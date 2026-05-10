@@ -1,279 +1,190 @@
-# Evolution of Populations
-
-**Suggested titles:**
-1. How Populations Change: The Invisible Hand of Allele Frequencies
-2. The Mathematics of Evolution: Why Populations Drift, Select, and Shift
-3. Reading Evolution in the Numbers: What Allele Frequencies Tell Us About Populations
-
-**TL;DR:** A population's genetics are not static. Allele frequencies shift due to five mechanisms — natural selection, genetic drift, gene flow, mutation, and nonrandom mating — and you can detect whether evolution is occurring by comparing real populations to the mathematical baseline called Hardy-Weinberg equilibrium.
+# Chapter 23 — Evolution of Populations: The Invisible Hand of Allele Frequencies
+*How to watch evolution happen by counting.*
 
 ---
 
-## Opening Scene: The Moth That Changed Color
+In 1848, a single dark moth appeared in Manchester, England.
 
-In 1848, a peppered moth appeared in Manchester, England with a dark pelt instead of the pale, speckled surface of every other moth in the region. One insect. One visible mutation in a population of thousands.
+Every other peppered moth in the region was pale and speckled — patterned to disappear against the lichen-covered bark of trees. This one individual was dark. One insect, one mutation, in a population of thousands.
 
 By 1895, nearly all the peppered moths in Manchester were dark.
 
-What happened in those forty-seven years was not that moths developed dark coloration because they needed it. It was not Lamarckian inheritance — the inheritance of acquired traits. A dark individual did not live and darken further over its life, then pass that darkening to its offspring. Instead, the dark insect, by accident of birth, survived better in the industrial world that Manchester had become. Soot from factories coated trees. Dark bark favored dark moths. Predatory birds spotted pale moths against it. Those dark moths bred more. Their dark offspring bred more. A rare allele — a variant of a gene — became common. Then dominant. Then nearly universal.
+I want you to hold that fact for a moment. Forty-seven years. One variant goes from vanishingly rare to nearly universal. Not because dark moths decided to become dark. Not because they learned anything. Because soot from factories coated the trees, pale bark disappeared, pale moths became visible to birds, and pale moths got eaten. The dark ones did not. The dark ones bred. Their dark offspring bred. A rare allele — a variant form of a gene — went from one copy to common to dominant.
 
-This was not a species becoming better adapted to its environment. This was a population's genetic makeup, described in numbers, shifting radically in the span of a few decades.
+This is evolution. Not the evolution of a new species, not the transformation of one body plan into another — that comes later and over much longer timescales. This is evolution as it is actually measurable: a change in allele frequencies in a population over time.
 
-To understand how populations evolve — not how species transform, but how the gene pool itself changes — you need one tool above all others: the ability to count alleles. Everything that follows rests on that simple habit: counting frequencies.
+That is the whole definition. Not a metaphor, not a narrative arc about progress or improvement. A number — the proportion of some genetic variant in a population — changes from one generation to the next. When that happens, the population has evolved.
 
----
-
-## Part 1: What Are Allele Frequencies and Why Count Them
-
-Mendel showed us how individual genes are inherited. A parent passes one allele to each offspring. The offspring carries two. But Mendel worked with single organisms, single crosses, single generations. A population is different. A population is the sum of all the alleles, all the variants of all the genes, in all the individuals of a group.
-
-Start with the ABO blood type system in humans. There are three alleles for the ABO gene — I^A, I^B, and I^0. Each person carries two. They can be:
-
-- I^A I^A or I^A I^0 (type A)
-- I^B I^B or I^B I^0 (type B)
-- I^A I^B (type AB)
-- I^0 I^0 (type O)
-
-Now zoom out. Take a population of 1,000 people. Each person carries two alleles. That's 2,000 alleles total in the population's gene pool. When scientists surveyed Jordanians, they found that I^A made up 26.1% of all ABO alleles in the population. I^B: 13.4%. I^0: 60.5%. The frequencies sum to 100%.
-
-The key insight: if those frequencies change from generation to generation, the population is evolving.
-
-That is the whole definition of evolution at the population level — a change in allele frequencies over time. Not the appearance of a new species. Not a dramatic shift in body size or behavior. A shift in the proportion of genetic variants. That shift is what drives everything else.
-
-### Why Allele Frequencies Matter More Than Genotypes
-
-You might think the thing that matters is what each individual looks like — the distribution of genotypes. A population with more dark moths looks different than one with more pale moths. But genotypes are temporary. They exist in an individual and vanish when that individual dies. Alleles persist. An allele lives in a population across generations. It can be rare, common, or fixed (present in every individual). If you want to know whether a population is evolving, count alleles, not phenotypes.
-
-Here's why this matters: imagine a population where 100 individuals carry the allele for sickle-cell hemoglobin. Then a disease — malaria — strikes. Individuals without the sickle allele die. The ones who carry it survive. Now 80 of those 100 still carry it. The allele frequency just went from 100 to 80 individuals. The population's phenotype has changed *because* its allele frequency changed. The phenotype is the shadow. The allele frequency is the thing casting it.
-
-### Sources of Genetic Variation
-
-Populations only evolve if there is variation to act upon. Three things create and maintain that variation:
-
-**Mutation** is the primary source of new alleles. DNA replication is not perfect. Sometimes an error occurs. The result is a new variant of a gene. Most mutations are neutral or harmful. A few are beneficial. But all of them are the raw material. Without mutation, a population would eventually exhaust its genetic variation. With mutation, novel alleles appear constantly, even at low rates (roughly 10^-8 to 10^-9 per base pair per generation).
-
-**Sexual recombination** shuffles existing alleles in new arrangements. A parent carries one copy of allele A and one of allele a. The other parent carries the same. Their offspring might be AA, Aa, or aa — three genotypes from two parents. Over many generations, recombination redistributes alleles in the population, creating combinations that natural selection can then act upon.
-
-**Gene flow** — migration of individuals between populations — introduces alleles that evolved elsewhere. A bird flies from one island to another. A pollen grain travels on the wind. An allele present in population X becomes present in population Y. The frequencies in both populations shift.
-
-Without variation, natural selection has nothing to select. This is the hardest part for people to grasp: *selection does not create variation; it shapes what is already there*.
+Everything in this chapter rests on that definition. Let me show you what you can do with it.
 
 ---
 
-## Part 2: Hardy-Weinberg Equilibrium — The Null Hypothesis for Evolution
+## Counting Alleles
 
-In the early 1900s, two scientists — English mathematician Godfrey Hardy and German physician Wilhelm Weinberg — proved something strange. In a large population with no mutations, no migration, random mating, and no natural selection, allele frequencies would not change. Generation after generation: the same frequencies. The same genotypes. Stability.
+Every gene in a diploid organism exists in two copies. One from the mother, one from the father. A population is the sum of all the copies of all the genes in all the individuals. That collection is the gene pool.
 
-This seems backwards. Why would a population ever be stable? Yet the mathematics are unassailable. Here is the proof.
+Take a simple gene with two variants: allele A and allele a. A population of 500 individuals contains 1,000 copies of this gene in total. Count the As. Divide by 1,000. That is the frequency of A — call it p. Count the as. Divide by 1,000. That is the frequency of a — call it q. By definition, p + q = 1. The two frequencies must sum to one because every allele is either A or a.
 
-Let's say a locus has two alleles: p (frequency of allele 1) and q (frequency of allele 2). By definition, p + q = 1. All alleles in the population must be one or the other.
+If you return to this population a generation later and count again, and p has changed, the population has evolved. This is not a metaphor. Evolution is visible in those numbers.
 
-Now, what are the genotype frequencies? If individuals mate randomly, the probability of drawing two alleles at random from the gene pool is the same as drawing two beads from a jar. The probability of getting p and p is p². The probability of getting p and q is 2pq (you can get p first then q, or q first then p). The probability of getting q and q is q².
+The ABO blood type system makes this concrete. Three alleles exist for the ABO gene in humans: I^A, I^B, and I^0. A survey of Jordanians found that I^A made up 26.1 percent of all ABO alleles in that population. I^B: 13.4 percent. I^0: 60.5 percent. If those percentages shift over generations — if I^0 becomes more common, if I^A becomes rarer — that population's genetics are changing. It is evolving.
 
-Thus:
+<!-- → [INFOGRAPHIC: Two bar charts side by side — left: ABO allele frequencies in the Jordanian population (I^A: 26.1%, I^B: 13.4%, I^0: 60.5%) labeled as "Generation 1"; right: a hypothetical shifted distribution labeled "Generation 2" with I^0 slightly higher — annotated to show that a change in bar heights between generations is the literal definition of evolution at the population level] -->
+
+Allele frequencies matter more than genotype frequencies for a reason that is easy to miss. Genotypes are temporary. They exist in one individual, for one lifetime, and disappear. Alleles persist across generations, passed from parent to offspring, reshuffling in new combinations but persisting in the gene pool as long as they are not lost. If you want to track what a population is doing, track the alleles.
+
+Now the question: what makes allele frequencies change?
+
+---
+
+## The Baseline: What Happens When Nothing Happens
+
+Before you can measure change, you need a reference point for no change. In 1908, a mathematician named Godfrey Hardy and a physician named Wilhelm Weinberg independently worked out what should happen to allele frequencies in a population if nothing is acting to change them.
+
+Their answer: nothing changes. If the population is large, mates randomly, experiences no mutation, receives no migrants, and is subject to no natural selection, then allele frequencies stay exactly the same generation after generation.
+
+The algebra is simple. Let p be the frequency of allele A and q be the frequency of allele a, with p + q = 1. If individuals mate randomly, the probability of inheriting A from one parent is p. The probability of inheriting A from the other parent is also p. So the probability of being AA is p². The probability of being aa is q². The probability of being Aa is 2pq — you can get A from the first parent and a from the second, or a from the first and A from the second.
+
+Thus the genotype frequencies should be:
 
 $$p^2 + 2pq + q^2 = 1$$
 
-This is the **Hardy-Weinberg equation**. It says: if these five conditions hold (large population, no mutation, no migration, random mating, no selection), the genotype frequencies will follow this formula forever.
+This is the Hardy-Weinberg equation. It is a prediction: if the five conditions hold, genotype frequencies follow this formula, and allele frequencies stay constant from generation to generation.
 
-### The Conditions Are Never Met
+The five conditions are: large population size, random mating, no mutation, no migration, no natural selection.
 
-No natural population satisfies all five conditions. All populations are finite (so genetic drift happens). All have mutation. Many have migration. Mating is almost never random. And selection is everywhere.
+No real population satisfies all five. Every real population is finite. All have mutation. Most have some migration. Mating is rarely fully random. Selection is omnipresent.
 
-But that is not the point. The Hardy-Weinberg equation is a *null hypothesis* — a baseline of no evolution. Compare real populations to it. If the real frequencies match the prediction, fine: no detectable evolution. If they deviate, something is changing the allele frequencies. Something is happening.
+That is exactly the point. Hardy-Weinberg is not a description of what populations do. It is a null hypothesis — a baseline of what populations would do if evolution were not happening. Compare a real population to the prediction. If the numbers match, nothing detectable is changing. If they deviate, something is shifting the allele frequencies. Your job is to figure out what.
 
-### Using Hardy-Weinberg to Detect Evolution
+Here is how to use it. Suppose violet flower color (V) is dominant over white (v) in a plant population. You observe 400 white flowers out of 500 plants. White flowers must be vv, so q² = 400/500 = 0.8. Square root: q ≈ 0.894. Then p ≈ 0.106.
 
-**Worked example:** Violet flower color (V) is dominant over white (v). In a population of 500 plants, you observe 400 white flowers and 100 violet flowers. What do the allele frequencies tell you?
+Hardy-Weinberg predicts: about 5.6 VV plants, about 94.4 Vv plants, about 400 vv plants. You observed 100 violet and 400 white — consistent with the prediction. This locus is in equilibrium. No detectable evolution.
 
-White flowers have genotype vv. If 400 out of 500 are vv, then q² = 400/500 = 0.8. Taking the square root: q = √0.8 ≈ 0.894. Then p = 1 − q ≈ 0.106.
+Return in ten years. Now 350 white and 150 violet. Recalculate: q² = 350/500 = 0.7, q ≈ 0.837. The allele frequency has shifted. Something is changing the numbers. Evolution is occurring. Now you investigate which mechanism is responsible.
 
-Now apply Hardy-Weinberg. You expect:
-- p² = 0.011 (about 5.6 VV plants)
-- 2pq = 0.189 (about 94.6 Vv plants)
-- q² = 0.8 (about 400 vv plants)
-
-You predicted 100 Vv + VV (violet flowers) and observed 100. The math checks. The population is in equilibrium—at least for this locus, no obvious evolutionary force is driving change.
-
-But if you return in ten years and find 350 white and 150 violet, the frequencies have shifted. q² = 350/500 = 0.7, so q ≈ 0.837. The allele frequencies have changed. Evolution is occurring. Now your job is to figure out which mechanism — selection, drift, migration, mutation, or nonrandom mating — is driving it.
+<!-- → [TABLE: Hardy-Weinberg worked example laid out as a two-column comparison — "Year 1 observation" vs. "Year 10 observation" — rows: observed phenotype counts, calculated q², calculated q, calculated p, expected genotype frequencies (p², 2pq, q²), conclusion (equilibrium vs. deviation) — annotated to show the detective logic: observed deviation → something is changing allele frequencies → investigate which mechanism] -->
 
 ---
 
-## Part 3: The Four Mechanisms of Evolution
+## The Mechanisms
 
-Every change in allele frequency falls into one of four categories. Most populations experience more than one simultaneously, which makes the real world messy. But each mechanism has a signature.
+There are exactly five ways allele frequencies can change. Understanding each one means understanding what signature it leaves in the population's genetics.
 
-### Mechanism 1: Natural Selection
+<!-- → [TABLE: Five-mechanism summary — rows: natural selection, genetic drift, gene flow, mutation, nonrandom mating — columns: what it changes, direction/predictability, strongest in which conditions, signature deviation from Hardy-Weinberg — designed as an orientation reference before the detailed sections below] -->
 
-Natural selection is the only mechanism that tends to increase adaptation. It acts because some individuals survive and reproduce more than others, and their success is heritable.
+**Natural selection** is the only mechanism that tends to produce adaptation. It works because some individuals survive and reproduce more than others, and that survival is partly heritable — tied to the alleles they carry.
 
-**Relative fitness** is what matters. You do not care if an individual produces five offspring in absolute terms. You care if five is more than the population average. If the average is three, the individual's relative fitness is 5/3 ≈ 1.67. If the average is six, the relative fitness is 5/6 ≈ 0.83. The population is selecting *against* this individual.
+The key concept is relative fitness. You do not care how many offspring an individual produces in absolute terms. You care whether it produces more or fewer than the population average. An individual producing five offspring when the average is three has a relative fitness above one. Natural selection favors it. Its alleles become more common.
 
-Selection has several modes, each producing a different outcome:
+Selection takes three forms, and they produce measurably different outcomes.
 
-**Stabilizing selection** favors individuals near the population average and selects against extremes. Imagine mice living in a forest where the leaf litter is uniformly brown. Pale mice stand out; dark mice stand out; medium brown mice vanish into the background. Predators catch more extremes. Medium-colored mice breed more. Over generations, the population becomes more uniform. Genetic variation *decreases*. The bell curve gets narrower.
+Stabilizing selection favors the middle and culls the extremes. Human birth weight is the classic example: very small babies and very large babies face higher mortality; intermediate-weight babies survive best. Over generations, the distribution of birth weights narrows. Variation decreases. The population becomes more uniform.
 
-**Directional selection** occurs when the environment changes and one end of the spectrum becomes advantageous. Peppered moths: pale moths were common until industrial soot darkened the trees. Dark moths now survived better. They bred more. The dark allele increased in frequency. The population's average shifted. This is the classic story of adaptation — the population becomes more like the new environment.
+Directional selection favors one extreme. The peppered moth story is directional: industrial soot shifted the environment, and one end of the spectrum — dark moths — suddenly had the advantage. The population's average shifted toward that end. The pale allele became rare.
 
-**Diversifying selection** favors *both* extremes over the middle. A population of beach mice might have light individuals (matching sand) and dark individuals (matching grass patches). Medium-colored mice match nothing and get eaten. Both pale and dark alleles increase. Genetic variation *increases*. The bell curve becomes bimodal — two peaks.
+Diversifying selection favors both extremes over the middle. Side-blotched lizards in California carry three male throat colors: orange, blue, and yellow. Orange males are aggressive and take territories. Blue males form pair bonds and guard mates. Yellow males mimic females and sneak matings. Orange beats blue in fights, but blue males guard against orange. Yellow sneaks past orange, but blue males guard against yellow. The system cycles like rock-paper-scissors: when orange is common, blue does well; when blue is common, yellow does well; when yellow is common, orange does well. No single morph ever wins permanently. The population maintains all three types, cycling through changing frequencies.
 
-An example: Male side-blotched lizards come in three throat colors — orange, blue, and yellow. Orange males are strong and win fights for females. Blue males form pair bonds and guard their mates. Yellow males sneak copulations by looking female-like. Like rock-paper-scissors, orange beats blue, blue beats yellow, and yellow beats orange in the competition for females. Orange beats blue (fights them off). Blue beats yellow (guards against them). Yellow beats orange (sneaks past them). Like rock-paper-scissors, none is universally advantageous. When orange is common, blue does well. When blue is common, yellow does well. When yellow is common, orange does well. The population cycles through a stable rotation of frequencies, maintaining variation.
+<!-- → [INFOGRAPHIC: Three bell-curve diagrams showing the effect of each selection mode on a trait distribution — stabilizing: original broad bell narrows over time, mean unchanged; directional: bell shifts left or right over time; diversifying: single bell splits into two peaks over time — annotate what happens to genetic variation in each case (decreases / shifts / increases)] -->
 
-### Mechanism 2: Genetic Drift — Evolution by Chance
+What selection cannot do is equally important. It can only act on variation that already exists. If a beneficial allele is absent, selection cannot create it. Selection shapes what is there — it does not conjure new options.
 
-This is the hardest mechanism to intuit because it has no direction and no adaptive logic. Genetic drift is *random sampling error in reproduction*.
+**Genetic drift** is the one that surprises people most, because it has nothing to do with fitness or adaptation. It is random sampling error, and it is always present.
 
-Consider a small population of ten individuals. Let's say five carry allele A and five carry allele a. The allele frequency is 0.5 for both. Now, by chance, three of the five A-carriers have offspring. The two a-carriers do not. A increases to 6 out of 10. Next generation, the A carriers again happen to be the ones who breed. Now A is 7 out of 10.
+Think of it this way. A population of ten individuals contains some number of copies of each allele. By pure chance, some individuals reproduce more than others this generation — not because they are better, but because accidents happen. An animal gets struck by lightning. A plant's seeds land in a dry patch. A fish gets caught in a net. The survivors are a random subsample of the population, and their alleles are a random subsample of the gene pool. In the next generation, the allele frequencies reflect that random draw.
 
-No one allele is "better." It is not selected. Chance alone is shifting frequencies.
+In a large population, the random errors average out. One unlucky individual does not much change the frequencies out of thousands. But in a small population, every individual death or reproductive success is a large fraction of the gene pool. Drift dominates. Allele frequencies lurch unpredictably. Beneficial alleles can be lost by bad luck. Harmful alleles can spread by good luck. There is no directionality, no goal, no adaptation. Just noise.
 
-Drift is stronger in small populations and weaker in large ones. If one individual in a population of 10 dies without reproducing, it removes 1/10 of the gene pool. If one individual in a population of 10,000 dies, it removes 1/10,000. The impact on allele frequencies is proportionally larger in the small population.
+The bottleneck effect is drift at its most brutal. A disaster — a disease, a volcanic eruption, a severe winter — kills most of the population randomly. The survivors are not the fittest; they are the lucky. Their alleles now represent the entire gene pool. Cheetahs passed through such a bottleneck thousands of years ago and today are so genetically uniform that skin grafts between unrelated individuals are rarely rejected — the immune system cannot recognize them as foreign.
 
-**The bottleneck effect** is drift magnified by catastrophe. A natural disaster — earthquake, hurricane, disease outbreak — randomly kills a large fraction of the population. The survivors are an unrepresentative sample of the original gene pool. The population's genetic makeup lurches to match the survivors' makeup, not because they are better, but because they are all that is left. Cheetahs passed through a severe bottleneck thousands of years ago; today they have almost no genetic variation. They are nearly clones of one another.
+The founder effect is bottleneck in miniature. A small group of individuals colonizes a new location. Whatever alleles those few founders carry become the basis of the new population's gene pool. Rare alleles in the source population can become common in the new one simply because a founder happened to carry them. The Amish in Pennsylvania show elevated rates of certain rare genetic diseases — not because those diseases are advantageous, but because the founders of the community happened to carry the responsible alleles at elevated frequency, and the community has remained largely isolated since.
 
-**The founder effect** is drift in the founding moment. A small group of individuals colonizes a new habitat — an island, a new valley. They are not a random sample of the original population; they carry whatever alleles happened to be in those few individuals. A Spanish ship carrying colonists arrived at the Americas carrying a disease allele at much higher frequency than in Spain. That allele now appears at elevated frequency in certain New World populations. The Amish of Pennsylvania descended from a small founding population; they carry rare deleterious mutations at much higher frequency than the general population because a founder happened to carry them.
+<!-- → [INFOGRAPHIC: Bottleneck effect diagram — large diverse population on the left (many different colored dots representing alleles); a narrow bottleneck in the middle (labeled "disaster: survivors are a random sample"); small, less diverse surviving population on the right — annotate that the right side reflects chance, not fitness; include a second panel showing the founder effect: a few individuals dispersing from a large population to colonize a new island, carrying only the alleles they happened to possess] -->
 
-Drift and selection operate simultaneously in most populations. A large population can overcome drift through selection's directional pressure. A tiny population is governed by drift; selection is too weak to overcome random noise.
+**Gene flow** is the movement of alleles between populations via migration. Animals move, pollen drifts, seeds travel. When an individual migrates to a new population and breeds, it introduces its alleles. The frequencies in both the source and destination populations shift.
 
-### Mechanism 3: Gene Flow (Migration)
+The main effect of gene flow is homogenization. Neighboring populations that exchange migrants become more genetically similar over time. This is why species distributed across large geographic areas often show gradual variation rather than sharp boundaries — alleles diffuse slowly from one region to the next, producing clines instead of walls. It is also why conservation biologists sometimes deliberately move individuals between isolated wildlife populations: to prevent drift from impoverishing each population's genetics, and to provide the benefits of new allele combinations.
 
-Alleles move. A bird migrates and brings its genes to a new population. Pollen drifts on the wind from one flower patch to another. A human moves to a new country and has children.
+**Mutation** introduces genuinely new alleles — variants that have never existed before in any individual. DNA replication is not perfect. Occasionally a base is copied incorrectly. Occasionally a segment is deleted or duplicated. The resulting allele may be harmful, neutral, or rarely beneficial. Mutation rates are slow — roughly one error per hundred million base pairs per replication — but over billions of individuals and thousands of generations, mutations are constant. They are the ultimate source of all genetic variation. Without mutation, selection and drift would grind populations down to fixation at every locus, and there would be no variation left to act on.
 
-Gene flow has two effects: it *introduces* alleles from elsewhere and it *homogenizes* populations, reducing differentiation. Over many generations, gene flow between neighboring populations erodes the genetic differences that would accumulate if populations were isolated. This is why species living across a continent show gradual transitions (clines) rather than sharp boundaries. Warm-blooded animals tend to be larger in cold climates (Bergmann's rule) — a latitudinal cline. Flowering plants bloom at different times on a mountain's slope — an altitudinal cline. These gradients exist because gene flow is slow enough to allow local selection to maintain some differentiation, but fast enough to prevent hard boundaries.
+**Nonrandom mating** changes genotype frequencies without necessarily changing allele frequencies. If individuals preferentially mate with others like themselves — which happens often, since many organisms choose mates based on observable traits — then homozygotes become more common than Hardy-Weinberg predicts, and heterozygotes become rarer. This has consequences. Rare recessive alleles that hide safely in heterozygotes become exposed in homozygotes, where their effects can be seen by selection. Inbreeding depression — reduced fitness in inbred populations — is the result. Zoo managers meticulously avoid mating closely related individuals for exactly this reason.
 
-### Mechanism 4: Nonrandom Mating
+Sexual selection is a special case of nonrandom mating. One sex — usually females in animals with large investment in offspring — chooses mates based on traits. The peacock's tail is the famous example. The tail is metabolically costly to grow, physically cumbersome, and makes the male more visible to predators. By every survival measure, it is harmful. Yet peahens prefer males with larger tails, and so larger-tailed males reproduce more, and the alleles for large tails persist and spread.
 
-If mating were random, every individual's probability of breeding would depend only on its survival. But animals choose mates.
-
-**Assortative mating** is preference for similarity. Tall people tend to mate with tall people. Peahens prefer peacocks with larger tails. This does not change *which* alleles are present, but it changes how they are packaged into individuals. Assortative mating increases the frequency of homozygotes (AA or aa) and decreases heterozygotes (Aa). The population becomes more inbred.
-
-**Inbreeding depression** is the cost of this packaging. Rare deleterious recessive alleles can hide in heterozygotes, undetected. In a large, outbred population, the chance that two carriers of a rare recessive mate is low. Their offspring might inherit the allele from both parents and show the disease. But this is rare. In a small inbred population, two carriers are likely to encounter each other. Deleterious mutations accumulate as homozygotes. The population becomes sickly. Zoo managers carefully control breeding to avoid this: they maintain genetic diversity by mating individuals who are least related.
-
-**Sexual selection** is mate choice based on traits that aid reproduction rather than survival. A peacock's tail makes the male more visible to predators and slower at escaping — it impairs survival. Yet peahens prefer large tails. Why?
-
-The **handicap principle** offers one explanation: if a trait is costly to survival, only the healthiest males can afford it. A large tail signals health. Peahens are reading that signal. They choose males with the biggest tails because those males must be extraordinarily fit to survive carrying them.
-
-The **good genes hypothesis** is similar: females choose males with impressive traits because those traits signal the male's ability to resist disease, metabolize efficiently, or fight infection. By choosing such males, females ensure their offspring inherit genetic superiority. Fewer, healthier offspring may outperform many weak ones.
-
-Both explanations assume that ornamental traits are honest signals of male quality. The empirical evidence is mixed, but the logic is sound: if a female invests heavily in offspring (as many do), choosing a genetically superior mate can increase her inclusive fitness.
+Why would females evolve to prefer a trait that harms its bearer? The handicap principle offers an answer: a male who can survive despite carrying such a costly ornament must be extraordinarily healthy. The tail is an honest signal of genetic quality, because only a genuinely fit male can afford it. Females who choose those males give their offspring better genes. The preference and the ornament co-evolve, each driving the other.
 
 ---
 
-## Part 4: How Mechanisms Interact
+## How the Mechanisms Interact
 
-Evolution in the real world is not one mechanism in isolation. A population experiences selection, drift, mutation, and gene flow all at once. The net result depends on their relative strengths.
+In the real world, all five mechanisms operate simultaneously, and the outcome depends on which is strongest.
 
-**Selection is strongest when:**
-- The fitness difference between alleles is large
-- The population is large (so drift noise does not drown out selection's signal)
-- The beneficial allele is already common enough to encounter selection (rare beneficial alleles can be lost to drift before selection helps them spread)
+Selection wins when the population is large and fitness differences between alleles are large. When Manchester trees were coated in soot, the fitness difference between dark and pale moths was enormous. Selection was so strong that in fewer than fifty generations the dark allele went from rare to nearly universal. Drift could not resist it — the population was too large and the selective advantage too great.
 
-**Drift is strongest when:**
-- The population is small
-- Alleles have similar fitness (selection cannot distinguish them)
+Drift wins when the population is small or when alleles are nearly neutral. In the Amish community, rare deleterious mutations persist not because they provide any advantage, but because drift in a small isolated population is strong enough to prevent selection from eliminating them. A mutation that reduces fitness by 0.1 percent is nearly invisible to selection in a population of a few thousand. Drift can easily fix it.
 
-**Gene flow is strongest when:**
-- Migration rates are high
-- Allele frequencies differ between populations (if two neighboring populations have the same alleles at the same frequencies, migration does not change anything)
+Gene flow can counteract local selection. A local population experiencing selection toward a particular allele might never achieve it if migrants constantly arriving from other populations carry different alleles. Conversely, gene flow can rescue a small population from inbreeding depression, bringing new alleles that reduce the concentration of harmful recessives.
 
-**Mutation is weak on short timescales** (10 to 1,000 generations) but provides the raw material for selection and drift to act upon on longer timescales.
+The interaction between selection and drift is especially important for conservation. An endangered species reduced to a few hundred individuals loses alleles to drift regardless of selection. Beneficial alleles can vanish by chance before selection has a chance to spread them. Harmful alleles can become fixed. If the population cannot be enlarged, its evolutionary potential erodes. This is why wildlife managers track not just the number of individuals in a population but the effective population size — the number that actually contribute genes to the next generation — and work to maintain genetic diversity as a hedge against future environmental change.
 
-The peppered moths again: in industrial Manchester, directional selection was powerful. Dark alleles had a huge fitness advantage. Even though the population was finite and drift was present, selection was so strong that the dark allele went from rare to nearly fixed in less than 50 years. But when factories closed and air pollution decreased, that same population reversed. Selection now favored pale moths again. Genetic drift alone would never reverse the trend; it would lock the population into whatever allele frequency existed at the bottleneck moment. But strong directional selection could and did.
-
-Contrast this with Amish genetic diseases. The Amish population is small. Many deleterious alleles are rare. Drift, not selection, dominates. Mutations that would be eliminated by selection in a large population persist in the Amish at elevated frequency purely because the founding population happened to carry them and drift has not yet erased them (or never will, if they reach fixation).
-
-In humans globally, gene flow is enormous. Different human populations have accumulated some different alleles due to isolation and local selection (adaptation to environment, to disease pressure). But global migration is now so high that these differences are being homogenized. Allele frequencies that might have differed by 20% between distant populations fifty years ago may differ by only 5% today.
-
-### The Limits of Adaptation
-
-Natural selection can generate populations exquisitely adapted to their environments. But it has hard limits.
-
-First, selection can only work with *existing* variation. If a beneficial allele does not exist, selection cannot create it. If a population has lost an allele to drift, mutation must reintroduce it. Mutation is slow.
-
-Second, selection acts on individuals, not alleles. An individual might carry ten beneficial alleles and five harmful ones. If the net fitness is positive, the individual thrives and passes on all fifteen. The harmful alleles hitch along. Over time, beneficial alleles can actually decrease in frequency if they are linked to bad ones — physically close on the chromosome and inherited together. This is linkage disequilibrium: nearby genes tend to be inherited as a block. A good allele buried next to a bad one will spread or decline with its neighbor.
-
-Third, a population might become trapped in a local optimum. Imagine mice on a beach with two habitats: light sand and dark grass. Light mice match sand; dark mice match grass. Medium mice match neither and get eaten. The population might split into two groups — some light, some dark. But a medium mouse cannot gradually shift to either light or dark without first becoming even more exposed (medium) and getting eaten. The intermediate phenotype is a dead end. Selection cannot traverse it.
-
-Finally, not all evolution is adaptive. Genetic drift introduces deleterious alleles. Gene flow can bring maladaptive alleles from other populations. Nonrandom mating can concentrate harmful recessive mutations. Evolution is the *sum* of all forces, not a unidirectional march toward perfection.
+<!-- → [CHART: Conceptual diagram showing selection strength vs. population size as two axes — four quadrants labeled: large population + strong selection = "selection dominates, rapid adaptation"; large population + weak selection = "slow drift and selection both matter"; small population + strong selection = "selection may overcome drift if advantage is large enough"; small population + weak selection = "drift dominates, random walk" — annotated with real examples in each quadrant: peppered moths (large/strong), neutral mutations (large/weak), Amish rare alleles (small/weak)] -->
 
 ---
 
-## Synthesis: Reading a Population's Future
+## What Evolution Is Not
 
-When you observe a population, you are seeing a snapshot of ongoing evolution. To know what will happen next, you need to know the allele frequencies, the population size, the mutation rate, the migration rate, and the strength of selection. No single factor determines the outcome. 
+The peppered moth story is sometimes told as a story of progress: moths getting better. The implication is that evolution moves toward improvement, toward fitness, toward some optimum.
 
-A population small enough to be governed by drift will evolve randomly, losing alleles by chance. A population large enough to resist drift will evolve according to selection — if selection pressures are strong. A population receiving heavy gene flow will become genetically similar to its neighbors. A population with high mutation rates will maintain variation even under selection.
+This is wrong.
 
-The Hardy-Weinberg equation gives you the baseline. Compare the population to it. If the frequencies deviate, you know something is changing the alleles. Now figure out what. Is the population shrinking? (Drift.) Are individuals not mating randomly? (Nonrandom mating.) Has the environment changed? (Selection.) Are new alleles appearing? (Mutation.) Has migration increased? (Gene flow.)
+Evolution is a change in allele frequencies. Drift changes allele frequencies randomly — no direction, no improvement, no goal. Gene flow changes allele frequencies by mixing — indifferent to whether the arriving alleles are beneficial or harmful in the new context. Mutation introduces new alleles randomly — most of them neutral or harmful. Nonrandom mating rearranges alleles without caring whether the resulting genotypes are fitter.
 
-The method is simple: count alleles. Compare to the expectation. Explain the deviation.
+Only selection tends toward adaptation, and even selection is constrained. It can only work with existing variation. It acts on the whole organism, not individual genes — a beneficial allele linked to a harmful one will rise or fall with its neighbor. It can trap populations in local optima where the intermediate phenotype between two well-adapted forms is worse than either, making it impossible to traverse from one to the other.
 
-This is how we know evolution is not just a historical event, not just something that happened to dinosaurs or to bacteria. Evolution is happening *now*, in measurable shifts in allele frequencies, in populations we can observe and count. It is happening in the Amish and the Afrikaner, in peppered moths and side-blotched lizards, in your own species as populations mix and environments change.
-
-The machinery is visible. The math is not hard. The only requirement is the willingness to think in terms of frequencies — to see a population not as a collection of individuals, but as a distribution of alleles, shifting and drifting and selecting across generations.
+Evolution is the net result of all five mechanisms acting simultaneously. Sometimes the net result is a beautifully adapted organism. Sometimes it is a population accumulating harmful mutations because drift is too strong to allow selection to clean them out. Sometimes it is a population becoming genetically impoverished through bottlenecks and founder effects. The machinery is mechanistic, not teleological. It has no destination.
 
 ---
 
-## Graduated Exercises
+## Reading a Population
 
-**Warm-up:**
-1. A gene has two alleles, A and a. In a population of 500 individuals, you count the alleles and find 600 copies of A and 400 copies of a. What are the allele frequencies?
+Here is what I want you to take away: a population is a distribution of alleles, not a collection of individuals. Its future depends on how those allele frequencies change, which depends on the balance of five forces.
 
-2. In the same population, what would you expect the genotype frequencies to be (AA, Aa, aa) if the population is in Hardy-Weinberg equilibrium?
+Count the alleles. Compare to Hardy-Weinberg. If they match, no detectable evolution is occurring at that locus. If they deviate, something is changing the numbers. Then ask: what? Is the population small? Drift may dominate. Has the environment changed? Selection may be driving a shift. Is migration high? Gene flow may be homogenizing nearby populations. Are mating patterns skewed? Nonrandom mating may be exposing recessive alleles.
 
-3. You observe the actual genotypes: 200 AA, 300 Aa, 0 aa. Does this match your expectation? What might explain the deviation?
+The machinery is visible if you know how to look. And the way to look is to count.
 
-**Application:**
-4. A population of plants has a flower-color gene with two alleles: R (red) is dominant, r (white) is recessive. In a sample, you observe 360 red flowers and 40 white flowers (total 400). Calculate the allele frequencies. If the population is in HWE, how many of each genotype would you expect in a population of 10,000 plants?
+When I find myself thinking about this carefully, what strikes me is the same thing that strikes me about every powerful framework in biology: the simplicity of the underlying logic given the complexity of the outcome. Two numbers — p and q — constrained to sum to one. Five mechanisms that can change them. An equation that predicts stability when nothing acts. Everything else — the dark moths, the spotted lizards, the cheetah's lost diversity, the Amish farmer with a rare disease — follows from those simple facts.
 
-5. An island population of birds is founded by ten individuals, five males and five females. Two of the males carry a rare allele. Over the next five generations, genetic drift operates (assume no selection). Would you expect this rare allele to be more common, less common, or about the same in generation five? Explain.
-
-**Synthesis:**
-6. A disease is caused by a rare recessive allele (frequency = 0.01). In a large outbred human population, how many individuals would you expect to show the disease phenotype? Now consider a small isolated population of 100 people where the same allele was carried by the founder at the same frequency. Would you expect the disease to be more common or rarer in the isolated population after ten generations? Why?
-
-7. Peppered moths in England show directional selection toward dark coloration during industrialization, then reversal toward light coloration when factories closed. Explain what mechanism (selection, drift, mutation, gene flow, nonrandom mating) is driving each phase. Would the direction have reversed if the population had been very small (say, ten moths)?
+It is, in the end, just arithmetic. The arithmetic of who is alive, who breeds, and what they carry.
 
 ---
 
-## Summary
+## Exercises
 
-Evolution at the population level is a change in allele frequencies. These frequencies shift because of five mechanisms: natural selection (favoring beneficial alleles), genetic drift (random change, especially strong in small populations), gene flow (migration of alleles between populations), mutation (introduction of new variants), and nonrandom mating (choice of mates affecting genotype packaging).
+**Warm-up**
 
-The Hardy-Weinberg equation provides a mathematical baseline — a prediction of what should happen if none of these mechanisms operate. Deviations from Hardy-Weinberg signal that evolution is occurring. By measuring the deviation and understanding the population's size, environment, and mating patterns, you can infer which mechanisms are active.
+1. A gene has two alleles, B and b. In a population of 200 individuals, you count 280 copies of B and 120 copies of b. Calculate p (frequency of B) and q (frequency of b). Verify that p + q = 1. *Tests: basic allele frequency calculation from a count.*
 
-Selection is the only mechanism that tends to increase adaptation. But selection is not the only force shaping populations. Drift dominates in small populations. Gene flow homogenizes neighboring populations. Mutation provides variation. Nonrandom mating concentrates alleles in particular genotypes.
+2. Using the allele frequencies from question 1, calculate the expected genotype frequencies (BB, Bb, bb) under Hardy-Weinberg equilibrium. How many individuals of each genotype would you expect in a population of 200? *Tests: applying the Hardy-Weinberg equation to produce expected values.*
 
-Most populations experience multiple mechanisms simultaneously. The outcome depends on their relative strengths. A population can be tracked across generations by counting alleles — not a metaphorical journey toward fitness, but a literal ledger of genetic frequencies, rising and falling, driven by the interplay of randomness and selection, death and reproduction, isolation and flow.
+3. You observe the actual genotypes in that population: 90 BB, 100 Bb, 10 bb. Do the observed values match the Hardy-Weinberg expectations? Calculate the observed allele frequency from these genotype counts and compare it to the p you calculated from the original count. *Tests: detecting deviation from equilibrium and interpreting it as a signal of evolution.*
 
----
+**Application**
 
-## Connections Forward
+4. A population of 20 mice lives on a small island. By chance, three mice die in a storm — not the weakest mice, just three unlucky ones. Explain why this event would change allele frequencies even if no allele confers any survival advantage. What would happen differently if the same storm hit a population of 20,000 mice? *Tests: applying the logic of genetic drift and understanding its relationship to population size.*
 
-The mechanisms of evolution operate not just on single loci, but across the entire genome. When populations diverge — when they stop gene flow and experience different selection pressures — allele frequencies can change so dramatically that reproductive isolation evolves. After many generations, a population becomes so genetically different that it can no longer interbreed with its parent population. This is speciation. Evolution of populations becomes evolution of species.
+5. A rare recessive allele (frequency q = 0.02) causes a metabolic disease when homozygous. In a large outbred population, calculate the expected frequency of affected individuals (q²). Now suppose the population passes through a bottleneck and the allele frequency rises to q = 0.15 in the survivors. Recalculate the expected frequency of affected individuals. What does this illustrate about the relationship between bottlenecks and genetic disease? *Tests: quantitative application of drift and bottleneck effects using Hardy-Weinberg.*
 
-Sexual selection, a subset of natural selection, can produce traits that seem maladaptive yet persist — antlers in deer, songs in birds, ornamental plumage in males. These traits do not aid survival; they aid reproductive success. Understanding them requires understanding that selection acts not just on survival, but on mating, and that mating decisions themselves are heritable and can be selected.
+6. Two neighboring bird populations have different frequencies of a wing-color allele: population A has 70% dark allele, population B has 20% dark allele. Over ten generations, birds regularly migrate between the populations. Predict the direction of change in each population's allele frequency, and describe what the long-term outcome of sustained gene flow would be. *Tests: applying gene flow logic to a specific scenario.*
 
-Inbreeding depression shows that population size matters not just for the mechanics of drift, but for the long-term health of a population. Conservation biology uses allele-frequency thinking to preserve endangered species: maintain population size to limit drift, maintain connectivity between populations to maintain gene flow, and maintain behavioral flexibility to allow adaptation to changing environments.
+**Synthesis**
 
----
+7. Peppered moths in Manchester showed rapid directional selection toward dark coloration during industrialization, then reversed toward pale coloration when air pollution decreased. Explain why selection could reverse the direction of allele frequency change, but drift alone could not reliably reverse it. Under what conditions might drift have reversed the direction — and why would that outcome be less predictable? *Tests: comparing the directionality of selection vs. the randomness of drift in the same population.*
 
-## What Would Change My Mind
+8. A conservation biologist is managing a captive population of 50 mountain gorillas for eventual reintroduction to the wild. She is concerned about both inbreeding depression and loss of genetic diversity over time. Using the mechanisms covered in this chapter, explain which mechanisms threaten this population and propose two practical interventions — one addressing genetic drift and one addressing nonrandom mating — that could improve the population's long-term viability. *Tests: applying multiple mechanisms simultaneously to a conservation scenario.*
 
-If strong gene flow between populations maintained constant allele frequencies despite strong directional selection, it would suggest that gene flow is a more powerful mechanism than I have described. Current evidence supports that selection can overcome moderate gene flow, but overwhelming gene flow (very high migration rates) can indeed prevent local adaptation. I would revise upward my emphasis on gene flow as a limiting factor on selection in open populations.
+**Challenge**
 
----
+9. The side-blotched lizard maintains three male color morphs (orange, blue, yellow) in stable cycling frequencies through a rock-paper-scissors dynamic. From a Hardy-Weinberg perspective, this population is not in equilibrium — frequencies cycle rather than stabilize. Yet the three morphs persist indefinitely. This seems to contradict the expectation that directional selection should eventually fix one allele. Explain why this cycling pattern represents a form of long-term stability, and what would have to change in the environment or the fitness relationships to break the cycle and allow one morph to become fixed. *Tests: applying selection logic to a frequency-dependent fitness system, reasoning about conditions for fixation.*
 
-## Still Puzzling
-
-I do not fully understand why populations in the wild do not collapse more often under inbreeding depression. Small populations should accumulate deleterious mutations and show declining fitness. Some do (cheetahs, Arabian oryx, California condors). But many wild populations persist at small sizes for extended periods. Either purging of deleterious mutations happens faster than theory predicts, or populations are rescued by immigration, or the mutations are not as deleterious as lab studies suggest. The empirical gap remains.
-
----
-
-## Tags
-
-allele-frequencies, Hardy-Weinberg-equilibrium, genetic-drift, natural-selection, gene-flow, founder-effect, bottleneck-effect, sexual-selection, directional-selection, population-genetics
-
----
-
-*Author: Nik Bear Brown*
-*This chapter was drafted for pedagogical clarity in the Feynman tradition: mechanism-first, variation preserved, jargon translated. It is a work in progress and has been reviewed by the author before publication.*
+10. A human population on a remote island has been isolated for 200 generations. A researcher finds that one allele at a particular locus has risen from a frequency of 0.01 (estimated from the founding population) to 0.35 today. The allele appears to have no effect on survival or reproduction in lab studies. Propose two different mechanisms that could explain this increase, explain how you would distinguish between them empirically, and describe what evidence would allow you to rule out natural selection as a cause. *Tests: designing an inference strategy to distinguish drift from selection using allele frequency data and population history.*
