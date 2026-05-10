@@ -1,238 +1,220 @@
-# Animal Reproduction and Development
-
-## Chapter opening
-
-1. **A seahorse carrying eggs that aren't his own**
-2. **Why fish release millions of eggs while mammals invest in one or two offspring**
-3. **The puzzle at the heart of making a new animal: how does a single cell become a body with a head and a tail**
-
-TL;DR: Animals solve the problem of passing genes to the next generation through two radically different strategies—quick and clonal, or costly but varied—and then invest everything from external spawning to gestation and parental care. Development itself runs on a deep evolutionary logic: fold the cells the right way, and the same molecular instructions build a fish, a frog, or a human.
+# Chapter 50 — Animal Reproduction and Development
+*How the same molecular instructions build a fish, a frog, or a human.*
 
 ---
 
-## Reproductive strategies: The fundamental trade-off
+Here is a fact that took me a long time to properly absorb.
 
-Picture a salmon swimming upstream. The fish has no parental instinct. It will never know its offspring. What it does instead is remarkable: it releases millions of eggs into the water, and males release sperm to meet them. This is broadcast spawning, and it works. The genetic gamble is extreme—most eggs never fertilize, most larvae get eaten—but the ones that survive are already starting to feed. In the same ecosystem, a mammal invests differently. A mouse carries fewer than a dozen embryos. Each one gets nine weeks of placental nourishment before birth. The mouse trades quantity for reliability.
+If you take a gene from a mouse — a gene that specifies where the eye should form — and insert it into the genome of a fruit fly, the fly grows an eye. Not in the wrong place, necessarily. But a fly eye made from a mouse gene. The fly's own molecular machinery reads the mammalian instruction and executes it.
 
-These are not just different numbers. They are different solutions to a single problem: how much resources does each parent put into each offspring, and how much does variation in the population matter?
+The gene is called Pax6. It is one of a family of regulatory genes called Hox genes, and versions of it exist in fruit flies, sea urchins, fish, frogs, mice, and humans. These genes are so old and so conserved that a mammalian version still works in an insect. They are not just similar — they are functionally interchangeable.
 
-**What is asexual reproduction, and why does it work in some environments but fail in others.**
+This tells you something profound about development: the instructions for building complex animals are ancient. They did not evolve separately in each lineage. They were inherited, once, from a common ancestor that lived perhaps 600 million years ago, and every animal alive today uses variations on the same molecular toolkit. The differences between a fly and a human arise not from completely different genetic programs but from differences in when and where those ancient programs are switched on.
 
-Asexual reproduction produces genetic clones. A sea star splits in two. A hydra buds off a daughter from its own tissue. Parthenogenesis—an unfertilized egg developing into a complete organism—happens in aphids and some bees. The advantage is overwhelming: you don't need a mate. One organism can colonize an empty island. The offspring are already adapted to whatever environment made the parent succeed. If that environment is stable, that's enough.
-
-But stability is the condition. When a sea star clones itself across a reef, every daughter is identical. If a disease arrives, if the water temperature shifts, if a new predator arrives, the entire population is equally vulnerable. There is no variation to explore, no genetic experiments running in parallel. Asexual reproduction is a bet that tomorrow will be like today.
-
-Sexual reproduction mixes the genes of two parents. That shuffling creates offspring that are new combinations—different from either parent, different from each other. This is expensive. Finding a mate takes time. Producing eggs or sperm requires resources. But in an unpredictable world, that genetic diversity is an investment. When conditions change, the species has variation to work with. Some of those new combinations will fail. Some will succeed where their parents would have died.
-
-**The specification move: what we mean by "male" and "female" and how much those words actually tell us.**
-
-In animals with sexual reproduction, we call the producers of small gametes males and the producers of large gametes females. That's the definition that actually matters for classification. But in the animal kingdom, that's nearly where agreement stops.
-
-Some species have separate sexes, one male and one female per individual. Most mammals, most birds, most fish work this way. But many invertebrates—earthworms, snails, clams—are hermaphrodites: one body with both reproductive organs. A hermaphrodite can self-fertilize (common in animals that don't move much, like barnacles and some snails) or mate with another hermaphrodite and exchange sperm, with both animals ending up pregnant.
-
-And then there are sex-determination systems that are not what you might guess. Mammals use XY chromosomes: females are XX, males are XY. But birds flip the system: males are ZZ, females are ZW. Some fish and reptiles don't use chromosomes at all. The sex of a crocodile or a turtle depends on the temperature of the sand during egg incubation. Warmer or cooler, and the embryo develops as male or female. Some species change sex during their lifetime. An oyster is born male, grows, becomes female, lays eggs—then may change sex again.
-
-None of this variation means that sex itself is unclear. It means that "male" and "female" are names for different roles in reproduction. The machinery that assigns those roles is wildly diverse.
-
-**How fertilization happens: the race at the cell surface.**
-
-When a sperm meets an egg, what happens is not the gentle merge of romance. It is a controlled collision. The egg is wrapped in a protective coating of glycoproteins called the zona pellucida. When a sperm binds to that coating, a cascade of enzymatic reactions—the acrosomal reactions—begins. The acrosome, a structure at the sperm's head, releases digestive enzymes. These enzymes tunnel through the glycoprotein layer. The sperm's plasma membrane fuses with the egg's plasma membrane. The sperm nucleus passes through.
-
-Then something crucial happens: the egg prevents any other sperm from entering. This happens in two phases. First, the egg's membrane potential changes sharply—what Ernest Everett Just called "the wave of negativity"—a rapid electrical change that spreads across the egg surface. Then the egg rewires its membrane structure itself. If both blocks fail, multiple sperm can fuse with the egg. The resulting embryo has too many chromosomes. It is not genetically viable and dies within a few days. The system exists to ensure one sperm, one egg, one diploid genome.
-
-**Trade-offs in how offspring develop: broadcast into the water, or sheltered inside the parent.**
-
-External fertilization—eggs and sperm released into the water—is the ancestral strategy. Fish, most amphibians, many invertebrates do it this way. The advantage: huge numbers of offspring, no specialized organs needed, rapid development. The cost: most offspring die. Eggs and larvae sit in the environment. Predators, infection, starvation—the odds are against them. Millions of eggs must be produced for a few to survive. The surviving larvae are already on their own, feeding, competing.
-
-Internal fertilization—sperm placed inside the female's body—changed everything for animals moving onto land. The female's body became a specialized environment. Fewer offspring, but protected. The survival rate jumps. But what happens to those offspring during development? That's where the strategies diverge again.
-
-**Oviparity, ovoviviparity, viviparity: three ways to finish development.**
-
-In oviparity, the fertilized egg is laid outside the parent's body. The embryo develops in an egg with a protective shell and a yolk that nourishes it—the egg is self-contained. Birds lay hard-shelled eggs because of calcium carbonate in the shell. Reptiles lay leathery eggs. Most fish, many reptiles, and two mammals (the platypus and the echidna) use this strategy. The developing embryo is independent from the moment of laying.
-
-In ovoviviparity, the fertilized egg stays inside the parent's body, but the embryo still gets all its nourishment from the yolk in the egg itself. The parent provides a sheltered environment—the temperature is stable, predators can't touch the developing offspring—but not food. Some sharks, some snakes, some fish do this. The young develop inside the mother, then are born live.
-
-In viviparity, which is the mammalian strategy, the young develop inside the female, receiving nourishment directly from the parent's blood through an organ called the placenta. The offspring is born live, already feeding and developing before it leaves the mother. Mammals and a few other vertebrates use this route.
-
-The trade-off is clear: oviparity requires a giant yolk and a protective shell, but the parent can walk away. Viviparity demands that the mother invest calories and minerals from her own body for months. The offspring is shielded and fed at the cost of the mother's resources. For mammals, viviparity made something new possible: a long, protected development before birth and then lactation—milk produced from the mother's own tissue—to continue the feeding after the offspring arrives.
+This chapter is about how new animals are made — the strategies animals use to reproduce, and the molecular machinery that turns a single fertilized cell into an organized body with a brain, a heart, and limbs in the right places.
 
 ---
 
-## The mammalian reproductive cycle: Hormones orchestrating the possibility of pregnancy
+## The Fundamental Trade-off
 
-Human reproduction is coordinated by a conversation between the brain, the pituitary gland, and the reproductive tissues themselves. The hypothalamus—the part of the brain that monitors the body's state—sends a signal: gonadotropin-releasing hormone, or GnRH. This reaches the anterior pituitary. The pituitary responds by releasing two hormones: follicle-stimulating hormone (FSH) and luteinizing hormone (LH). These hormones reach the reproductive organs and trigger the cycle that prepares an egg for release.
+Every reproducing animal faces the same arithmetic problem.
 
-**In males: a steady supply.**
+Each offspring requires resources: energy to make it, time to develop it, protection from the world while it grows. Those resources are finite. Spend more on each offspring and you make fewer of them. Make more offspring and each one gets less.
 
-In males, FSH and LH arrive at the testes. FSH tells the Sertoli cells—support cells in the sperm-producing tubes—to begin making sperm. LH tells the interstitial cells of Leydig to produce testosterone. Testosterone is the hormone that drives the secondary sexual characteristics: the deepening voice, facial hair, the initiation of sex drive. It also supports spermatogenesis—the ongoing production of sperm.
+Evolution has explored both extremes.
 
-The system runs on negative feedback. As sperm count rises, Sertoli cells release inhibin, a hormone that tells the hypothalamus and pituitary: slow down FSH. When sperm count reaches 20 million per milliliter, inhibin stops. The production continues. The cycle has no monthly rhythm. Once puberty arrives, a male human produces sperm continuously until old age.
+A salmon swimming upstream releases roughly 3,000 to 5,000 eggs into the water. Males release clouds of sperm. Most eggs never fertilize. Most fertilized eggs never hatch. Most larvae that hatch are eaten within days. But the ones that survive are already on their own — feeding, competing, growing. The parent invests almost nothing per individual offspring and makes up for the near-zero survival rate with sheer numbers.
 
-**In females: a monthly oscillation.**
+A female elephant carries one calf for 22 months, nurses it for two to three years, and has another calf only after the first is weaned. Two or three calves in a lifetime. Each receives years of parental investment, protection, and teaching. The survival rate of each calf is vastly higher than a salmon egg's.
 
-In females, the system is cyclical. FSH arrives at the ovaries and triggers a batch of follicles—structures in the ovary that contain eggs—to develop. As the follicles grow, they release estrogen (specifically estradiol, the most potent form). Estrogen does two jobs: it begins to thicken the uterine lining, and it creates a feedback signal to the hypothalamus and pituitary.
-
-Here is where the cycle accelerates. When estrogen levels reach a peak, around day 14 of a typical 28-day cycle, they trigger an LH surge. LH rises sharply, then falls. That spike causes the most mature follicle to rupture. An egg is released. This is ovulation.
-
-After ovulation, the ruptured follicle transforms into the corpus luteum—a structure that produces progesterone and some estrogen. Progesterone prepares the uterine lining for implantation. It also sends a signal back: inhibit FSH and LH. This prevents any new eggs from developing while this one is traveling to the uterus.
-
-If the egg is fertilized and implants, a hormone from the developing embryo (human chorionic gonadotropin, or hCG) maintains the corpus luteum. Progesterone levels stay high, and the uterine lining is preserved. If the egg is not fertilized, the corpus luteum breaks down. Progesterone levels drop. The uterine lining degenerates—this is menstruation—and the cycle begins again.
-
-**Menopause: when the conversation frays.**
-
-By the mid-40s to mid-50s, the ovaries lose their sensitivity to FSH and LH. Follicles no longer respond to the signals. Ovulation becomes irregular, then stops. Menstrual periods cease. This is menopause. The woman can no longer become pregnant.
-
-The side effects are significant. Without estrogen, blood calcium levels drop. Calcium is pulled from bone to replenish the blood, lowering bone density and increasing the risk of osteoporosis. Hot flashes, night sweats, mood swings, vaginal dryness, insomnia—all result from the sudden loss of hormones the body has relied on for decades. Hormone replacement therapy (HRT) can prevent bone loss, but it carries its own risks: increased chance of stroke, heart attack, blood clots, breast cancer. Medicine here is a negotiation between competing harms.
+These are not arbitrary choices. They are different solutions to the same optimization problem, shaped by ecology: how predictable is the environment, how much competition will offspring face, how much does parental care actually improve survival?
 
 ---
 
-## Gametogenesis: Making sperm and eggs, asymmetrically
+## Sexual vs. Asexual: The Deeper Trade-off
 
-**Spermatogenesis: a continuous factory.**
+Underneath the question of how much to invest in each offspring lies an older question: should reproduction involve sex at all?
 
-In the testes, within the seminiferous tubules, sperm are made. Stem cells at the periphery of the tubule divide. One daughter cell stays put, ready to divide again. The other begins the meiotic divisions that produce sperm. The process is called spermatogenesis, and it takes about 74 days from start to finish. A cell called a primary spermatocyte enters meiosis I and produces a secondary spermatocyte—a haploid cell with half the chromosomes. Meiosis II produces a spermatid. When the spermatid grows a flagellum—a tail—it is called a sperm cell.
+Asexual reproduction is, in many ways, obviously better. A sea star that splits in two produces a genetically identical copy of itself. A hydra that buds a daughter from its own tissue does the same. No mate required. No energy wasted on finding one. The offspring are already adapted to whatever environment made the parent successful — because they are genetically the parent.
 
-Four sperm result from each primary spermatocyte. The output is immense: a man can produce 200 million sperm per day. This is a factory running full capacity. The process begins at puberty and continues, with diminishing efficiency, into old age.
+In a stable environment, this is nearly optimal. You already have a winning combination; make more copies of it.
 
-**Oogenesis: arrested at the gate.**
+But stability is the assumption. If a disease arrives that the parent is susceptible to, every clone is equally susceptible. There is no variation. The entire population fails together. Sexual reproduction, by contrast, shuffles genes from two individuals. Every offspring is a new genetic combination, different from its parents and different from every sibling. Most of these new combinations are worse. Some are better. A few will succeed in conditions that would have killed their parents.
 
-Women's eggs follow a profoundly different timeline. Before birth, a female fetus has about one to two million potential eggs (oogonia). These cells begin meiosis I but stop partway through, arrested in the first prophase. They remain frozen there, waiting, until puberty arrives. At adolescence, FSH and LH restart the process. Batches of follicles begin meiosis I again, but they stop again at a different point—metaphase II. Only at ovulation does the secondary oocyte finish meiosis I, dividing unequally. Most of the cell's material and organelles go to one cell—the secondary oocyte that will be ovulated. The other cell, the polar body, gets only a set of chromosomes and a tiny bit of cytoplasm. It dies and is reabsorbed.
-
-The secondary oocyte is ovulated in this arrested state. Meiosis II only completes if the egg is fertilized. If a sperm enters, the secondary oocyte finishes its division, producing a second polar body and a mature, diploid egg containing 46 chromosomes: 23 from the egg's nucleus, 23 from the sperm.
-
-The numbers are stark. A woman is born with about two million potential eggs. By puberty, about 400,000 remain. Between puberty and menopause, one egg (usually) is ovulated each month. By menopause, the store is essentially exhausted. One egg is released across a whole life. Compare this to the 200 million sperm produced per day. Sexual reproduction in mammals is asymmetrical at every level: in the size of the gametes, in the energy invested, in the timeline of production, in the number.
+Sex is an investment in the future. It costs resources. It requires a mate. It makes no guarantee that any particular offspring will be better than the parent. But across a changing environment, the population contains variation, and some fraction of that variation will always be closer to what the new conditions favor.
 
 ---
 
-## Embryonic development: Building the architecture
+## How Fertilization Works
 
-**Fertilization and the first divisions: the zygote becomes a blastula.**
+When a sperm reaches an egg, what happens is not passive. It is a controlled molecular assault followed by an instant lockdown.
 
-When sperm and egg fuse, their haploid nuclei merge. The resulting zygote is diploid—it has the full complement of chromosomes from both parents. It is now a new organism. Immediately, the zygote begins dividing. These divisions are rapid and different from normal cell division: they are called cleavage. The embryo divides into 2 cells, then 4, then 8, then 16, doubling with each round.
+The egg is protected by a glycoprotein coat called the zona pellucida. A sperm that reaches it triggers the acrosomal reaction: a structure at the sperm's head ruptures and releases digestive enzymes that dissolve a path through the coat. The sperm's membrane fuses with the egg's membrane. The sperm nucleus passes through.
 
-Here is the unusual part: the total mass does not increase. The zygote is not growing. It is subdividing. One large cell becomes many small cells, all within the same protective envelope. This phase lasts about three days. By the time the embryo has more than 100 cells, it has taken on a new structure: a hollow ball of cells called the blastula, with a fluid-filled cavity (the blastocoel) at its center. In mammals, this structure is called a blastocyst, and it has already begun to show internal organization—an inner cell mass (which will become the embryo) and an outer layer called the trophoblast (which will become the placenta and nourish the embryo).
+The moment the first sperm enters, the egg responds in two phases.
 
-**Gastrulation: folding into three layers.**
+First: an immediate electrical change. The egg's membrane potential shifts — the inside becomes rapidly positive relative to the outside. This wave of electrical change propagates across the egg surface within seconds, altering the membrane proteins that sperm use to bind. No second sperm can enter. This is the fast block to polyspermy.
 
-The next move is a transformation. The ball of cells folds in on itself in a process called gastrulation. Imagine a rubber ball with a thumbprint pushed into it—the indentation deepens, and the ball reorganizes into layers. Over the course of days, the blastula rearranges itself into three distinct sheets: the ectoderm (outer), the mesoderm (middle), and the endoderm (inner).
+Second: a slower structural change. The egg releases calcium from internal stores. The calcium wave triggers cortical granules — vesicles just beneath the egg membrane — to fuse with the membrane and release their contents into the space between the egg and the zona pellucida. These contents harden the zona pellucida into a fertilization envelope that physically prevents any remaining sperm from penetrating. This is the slow block.
 
-What each layer becomes is conserved across the animal kingdom. The ectoderm gives rise to the nervous system and the outer skin. The mesoderm gives rise to muscle, bone, connective tissue, and blood. The endoderm gives rise to the lining of the digestive system and many internal organs. In a human, this three-layer architecture is established by the end of the third week of pregnancy.
+<!-- → [IMAGE: Polyspermy blocking diagram — two panels: left panel showing the fast block (membrane potential change sweeping across the egg surface, labeled "seconds", with a sperm attempting to bind at the far end and being blocked); right panel showing the slow block (calcium wave from the point of sperm entry propagating around the egg, cortical granules fusing with the membrane, fertilization envelope forming just outside the zona pellucida) — annotate: "two sequential mechanisms ensure one sperm, one egg, one diploid genome"; label the acrosome, zona pellucida, cortical granules, and fertilization envelope] -->
 
-**Organogenesis: where the machinery gets specific.**
-
-Once the three layers are in place, they begin to differentiate into organs. This is organogenesis. It is the longest and most complex phase of development. Different cells in the ectoderm receive different signals. Some are told to become skin. Some are told to become the nervous system. The specification happens through a cascade of molecular signals—growth factors secreted by neighboring cells, genes turning on and off in response.
-
-In vertebrates, one of the first organs to form is the nervous system. A band of ectoderm at the midline thickens into the neural plate. Growth factors from the mesoderm below signal: become nervous tissue. The neighboring ectoderm is told: become skin. The neural plate folds up and pinches off into a tube called the neural tube. By week 4 in humans, this tube is already forming regions that will become the brain and spinal cord.
-
-The mesoderm meanwhile is being carved up by signals into blocks called somites. These somites will become vertebrae, ribs, and skeletal muscle. The mesoderm also forms the notochord—a rod-shaped structure running the length of the embryo that serves as the central axis, organizing everything else around it.
-
-This process is astonishing for one reason: the same basic logic appears across all vertebrates and beyond. A fruit fly embryo receives molecular signals that say "anterior" and "posterior," "dorsal" and "ventral." These signals are produced by genes called Hox genes. The same Hox genes exist in humans, in fish, in sea urchins, in fruit flies. The genes are so conserved that you can take a Hox gene from a mouse, put it into a fruit fly, and the fly develops mouse-like structures in that position. This is not metaphor. It is evidence that all these organisms inherited the genetic toolkit from a common ancestor hundreds of millions of years ago.
-
-**Axis formation: how the embryo learns its orientation.**
-
-An embryo begins as a ball of cells. How does it know which way is up? In one of the most elegant experiments in developmental biology, Spemann and Mangold took cells from the dorsal (back) region of a newt embryo and transplanted them to the ventral (belly) region of another embryo. Where they transplanted the cells, a new notochord formed—a second axis. This suggested that the dorsal cells carried information that said "organize everything around me." Subsequent research has identified dozens of genes responsible for axis formation. Mutations in these genes lead to severe developmental abnormalities: missing limbs, reversed organs, inability of left-right asymmetry to form. The internal organs are not symmetrical—the heart is on the left, the liver on the right—and this asymmetry is established very early, through genes we are still working to understand.
-
-**Trade-off: early development is vulnerable to toxins.**
-
-The first trimester of human pregnancy is when organs are being formed. Exposure to toxins during this period is especially dangerous. Thalidomide, a sedative prescribed in the 1950s and 60s, inhibited limb formation. Mothers who took it gave birth to children with severe limb abnormalities. Alcohol crosses the placenta and can damage the developing nervous system. Infections like rubella can cause miscarriage or congenital disease. The window when organs are being specified is a window when almost anything that interferes can cause severe damage. By the end of the first trimester, the major structures are laid down. The second and third trimesters are about growth and the fine-tuning of systems, but the fundamental architecture is set.
+Both blocks exist because polyspermy — the entry of more than one sperm — is fatal. An egg fertilized by two sperm contains three copies of every chromosome instead of two. The resulting embryo is genetically incoherent and dies within days. Every mechanism of fertilization is engineered to ensure: one sperm, one egg, one diploid genome.
 
 ---
 
-## Fetal development and birth: The three trimesters
+## External vs. Internal Fertilization, and What Comes After
 
-**First trimester: laying down the architecture.**
+In aquatic animals, eggs and sperm can be released directly into the water. This is broadcast spawning, and it works when water is available to carry sperm to eggs over short distances. It requires no specialized reproductive structures. But it demands enormous numbers, because the vast majority of encounters fail.
 
-At fertilization, the egg begins traveling down the oviduct toward the uterus. By day 6 or 7, the blastocyst implants into the endometrium—the uterine lining. The outer layer of the blastocyst invades the endometrial tissue, and the endometrium closes around it. A hormone from the blastocyst's chorion, hCG, signals the corpus luteum to keep producing progesterone. This hormone maintains the uterine lining and prevents menstruation.
+Moving onto land eliminated water as a medium. Internal fertilization — sperm placed inside the female's body — solved the transport problem. Once inside, sperm face a protected path to the egg. Fewer offspring, but each stands a much higher chance of beginning development.
 
-In the first two to four weeks, nutrition and waste exchange happen by diffusion through the endometrial lining. But as the trimester progresses, something new forms: the placenta. The placenta is the most novel mammalian organ. It is a hybrid—part fetal tissue (derived from the trophoblast), part maternal tissue (the endometrium). Blood from the fetus and blood from the mother come into contact across the placental membrane. They never mix, but oxygen, nutrients, and waste diffuse across. The mother's blood delivers glucose, amino acids, oxygen. The fetus's blood sends back carbon dioxide and metabolic waste. The placenta also transfers maternal antibodies—passive immunity that protects the newborn against some infections the mother has already encountered.
+What happens after fertilization divides into three strategies:
 
-By week 5, the embryo is about 2 millimeters long. Limb buds appear—small protrusions where arms and legs will grow. The heart has begun to beat. Eyes are forming. The liver is beginning to produce blood cells.
+In oviparity, the fertilized egg is laid outside the parent's body. The embryo develops inside a self-contained egg with a yolk for nutrition. Birds and most reptiles use this strategy. The parent can walk away. The developing embryo is independent from the moment of laying.
 
-By week 8, the embryo is about 5 centimeters long—still smaller than a thumb. The term "fetus" applies now. Major organ systems are recognizable, though most are not yet functioning. The lungs cannot breathe. The kidneys exist but do not yet filter. The brain is forming its major regions.
+In ovoviviparity, the fertilized egg stays inside the parent's body but the embryo is still nourished entirely by the yolk. The parent provides a sheltered environment but not food. Some sharks and snakes use this route. The young are born live but were never connected to the parent metabolically.
 
-By the end of the first trimester (week 12), the embryo is about 10 centimeters long and weighs about 15 grams. It can move, though the mother cannot feel it yet. Every major organ system is present in at least rudimentary form.
+In viviparity, the young develop inside the female and receive nourishment directly from the parent's blood through the placenta. This is the mammalian strategy. The offspring is shielded and fed from the parent's own resources for weeks or months. After birth, lactation continues the investment: milk produced from the mother's own tissue feeds the newborn before it can feed itself.
 
-**Second trimester: growth and movement.**
+<!-- → [INFOGRAPHIC: Three reproductive strategies compared — three side-by-side panels: (1) oviparity: egg with labeled yolk, shell, and embryo inside, parent walking away; (2) ovoviviparity: egg retained inside parent's body, embryo drawing from yolk with no maternal blood connection; (3) viviparity: embryo inside uterus connected to placenta, arrow showing nutrient/oxygen flow from maternal blood; for each: one example species, offspring count per reproductive event, and key trade-off in a single phrase] -->
 
-The second trimester is the period of rapid growth. The fetus doubles in length and increases dramatically in weight. By midway through the second trimester (around week 20), the fetus is about 25-30 centimeters long—the mother now feels movements. The fetus swallows amniotic fluid, a behavior that exercises the muscles needed for eating after birth. The fetus can hear—low-frequency sounds from the mother's voice and heartbeat, external noises muffled by the fluid.
-
-The placenta has taken over the production of progesterone and estrogen from the corpus luteum, which has now degenerated. All of the fetus's oxygen, nutrients, and waste management flows through the placenta. The fetus is developing at an accelerating rate. By the end of the second trimester (week 26), the fetus is about 35-40 centimeters long and weighs about 1 kilogram (2.2 pounds).
-
-**Third trimester: the growth surge and preparation for birth.**
-
-The third trimester is when the fetus grows most rapidly. The brain continues to develop, laying down neural connections. The lungs mature, developing the ability to expand and gas-exchange. The immune system is being primed by maternal antibodies. The fetus is putting on fat, developing brown fat in particular—fat that will be burned quickly after birth to generate heat.
-
-By the end of pregnancy (around week 40), the fetus weighs about 3.5 kilograms (7-8 pounds) and is about 50 centimeters long (19-20 inches). The pregnant person is uncomfortable. The fetus is pressing on the bladder, causing frequent urination. Pressure on the abdominal cavity and the veins returning from the legs can cause constipation and swelling in the ankles. The weight distributed in the front of the body strains the lower back.
-
-**Labor and birth: the three stages.**
-
-Near the end of pregnancy, estrogen causes receptors for oxytocin to develop on the smooth muscle of the uterine wall. The fetus reorients, moving head-down, with the crown of the head pressing against the cervix. This pressure triggers a reflex: signals go to the hypothalamus, which releases oxytocin from the posterior pituitary. Oxytocin causes the smooth muscle to contract. The placenta releases prostaglandins, which amplify the contractions. This is positive feedback: more oxytocin causes stronger contractions, stronger contractions trigger more oxytocin release. The cycle builds.
-
-Labor has three stages. Stage one is cervical dilation. The cervix thins and opens, eventually reaching about 10 centimeters of dilation. The contractions increase in intensity and frequency. This stage can last hours.
-
-Stage two is expulsion of the fetus. The cervix is now fully dilated. Contractions of the uterus, combined with the pregnant person's voluntary pushing, compress the abdominal muscles and move the fetus through the birth canal. The fetus descends, rotating slightly to navigate the pelvis. Within minutes to hours, the baby is born.
-
-Stage three is passage of the placenta. After the baby is out, contractions continue. The placenta—which has been attached to the uterine wall—separates and is expelled. Bleeding occurs as blood vessels in the uterine wall are severed, but the muscles of the uterus contracting compress these vessels and usually stop the bleeding naturally.
-
-After birth, the newborn makes its first independent breath. The lungs expand. Blood begins to flow through them instead of bypassing them through fetal blood vessels. The umbilical cord is clamped and cut. For the first time, the infant is completely separate from the mother's body.
-
-Lactation begins. When the infant suckles, signals travel to the hypothalamus. The anterior pituitary releases prolactin, which stimulates milk production. Oxytocin is also released, promoting the letdown reflex—the release of milk into the ducts. The milk contains antibodies and nutrients that continue to nourish the infant and protect it against infection.
+Viviparity allows something the others do not: extended development under controlled conditions before birth, followed by continued investment after. The cost is substantial — the mother's calcium, protein, and energy go into building another organism inside her body. The benefit is a newborn that is further developed and more likely to survive than a hatchling emerging from an independent egg.
 
 ---
 
-## Contraception and assisted reproduction: Managing fertility
+## Making Gametes: The Asymmetry Is Total
 
-**Preventing pregnancy: the mechanisms.**
+The difference between male and female, at the cellular level, is simple: males make small gametes (sperm), females make large gametes (eggs). Everything else follows from this.
 
-Contraception prevents pregnancy through several mechanisms. Barrier methods—condoms, diaphragms, cervical caps—block sperm from reaching the uterus. Spermicides kill sperm chemically. The failure rate of barrier methods is 15-24% over a year when used in typical (not perfect) circumstances. Many users fail to use them every time or use them incorrectly.
+In males, sperm are made in the seminiferous tubules of the testes. The process — spermatogenesis — begins at puberty and runs continuously thereafter. Stem cells at the periphery of the tubule divide constantly. One daughter cell stays to divide again. The other enters meiosis, producing four haploid cells. Each grows a flagellum and becomes a sperm. The output: roughly 200 million sperm per day. The scale is industrial.
 
-Hormonal contraception uses synthetic progesterone or progesterone plus estrogen to inhibit FSH and LH. Without these hormones, FSH and LH cannot trigger follicle development or ovulation. No ovulation, no egg available for fertilization. The method varies: oral pills (8% failure rate), patches, vaginal rings, injections (3% failure rate), or subdermal implants (less than 1% failure rate). The difference comes down to compliance. An implant works for three years without the user having to do anything. A pill requires remembering every day.
+In females, the situation is different in almost every way.
 
-Intrauterine devices (IUDs) are placed inside the uterus. Some release copper, which creates an inflammatory condition that prevents fertilized eggs from implanting. Others release small amounts of progesterone. IUDs have a failure rate of less than 1%.
+Before birth, a female fetus already contains all the potential eggs she will ever have — about one to two million cells arrested partway through meiosis I. They remain frozen there, waiting. By puberty, roughly 400,000 remain. Each menstrual cycle, a batch begins meiosis again, but only one typically completes the process. That one egg (the secondary oocyte) is released at ovulation still arrested — not in meiosis I anymore, but in metaphase of meiosis II. It only finishes meiosis II if it is fertilized.
 
-Natural family planning relies on detecting ovulation through body temperature changes (a rise of about 0.5 degrees Celsius) or changes in cervical mucus (becoming more stretchy at ovulation). But all of these signs can be subtle or masked by illness or stress. The failure rate is 12-25%.
+If it is not fertilized, the egg degenerates.
 
-Sterilization—vasectomy in males (cutting and sealing the vas deferens) or tubal ligation in females (cutting and sealing the oviducts)—has a failure rate of less than 1%. Both are considered permanent, though reversal is sometimes possible.
+<!-- → [IMAGE: Spermatogenesis vs. oogenesis comparison — two parallel diagrams side by side: left (spermatogenesis): stem cell → primary spermatocyte → meiosis I → two secondary spermatocytes → meiosis II → four spermatids → four sperm (all equal size, all functional); right (oogenesis): primary oocyte arrested at birth → puberty → meiosis I → secondary oocyte (large) + first polar body (tiny) → ovulation → meiosis II only if fertilized → mature egg (large) + second polar body — annotate the arrests ("arrested before birth", "arrested at metaphase II until fertilization"); annotate the output asymmetry: "4 functional gametes vs. 1 functional gamete per meiosis"] -->
 
-**When conception is difficult: assisted reproduction.**
+The asymmetry compounds: each primary oocyte that completes the process produces one egg and two or three polar bodies — cells that receive chromosomes but almost no cytoplasm. They die and are reabsorbed. One functional gamete from each meiosis, versus four sperm. One egg per month over a reproductive lifetime versus 200 million sperm per day.
 
-About 10-15% of couples cannot conceive despite unprotected intercourse. The causes are varied: blocked fallopian tubes, low sperm count, hormonal imbalance, age-related decline in egg quality. When these problems are identified, assisted reproductive technologies (ART) offer options.
-
-The most common is in vitro fertilization (IVF). An egg and sperm are combined in a laboratory dish and allowed to fertilize and divide. When the resulting embryo reaches the eight-cell stage (after about 3 days), it is transferred into the uterus. If implantation occurs, the pregnancy proceeds normally.
-
-The procedure requires preparing eggs first. Hormonal treatments stimulate the ovaries to produce multiple mature eggs in a single cycle. Eggs are retrieved through a needle guided into the ovary under ultrasound. Sperm are collected and concentrated. In standard IVF, eggs and sperm are mixed in culture. In intracytoplasmic sperm injection (ICSI), a single sperm is injected directly into each egg. This is used when sperm count is very low or sperm motility is poor.
-
-IVF produces surplus fertilized eggs and embryos. These can be frozen and stored for future attempts or donated to other couples. The process has been responsible for the birth of over 10 million children since the first "test tube baby," Louise Brown, was born in 1978.
-
-The costs are significant: a single IVF cycle costs $15,000-20,000 in the United States and is often not covered by insurance. Success rates depend on age—a woman over 40 has a 20% chance per cycle; under 35, closer to 40%. Multiple cycles are often needed. The emotional toll of repeated attempts and failures is substantial.
+This asymmetry in investment extends to every level of reproduction: the size of the gametes, the energy each takes to produce, the time invested in development, the parental care that follows. Females make fewer, larger, more expensive gametes. Males make more, smaller, cheaper ones. Everything downstream — courtship, parental investment, mating systems — flows from this starting point.
 
 ---
 
-## Summary
+## Cleavage: The Ball Forms
 
-Animals solve the problem of reproduction through two main strategies: asexual reproduction, which is fast and produces genetic clones, and sexual reproduction, which is costly but produces genetic diversity. Sexual reproduction can occur through external fertilization (common in aquatic animals) or internal fertilization (common in terrestrial animals). Internal fertilization is often coupled with three different strategies for how offspring complete development: oviparity (laying eggs outside the body), ovoviviparity (eggs retained inside but nourished by yolk), and viviparity (offspring nourished through placental connection).
+When sperm and egg nuclei fuse, the resulting diploid cell is the zygote. It immediately begins dividing.
 
-In mammals, the reproductive cycle is controlled by hormones from the hypothalamus, pituitary gland, and reproductive tissues. In males, FSH and LH trigger continuous sperm production. In females, FSH and LH trigger a monthly cycle in which a follicle develops, releases an egg (ovulation), and if the egg is not fertilized, the uterine lining is shed. This cycle continues until menopause, when the ovaries stop responding to hormonal signals.
+These early divisions are unusual. They are called cleavage, and they differ from normal cell division in one critical way: the total mass does not increase. The large egg subdivides into smaller and smaller cells without growing. The result, after several rounds of division, is a hollow ball of cells — the blastula. In mammals, this structure is called a blastocyst.
 
-Sperm are produced in vast numbers continuously. Eggs are produced in far fewer numbers and follow a different timeline: potential eggs arrest in meiosis before birth and remain arrested until they are ovulated. This asymmetry shapes human reproduction.
+By this point, the cells are already beginning to specialize. The outer layer — the trophoblast — will become the placenta and other extraembryonic structures. The inner cell mass will become the embryo itself.
 
-Embryonic development follows a conserved sequence: cleavage produces a blastula, gastrulation forms three germ layers, and organogenesis builds organs from those layers. Hox genes—ancient genetic switches—direct this process in ways that are similar across all vertebrates and many invertebrates, evidence of deep evolutionary heritage. Human fetal development takes place over three trimesters, with major organs and systems formed in the first trimester, growth and functional maturation in the second and third.
-
-Birth is triggered by hormonal signals, progressing through three stages of labor. After birth, lactation provides continued nutrition and immune protection.
-
-Contraception prevents pregnancy through barriers, hormones, or devices that prevent sperm and egg from meeting or implantation from occurring. When pregnancy cannot occur naturally, assisted reproductive technologies like in vitro fertilization (IVF) can help.
+The cells of the inner cell mass are the original embryonic stem cells. They are totipotent: each can, in principle, become any cell type in the body. What they become is determined by the signals they receive as development proceeds.
 
 ---
 
-## What would change my mind
+## Gastrulation: Three Layers Define the Body
 
-If the conservation of Hox genes across animal phyla were shown to be much less universal than current evidence suggests—or if new mechanisms for axis formation and organogenesis were discovered that operate independently of these genetic toolkits—the evolutionary story I've outlined would need revision.
+The blastula is a hollow ball. The embryo is not yet organized into the structures of a body. Gastrulation changes this.
 
-## Still puzzling
+In gastrulation, cells migrate and fold, converting the ball into a three-layered structure. Imagine pressing your thumb into a rubber ball: an indentation forms, deepens, and eventually creates an inner layer distinct from the outer one. In gastrulation, the process is more elaborate, but the result is the same: three distinct cell layers called germ layers.
 
-I don't yet fully understand the molecular logic of how growth factors coordinate the differentiation of cells within a developing germ layer, or how the notochord and neural tube "know" how to organize around it in the correct spatial configuration. The signals are being identified, but how they integrate into a coherent body plan is still being worked out.
+The ectoderm is the outer layer. It will give rise to the nervous system and the skin.
+
+The mesoderm is the middle layer. It will give rise to muscle, bone, connective tissue, and blood.
+
+The endoderm is the inner layer. It will give rise to the lining of the digestive tract and many internal organs.
+
+<!-- → [IMAGE: Gastrulation diagram — three sequential panels: (1) blastula shown as a hollow ball of cells with blastocoel labeled; (2) gastrulation in progress with cells migrating inward at the blastopore (labeled), forming the archenteron; (3) completed gastrula showing three labeled germ layers: ectoderm (outer), mesoderm (middle), endoderm (inner) — include a small key showing what each layer becomes in an adult: ectoderm → skin/nervous system, mesoderm → muscle/bone/blood, endoderm → gut lining/organs] -->
+
+This three-layer architecture is not arbitrary. It is conserved across all vertebrates and most animals with bilateral symmetry. A human embryo at the end of the third week looks very different from an adult, but it already has these three layers in place, and every organ that will ever exist in that body will derive from one of them.
+
+The conservation tells you something: this organization was the solution, found once, hundreds of millions of years ago, and every animal we recognize today inherited it.
 
 ---
 
-**Tags:** reproductive strategies, sexual reproduction, asexual reproduction, gametogenesis, spermatogenesis, oogenesis, mammalian reproduction, embryonic development, gastrulation, organogenesis, Hox genes, viviparity, placenta, human development, fetal development, labor, contraception, in vitro fertilization
+## Organogenesis: The Molecular Machinery Takes Over
 
+Once the three layers exist, they receive signals that tell them what to become.
+
+The first major event in vertebrates is neurulation. The notochord — a rod of mesodermal cells running the length of the embryo — secretes a signal called sonic hedgehog protein into the ectoderm above it. The signal says: become nervous tissue. The neighboring ectoderm receives a different signal and becomes skin instead.
+
+The ectoderm receiving the neural signal thickens into the neural plate. Growth along the edges of the plate causes it to fold upward and then inward, the edges meeting and fusing into a closed tube. This neural tube runs the length of the embryo. The anterior end will expand into the brain. The posterior end will become the spinal cord. Cells that were at the edges of the neural plate — neural crest cells — break away and migrate throughout the embryo to become an extraordinary variety of structures: peripheral neurons, the adrenal medulla, the bones of the face, the melanocytes in the skin.
+
+<!-- → [IMAGE: Neurulation sequence — four panels showing: (1) flat neural plate (thickened ectoderm) above the notochord; (2) neural folds rising on either side; (3) neural folds meeting at the midline; (4) neural tube closed, with neural crest cells (labeled) breaking away and beginning to migrate — annotate: "anterior end → brain; posterior end → spinal cord"; annotate neural crest cells with representative fates: "peripheral neurons, facial bones, melanocytes, adrenal medulla"] -->
+
+In the mesoderm, signals cause blocks of tissue called somites to form, then differentiate into vertebrae and ribs, into skeletal muscle, into the connective tissue that will fill in the body's architecture.
+
+All of this is orchestrated by Hox genes — master regulatory switches that determine position along the anterior-posterior axis. Each Hox gene is expressed in a specific segment of the embryo. The gene says: in this region, make these structures. Mutations in Hox genes cause homeotic transformations: an antenna grows where a leg should be in a fly, or a rib forms on a cervical vertebra in a mouse. The gene does not build the structure itself; it activates the network of downstream genes that builds it.
+
+<!-- → [IMAGE: Hox gene expression diagram — a schematic of a vertebrate embryo alongside a fruit fly embryo, both shown as elongated anterior-posterior axes; color-coded bands on each showing where each Hox gene (labeled Hox1–Hox13 for vertebrate, with corresponding fly genes labeled) is expressed; annotate the conservation: same gene order on the chromosome, same anterior-to-posterior expression order; show one homeotic mutation example (e.g., Antennapedia in fly: antenna → leg) with a photo or drawing — caption: "Hox gene order on the chromosome mirrors the order of expression along the body axis — a conservation across 600 million years of evolution"] -->
+
+The conservation of Hox genes across all these species is what made possible the cross-species transplant I described at the opening. Pax6 in a mouse and eyeless in a fly are homologs — they share ancestry from a common gene in the ancestor of all bilaterians. That ancestor used this gene to specify whatever photosensitive cells it had. Every lineage since inherited the gene and modified it, but the core function — make a light-sensing organ here — was preserved.
+
+This is the deep logic of development: not that each species has its own unique developmental program, but that all complex animals share an ancient toolkit, deployed in different ways, in different times and places, to produce the staggering diversity of animal body plans.
+
+---
+
+## Human Development: Three Trimesters
+
+In humans, the entire developmental sequence plays out over approximately 40 weeks.
+
+The first trimester is when the architecture is established. By the end of week 8, every major organ system is present in rudimentary form: the heart is beating, the brain is dividing into its major regions, limb buds have appeared, the digestive tract is forming. The embryo is the size of a raspberry. This period is also the most vulnerable: exposure to toxins, radiation, infections, or certain drugs during organogenesis can disrupt the precise molecular signals that specify organ formation. Thalidomide, prescribed as a sedative in the late 1950s, blocked blood vessel formation in developing limb buds. Mothers who took it gave birth to children with severely shortened or absent limbs. The first trimester is when the instructions are executing; interference then causes permanent consequences.
+
+The second trimester is growth and maturation. The fetus doubles in length. The mother begins to feel movement. The fetus swallows amniotic fluid, practicing the muscles needed for feeding. By the end of this trimester, the fetus weighs about one kilogram.
+
+The third trimester is the growth surge. The brain continues to develop, laying down the neural connections that will process sensation and coordinate movement. The lungs develop the capacity to breathe. Fat accumulates — brown fat in particular, which the newborn will burn to generate heat. By week 40, the fetus weighs about 3.5 kilograms.
+
+Birth is triggered by a hormonal cascade. As the pregnancy nears its end, estrogen rises and causes the uterine muscle to develop receptors for oxytocin. The fetus's head, pressing against the cervix, triggers oxytocin release from the hypothalamus. Oxytocin causes uterine contractions. Contractions press the fetus further against the cervix, triggering more oxytocin. The feedback loop builds until the cervix dilates to 10 centimeters, the uterus contracts powerfully enough to expel the fetus, and then the placenta separates from the uterine wall and is delivered.
+
+With the first breath, the lungs expand and blood begins flowing through them for the first time. Fetal circulatory bypasses that allowed blood to skip the non-functional lungs close. The umbilical cord is cut. A physiologically dependent organism becomes a separate organism.
+
+What the newborn cannot yet do is feed itself. Lactation begins in response to suckling: the infant's suckling triggers prolactin release from the anterior pituitary, which stimulates milk production, and oxytocin release, which causes milk letdown. The milk contains antibodies that provide the newborn with passive immunity against pathogens the mother has already encountered. The investment continues after birth.
+
+---
+
+## What the Hox Genes Explain
+
+Return to where this chapter began.
+
+The reason a mouse gene can direct eye formation in a fly is not that mice and flies are secretly similar. It is that both inherited the gene from a common ancestor that used it for roughly the same purpose, and both have been evolving ever since — but the core molecular switch, honed over hundreds of millions of years, remains recognizable and functional across the evolutionary distance.
+
+The same logic applies to the three-layer body plan, the neural tube, the somites, the notochord. These are ancient solutions, found once, that worked. Every complex animal you can name descended from ancestors that already had them. The differences between a sea urchin and a human are enormous, but they are differences in the timing and location of the same molecular switches, not the invention of entirely new programs.
+
+This is what development tells us about evolution: complexity did not arise by discarding the past. It arose by modifying it, layering new controls on ancient machinery, deploying old tools in new contexts. The body you have was not designed from scratch. It was assembled from a toolkit that is hundreds of millions of years old, used in combination in ways that no ancestor ever used it, producing something the genome had never produced before.
+
+That, I find genuinely remarkable. The same instruction that makes an eye in a mouse can make an eye in a fly. The same three layers that built a fish's body built yours. The architecture of life is ancient, and the diversity of life is what happens when ancient instructions are used in new arrangements.
+
+---
+
+## Exercises
+
+**Warm-up**
+
+1. A coral reef releases trillions of eggs and sperm simultaneously into the water during a mass spawning event. A whale bears one calf every few years and nurses it for over a year. Identify the trade-off each strategy represents, and predict which strategy would be favored in a stable, predictable environment versus an environment where conditions change rapidly. *Tests: applying the offspring number vs. parental investment trade-off to real reproductive strategies.*
+
+2. Polyspermy — fertilization by more than one sperm — is fatal to the embryo. Explain the two sequential mechanisms that prevent polyspermy in mammals, identifying which is faster and which provides a more durable structural barrier. Why does having two different mechanisms rather than one provide better insurance? *Tests: understanding fast and slow polyspermy blocks as sequential and mechanistically distinct.*
+
+3. Spermatogenesis produces four functional sperm from each primary spermatocyte. Oogenesis produces one functional egg and two or three polar bodies. What is the purpose of the unequal cytoplasmic division in oogenesis, and what would happen to egg viability if the divisions were equal? *Tests: connecting unequal cytokinesis in oogenesis to the functional requirements of a large, nutrient-rich egg.*
+
+**Application**
+
+4. Thalidomide, prescribed in the late 1950s, caused severe limb abnormalities when taken during the first trimester but caused no such abnormalities when taken during the third trimester. Using what you know about when organogenesis occurs, explain why the timing of exposure determined the severity of the defect. Predict what organ systems would be most affected by a toxin taken in week 4 versus week 28 of pregnancy. *Tests: applying the concept of developmental critical periods to a real teratogen case.*
+
+5. A mutation in the Hox gene Antennapedia in fruit flies causes legs to grow where antennae should be. Using your knowledge of how Hox genes work, explain the mechanism: does the mutation cause the leg genes to turn on, or does it cause the antenna genes to turn off, or something else? What does this mutation tell you about the normal role of Hox genes in development? *Tests: applying Hox gene function and homeotic transformation logic.*
+
+6. In viviparity, the developing embryo receives oxygen and nutrients through the placenta. In oviparity, the embryo receives all its nutrition from the yolk. Identify two specific physiological advantages of viviparity for embryo development, and identify one cost to the mother for each advantage. Then predict which strategy would be favored if a species moved from a stable tropical environment to a highly seasonal environment with cold winters. *Tests: applying the costs and benefits of viviparity vs. oviparity to an ecological context.*
+
+**Synthesis**
+
+7. Gastrulation converts a hollow ball of cells (blastula) into a three-layered embryo. The three germ layers — ectoderm, mesoderm, endoderm — give rise to specific tissues in every vertebrate. Construct a table mapping each germ layer to three adult tissues it produces, and explain why the conservation of this three-layer plan across all vertebrates constitutes evidence for common descent. *Tests: integrating germ layer fate with evolutionary reasoning.*
+
+8. The sexually reproducing population and the asexually reproducing population of the same species are both doing well in a stable environment. A new fungal pathogen arrives that can infect 60% of individuals in both populations. Predict the outcome for each population after five generations, explaining your reasoning in terms of genetic variation, natural selection, and the speed at which resistance can evolve. *Tests: applying the genetic diversity argument for sexual reproduction to a specific selective pressure.*
+
+**Challenge**
+
+9. Pax6, a gene that specifies eye development, is so conserved that a mouse version can trigger eye formation in a fruit fly. However, the eyes produced are fly-type compound eyes, not mammalian camera eyes. Explain this result in terms of the distinction between the master regulatory switch (Pax6) and the downstream developmental program it activates. What does this tell you about how evolution can produce morphologically different structures using the same regulatory gene? *Tests: distinguishing the conserved regulatory logic from the diverged downstream programs — requires reasoning about modularity in gene regulatory networks.*
+
+10. Human twins can arise in two ways: monozygotic twins (from a single zygote that splits) and dizygotic twins (from two separate eggs fertilized by two separate sperm). Monozygotic twins are genetically identical; dizygotic twins share on average 50% of their genes. In very rare cases, monozygotic twins are not phenotypically identical despite identical DNA — one twin may develop a condition the other does not. Propose two mechanisms that could explain phenotypic differences between genetically identical individuals, and connect each mechanism to what you know about how gene expression is regulated during development. *Tests: applying developmental biology concepts (epigenetics, stochastic gene expression, developmental asymmetry) to explain variation that cannot be attributed to DNA sequence differences.*
