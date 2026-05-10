@@ -1,267 +1,183 @@
-# Population and Community Ecology: How Organisms Organize at Scale
+# Chapter 53 — Population and Community Ecology: How Organisms Organize at Scale
 
-## TL;DR
-Populations grow or stabilize based on birth and death rates, competition, and resources. Communities emerge from interactions between species—predation, competition, mutualism—creating structures that persist until disturbance forces them to reorganize.
-
----
-
-## Chapter Opening: The Unwanted Visitor
-
-You're on a river in Illinois on a summer afternoon, the water smooth, the sun warm. Then a 20-pound silver carp hits you in the head.
-
-This is no longer a rare accident. The fish you've collided with is one of several Asian carp species—silver, black, grass, big head—introduced to the United States decades ago by aquaculture operations hoping to use their filter-feeding efficiency to clean waste water. Some escaped. By the 1980s, they had colonized the Mississippi River basin and its tributaries. Now, in parts of the Illinois River, they constitute 95 percent of the fish biomass. They outcompete native species for plankton and small fish, leaping into boats when startled by motors, damaging fisheries that depend on native species. A fish farmed in China for 1,000 years has become a cautionary tale about what happens when populations go unchecked and interactions cascade across an ecosystem.
-
-This chapter is about why populations grow or shrink, how species interact when they share space, and what ecosystems look like as a result. The machinery is elegant. The stakes are visible everywhere you look.
+*A fish hit you in the head. Now you understand ecology.*
 
 ---
 
-## 1. Population Size and the Logic of Sampling
+You are on a river in Illinois on a summer afternoon. The water is smooth. The sun is warm. Then a 20-pound silver carp hits you in the head.
 
-### What ecologists actually measure
+This is not a freak accident. The fish belongs to a group of Asian carp species introduced to the United States by aquaculture operators who wanted their filter-feeding efficiency to clean waste ponds. Some escaped. By the 1980s, they were established in the Mississippi River basin. Now, in stretches of the Illinois River, they constitute 95 percent of the fish biomass. They outcompete native species for plankton. They leap into boats when startled by motors. A fish farmed in China for a thousand years has become one of the most disruptive ecological invasions in American history — not because it was malicious, but because it arrived in a place where nothing was adapted to stop it.
 
-A *population* is all individuals of a species in a particular place. Ecology—the study of organisms and their environment—begins with a simple question: how many?
-
-The catch: you almost never count all of them. It's logistically impossible and economically unfeasible. Instead, ecologists use sampling strategies.
-
-**For stationary organisms** (plants, coral, slow invertebrates), they mark off square areas called quadrats—a 1 m² frame for daffodils, a 100 m² plot for giant redwoods—count what's inside, and repeat at random locations throughout the habitat. The ratio of marked to unmarked area gives an estimate of total population size (*N*) and density: how many individuals per unit area.
-
-**For mobile organisms** (mammals, fish, birds), they use mark and recapture. Catch a sample, mark them (tags, dye, bands), release them back, wait for mixing, then capture again. The proportion of marked individuals in the second catch tells you the population size using a simple ratio:
-
-$$N = \frac{\text{(marked in catch 1)} \times \text{(total in catch 2)}}{\text{marked in catch 2}}$$
-
-If 80 deer are tagged, released, and later you recapture 100 deer with 20 tagged, the population is estimated at 400. The assumption holds only when tagging doesn't harm survival, animals don't learn to avoid traps, and the population hasn't changed between captures. In practice, all three assumptions leak.
-
-### Trade-off: spatial patterns
-
-Beyond mere density, *species distribution patterns*—uniform, random, or clumped—reveal how individuals relate to each other and their environment.
-
-**Uniform spacing** happens in plants that release toxins to inhibit neighbors (like sage) or in animals that defend territories (like penguins). The pattern emerges from active exclusion.
-
-**Random distribution** occurs when placement is independent of other individuals—like wind-dispersed seeds landing wherever they germinate, no interference.
-
-**Clumped distribution** is the most common in nature: oak trees whose seeds drop straight down cluster near parents; fish school together; elephants herd. Sometimes clumping reflects habitat heterogeneity—pockets of good soil, shade, water. Sometimes it reflects behavior: safety in numbers, easier mating.
-
-The distribution pattern matters. A solitary, randomly dispersed individual has harder odds finding a mate than one in a clump. A territorial animal defends constant space, while clumped individuals compete for the same local resources.
+Why does a population explode like that? What usually keeps populations in check, and what happens when those checks fail? Why does a community of species persist at all, and what makes it reorganize when something disrupts it? These are the questions this chapter is about.
 
 ---
 
-## 2. Life Histories and the Energy Budget
+## Counting and the Logic of Sampling
 
-### The central trade-off
+A population is all individuals of a species in a particular place. The first question ecology asks is: how many?
 
-Every organism has a budget: energy available for growth, maintenance, and reproduction. How the budget allocates determines its life history—the sequence of life events from birth to death.
+The difficulty is that you almost never count all of them. A population of field mice in a hundred acres of meadow cannot be completely enumerated. Instead, ecologists estimate.
 
-*Fecundity* is the reproductive potential: how many offspring could an individual produce if it reproduced at maximum rate? In animals, fecundity is *inversely related* to parental care. This is not coincidence—it's an energy constraint.
+For stationary organisms — plants, corals, sessile invertebrates — the method is quadrats. Mark off a square of known area, count everything inside, and repeat at random locations throughout the habitat. The ratio of sampled area to total area gives you a population estimate and a density: individuals per unit area.
 
-**High-fecundity, low-care strategy**: A marine invertebrate produces thousands of tiny offspring, invests little energy in each, provides no protection. Most die. The strategy works because sheer numbers ensure enough survive. The investment is in quantity and luck.
+For mobile organisms, the standard method is mark and recapture. Capture a sample, mark each individual — a tag, a dye, a radio collar — and release them. Wait for the population to mix. Capture a second sample. The proportion of marked individuals in the second catch allows you to estimate total population size:
 
-**Low-fecundity, high-care strategy**: A mammal produces one or a few offspring over long intervals, invests heavily—pregnancy, nursing, protection, teaching—sometimes at expense of its own health. Each offspring has higher survival odds. The investment is in quality and certainty.
+$$N = \frac{\text{marked in first catch} \times \text{total in second catch}}{\text{marked in second catch}}$$
 
-This is not choice; it's physics. You cannot simultaneously feed thousands of eggs and protect each one intensely. Evolution explores both directions depending on the environment. In a stable, predictable world, parental care pays off. In a chaotic world, the bet-on-quantity strategy succeeds.
+If you tagged 80 deer, released them, and later recaptured 100 deer of which 20 were tagged, the estimate is $N = (80 \times 100)/20 = 400$. The logic is simple: if 20 percent of the second catch is marked, then your 80 marked animals represent 20 percent of the population, so the population is 400.
 
-**Timing matters too**. A guppy reproduces early, stays small, dies young, never achieves the size that would defend against large predators. A shark matures late, reaches large size, but risks dying before reproduction. The trade-off: *early reproduction guarantees some offspring pass on your genes, but you sacrifice growth and health. Late reproduction bets on survival, size, and better parental capacity, but you may not live to see reproduction at all.*
+The assumptions are equally simple and equally fragile. The marking must not affect survival — a bright red tag on a small fish is also a bright red tag for a predator. Animals must not learn to avoid traps. The population must not have changed between captures due to births, deaths, immigration, or emigration. In practice, all three conditions are approximations. The estimate is always an estimate.
 
-### Single versus repeated reproduction
+<!-- → [INFOGRAPHIC: mark-recapture logic diagram — two panels. Panel 1: first capture showing 80 fish marked (filled circles) released back into a population of unknown size N. Panel 2: second capture showing 100 fish, of which 20 are marked (filled) and 80 are unmarked. Ratio shown explicitly: 20/100 = 80/N → N = 400. Student should see the proportional reasoning and where each assumption (no learning, no mortality, mixing) could introduce error.] -->
 
-*Semelparity*: reproduce once, then die. Bamboo flowers once, then the entire plant dies. Chinook salmon swim upstream, burn their energy reserves in a final mating sprint, and die. The energy allocated in that one pulse is total.
+Beyond density, the spatial pattern of a population carries information. Individuals distributed uniformly — like penguins defending territories, or sage plants releasing allelopathic chemicals that kill competitors — are spaced by exclusion. Random distribution happens when placement is independent of neighbors, as in wind-dispersed seeds with no preference for where they land. Clumped distribution is the most common: oak trees whose seeds fall beneath parent trees and germinate there, fish schooling together, elephants herding. Clumped distribution usually reflects either habitat heterogeneity — the good resources are in patches — or behavior, since grouping offers protection, easier mating, and more eyes for predators.
 
-*Iteroparity*: reproduce repeatedly across multiple seasons. Pronghorn antelope enter estrus cycles once per year; humans cycle monthly. These organisms extend reproduction across their lifespan.
-
-The question is not moral—it is evolutionary. When should an organism commit all resources to one reproductive attempt versus spreading risk across multiple attempts? Semelparity can work if the single event is high-probability success and the organism can't survive long anyway. Iteroparity works if the organism can survive the cost of reproduction and reproduction will happen again.
+<!-- → [IMAGE: three side-by-side dot plots showing the same number of individuals distributed uniformly (regular grid spacing), randomly (no pattern), and clumped (tight clusters). Each panel labeled with its distribution type and a real-world example. Student should be able to visually classify distribution patterns and connect each to its ecological mechanism.] -->
 
 ---
 
-## 3. Population Growth: Exponential and Logistic Models
+## Life Histories: The Energy Budget
 
-### Exponential growth: the bacteria story
+Every organism has a fixed energy budget. What it spends on reproduction it cannot spend on growth. What it spends on parental care it cannot spend on producing more offspring. Life history — the pattern of growth, reproduction, and death across a lifetime — is the outcome of how that budget is allocated.
 
-Thomas Malthus, an English clergyman, published an observation in 1798: populations with unlimited resources grow very rapidly. Charles Darwin read Malthus and recognized the implication for natural selection—there's always competition for limited resources.
+The most fundamental trade-off is between offspring number and offspring quality. A marine snail releases tens of thousands of eggs, tiny and unprotected. Most die within hours. The strategy works because the numbers are so large that enough survive, not because each has good odds individually. An elephant gestates a single calf for nearly two years, nurses it for years afterward, and dedicates its social intelligence to teaching and protecting it. The calf's odds of reaching adulthood are far better than the snail's egg. The energy budget makes both strategies self-consistent: you cannot simultaneously produce thousands of offspring and protect each one intensively.
 
-The mathematics is straightforward. If you start with 1,000 bacteria in a flask with unlimited nutrients and no death:
+<!-- → [INFOGRAPHIC: life history trade-off spectrum — horizontal axis from "many offspring, low care" to "few offspring, high care." Representative organisms placed along the axis: sea urchin (thousands of tiny eggs, no care), frog (hundreds of eggs, some nest guarding), robin (4 eggs, extensive feeding and brooding), elephant (1 calf, years of care). Y-axis could show offspring survival probability, rising from left to right. Student should see that the total energy investment per reproductive event is roughly constant; what changes is how it is distributed.] -->
 
-- Hour 1: each organism divides. 2,000 bacteria. +1,000.
-- Hour 2: each of 2,000 divides. 4,000. +2,000.
-- Hour 3: 8,000. +4,000.
+Timing adds another dimension. A guppy in a stream with large predators that eat big fish matures early, reproduces at a small size, and dies young — because large size is dangerous, not protective. A guppy in a stream with small predators that eat only tiny fish matures late, grows large, and reproduces more times over a longer life. Natural selection in each environment is selecting the same parameter — when to start reproducing — in opposite directions.
 
-The growth *accelerates*. The number of organisms added per generation increases. After 24 hours, you exceed 16 billion. Plot population size against time and you get a J-shaped curve—exponential growth.
+The starkest version of the trade-off is between organisms that reproduce once, catastrophically, and die, versus those that reproduce repeatedly. Bamboo grows for decades, sometimes a century, then flowers across an entire stand simultaneously, sets seed, and dies. Chinook salmon navigate hundreds of miles upstream to their birth streams, spawn with the full reserves of their bodies, and die in days. This strategy is called semelparity: one enormous reproductive event, then death. The logic is that if the organism can't survive the winter, or can't compete for resources in the next breeding season, it is better to pour everything into a single reproductive act than to hold back and never reproduce again. Iteroparity — repeated reproduction — is the opposite bet: survival is likely, conditions will be as good next year, spreading reproduction over time reduces the risk of total failure in any single year.
 
-The formula is elegant:
+---
+
+## Why Populations Don't Grow Forever
+
+The mathematics of unrestricted population growth is alarming. If you start with a bacterium that divides every hour, in 24 hours you have more than 16 million. In 48 hours, more than 280 trillion. The number added each generation grows — not because the per capita growth rate changes, but because each generation applies the same rate to a larger number. This is exponential growth, described by:
 
 $$\frac{dN}{dt} = rN$$
 
-where *N* is population size, *t* is time, and *r* is the *intrinsic rate of increase*—the per capita growth rate under ideal conditions (birth rate minus death rate). A population doubling every hour has a different *r* than one doubling every year.
+where $N$ is population size and $r$ is the intrinsic rate of increase — the per capita birth rate minus the per capita death rate under ideal conditions. The equation says: the rate of change of the population is proportional to the population itself. The more there are, the faster they grow.
 
-The catch: this assumes unlimited resources. It doesn't account for death, waste, or competition. In nature, exponential growth never lasts long.
+This curve, plotted, is the J-shape. Every population with $r > 0$ and unlimited resources follows it. No population in nature follows it for long.
 
-### Logistic growth: the S-curve
-
-In the real world, resources are finite. As a population grows, individuals compete for food, water, space, mates. Birth rates fall. Death rates rise. Growth slows.
-
-The logistic model adds a *carrying capacity* (*K*)—the maximum population size the environment can sustain. The equation becomes:
+Resources are finite. As a population grows, individuals compete for the same food, the same space, the same breeding sites. Birth rates fall as individuals are less well-nourished and less able to support offspring. Death rates rise as disease spreads more easily, predators find prey more easily, and waste accumulates faster. The logistic model adds the carrying capacity $K$ — the population size the environment can sustain — and modifies the growth equation:
 
 $$\frac{dN}{dt} = r_{\max}N\frac{(K - N)}{K}$$
 
-Watch what happens at different points:
-- When *N* is small (few individuals), (*K* − *N*) / *K* ≈ 1, and growth is nearly exponential.
-- When *N* approaches *K*, (*K* − *N*) / *K* approaches 0, and growth slows.
-- When *N* = *K*, growth stops. The population fluctuates around carrying capacity.
+When population is small, $(K - N)/K$ is close to 1, and growth is nearly exponential. As population approaches $K$, the fraction approaches zero, and growth slows. When $N = K$, growth stops. The result is the S-shaped logistic curve: slow start, rapid middle, plateau.
 
-Plot this and you get an S-shaped curve: slow start, rapid middle, plateau at the top.
+<!-- → [CHART: two curves on the same axes — population size (y-axis) vs. time (x-axis). First curve: J-shaped exponential growth, no ceiling. Second curve: S-shaped logistic growth, plateauing at K. A dashed horizontal line marks K. Key points labeled: early exponential phase where both curves overlap, inflection point of logistic curve (N = K/2, maximum growth rate), and plateau at K. Student should be able to read off where on the S-curve a population is growing fastest and where growth slows.] -->
 
-Real populations oscillate around *K* rather than settling exactly at it. Yeast in a test tube exhibits the classic S-shape: rapid growth, then leveling as nutrients deplete. Sheep and harbor seals overshoot carrying capacity, then crash, then recover—a damped oscillation that eventually stabilizes.
+Real populations don't settle cleanly at $K$. They oscillate. Yeast in a flask trace the S-curve fairly cleanly as nutrients deplete. Sheep populations introduced to islands overshoot carrying capacity, crash as vegetation is destroyed, and recover in damped oscillations. The logistic model is a useful approximation, not a law. What it captures correctly is the mechanism: density-dependent feedback. As density increases, per capita growth rate decreases.
 
-### Trade-off: intrinsic rate of increase versus survival
+The factors that drive this feedback are density-dependent: disease that spreads more easily through crowded populations; predators that aggregate where prey is abundant; intraspecific competition that reduces nutrition and reproduction in dense conditions. These factors intensify as population grows, and relax as population shrinks. They are the machinery of carrying capacity.
 
-Here's a hidden decision that evolution has to make: how fast should you reproduce versus how likely should you be to survive?
-
-Bacteria have *r*-selection characteristics: high birth rate, low parental care, early maturity, fast turnover. They maximize *r*—the speed of reproduction—betting that no individual will live long but the population will.
-
-Elephants have *K*-selection characteristics: low birth rate, high parental care, late maturity, long lifespan. They optimize for survival in a stable environment near carrying capacity, investing in few but hardy offspring.
-
-These are endpoints of a spectrum. *r*-selected species thrive in unpredictable or changing environments where rapid growth matters and mortality is high anyway. *K*-selected species dominate stable environments where competition is fierce and parental investment pays off. Neither is "better"—each is tuned to different conditions.
+Separate from these are density-independent factors: a hard freeze, a drought, a volcanic eruption. These kill in proportion to population size but are not triggered by it. They are background mortality that every population experiences, regardless of whether it is near or far from carrying capacity.
 
 ---
 
-## 4. Regulation: Why Populations Don't Grow Forever
+## When Species Share Space
 
-Population growth is regulated by two classes of factors:
+A community is all species in a place, and the species interact. Four types of interaction dominate: predation, competition, mutualism, and parasitism.
 
-**Density-dependent factors** intensify as population grows. Disease spreads faster. Waste accumulates. Predators increase. Intraspecific competition—competition within the same species—rises. These factors create the carrying capacity. A dense population of parasitic roundworms shows lower fecundity than a sparse one, not because the worms are smaller but because density itself depresses reproduction. The denser you are, the worse the condition.
+Predation is the oldest story in biology. The textbook version is the lynx and the snowshoe hare in the North American boreal forest, tracked for nearly 200 years through fur trapping records. When hare populations rise, lynx have abundant food and their populations grow. But lynx growth lags hare growth by a year or two — reproduction takes time. When the lynx population peaks, intense predation drives hare numbers down. With prey scarce, lynx starve and their population crashes. With predators rare, hare numbers recover. The cycle repeats every ten years.
 
-**Density-independent factors** strike regardless of density. A forest fire kills proportionally as many individuals in a sparse population as in a dense one. A harsh winter is equal-opportunity death. These are typically abiotic: weather, natural disasters, pollution.
+The mechanism seems straightforward. The reality is messier. Hare populations also crash because of their own density-dependent dynamics — crowding stress, vegetation overexploitation. Winter severity affects both species. Lynx have other prey. Modern analysis suggests the hare decline precedes the lynx decline partly because the hares were already stressed by density before the predators arrived in force. The lynx-hare cycle is real. Its cause is not purely predation.
 
-In reality, both operate simultaneously. A dense population hit by a harsh winter loses a fixed percentage of individuals, but the surviving population recovers faster because more individuals remain to reproduce. A sparse population loses the same percentage but has fewer survivors to rebuild from.
+<!-- → [CHART: lynx-hare cycle line graph — x-axis spanning approximately 90 years (1850–1940), y-axis showing population size (two scales, one for each species). Two lines: hare population (solid) and lynx population (dashed), each oscillating with roughly 10-year period. Lynx peaks clearly lag hare peaks by 1–2 years. A note or annotation should flag that modern research attributes hare crashes partly to density-dependent factors, not only lynx predation. Student should see the time-lag structure and be ready to question the simple predation story.] -->
 
-### Human populations: overcoming regulation
+Predation drives prey evolution. The foxglove accumulates cardiac glycosides that sicken anything eating its leaves. Poison dart frogs sequester alkaloids from the ants they eat and advertise the fact with brilliant reds and yellows — aposematic coloration, a warning signal that works only if predators have learned to associate the pattern with a bad experience. A non-toxic butterfly that mimics the pattern gets the protection without the chemistry. This is Batesian mimicry: a harmless species free-riding on a toxic species' reputation. It works as long as predators don't encounter enough harmless mimics to learn that the pattern is unreliable.
 
-Humans are unique in their ability to consciously expand carrying capacity. We build shelter. We farm. We domesticate animals. We develop public health, vaccination, antibiotics—and infectious disease, historically a major mortality factor, no longer dominates human death rates.
+Müllerian mimicry is different: multiple toxic species converge on the same warning pattern. A predator that encounters any one of them learns to avoid all of them. The cost of a predator's education is spread across many species, and the protection is stronger because it is taught more frequently.
 
-Globally, infectious disease deaths fell from 15.4 million in 1990 to 10.4 million in 2017, even as global population rose. We migrated from Africa to every habitable continent. We created agricultural surpluses.
+Competition occurs when two species require the same limiting resource. In the laboratory, *Paramecium aurelia* and *Paramecium caudatum* each thrive alone in identical conditions. Together, *P. aurelia* drives *P. caudatum* to extinction. Both need the same bacteria. *P. aurelia* grows faster and depletes the food before *P. caudatum* can. This is the competitive exclusion principle: two species competing for identical resources in identical space cannot coexist indefinitely. One wins.
 
-But expanding carrying capacity has costs. The technologies—fossil fuels, industrial agriculture, deforestation—alter the planet. The ozone layer depletes. CO₂ accumulates. The question that haunts population ecology now is whether we've expanded carrying capacity indefinitely or whether we've shifted the ceiling lower through environmental damage. The late Paul Ehrlich, in *The Population Bomb* (1968), predicted mass starvation in the 1970s. He was wrong about the timeline but correct that unchecked exponential growth cannot continue indefinitely. The mathematics is relentless.
+In the field, coexistence is everywhere. The escape from competitive exclusion is niche partitioning — species use different parts of the resource spectrum. Five warbler species in a single spruce tree feed on insects in different zones: some near the tips of branches, some deep in the crown, some at the base. They avoid direct competition by exploiting different microhabitats. The niche is not a place but a role: where you feed, when, on what. Sufficiently different niches allow coexistence.
 
----
+<!-- → [IMAGE: warbler niche partitioning diagram — spruce tree cross-section with five warbler species shown in their preferred feeding zones, each zone shaded differently and labeled with the species name. A small bar below the tree shows the percent of foraging time each species spends in each zone. Student should see that species occupying the "same tree" are actually occupying different ecological spaces within it, and that this spatial partitioning is the mechanism preventing competitive exclusion.] -->
 
-## 5. Community Interactions: When Species Share Space
+Mutualism is the interaction where both species gain. Termites harbor protozoa in their gut that digest cellulose — the termite gets nutrition it cannot produce, the protozoan gets habitat and a constant food supply. Lichens are a partnership between fungus and algae: the alga photosynthesize, the fungus provides physical structure and water retention. Neither thrives on bare rock alone; together they are among the hardiest organisms on Earth, colonizing volcanic rock within years of an eruption.
 
-A *community* is all populations of all species in a place. When populations interact, the effects cascade.
+Flowering plants and their pollinators are the most economically important mutualism on the planet. The plant provides nectar; the insect transports pollen. The trade is precise: flower shapes match the body geometry of specific pollinators, which is why orchids can evolve elaborate anatomical deceptions to extract pollination service from insects that receive no reward. The mutualism has a cheater problem, and evolution has generated cheaters.
 
-### Predation and the Lotka-Volterra cycle
+Parasitism benefits one organism at another's expense. A tapeworm in a mammal's intestine absorbs digested nutrients without digesting anything itself. The host is weakened. The parasite rarely kills the host quickly — a dead host is a lost home and a lost food source. The parasite's evolutionary interest is a long, productive exploitation, which is why many parasites modulate host immune responses rather than simply avoiding them.
 
-The textbook example: lynx and snowshoe hare in North American boreal forests, tracked for nearly 200 years from fur trapping data.
-
-When hare population rises, food for lynx increases, so lynx population grows. But lynx growth lags hare growth by 1–2 years (reproduction takes time). Once lynx population peaks, they hunt hares intensely. Hare population crashes. With food scarce, lynx population crashes too. With predators rare, hare population recovers. The cycle repeats with roughly 10-year period.
-
-[FIGURE: Lynx-hare cycle, showing time-lagged predator-prey oscillation over ~100 years]
-
-The mechanism is simple, but the full picture is complicated. Hare populations also depend on density-dependent factors (crowding stress lowers fecundity). Plant availability affects hares directly. Winter severity affects both. Lynx have other prey. Modern studies suggest the lynx-hare cycle is driven less by pure predation and more by the hare population's own density-dependent crashes, with lynx tracking the result.
-
-### Defense and mimicry
-
-Evolution doesn't stop at reproduction rates. Predation pressure drives prey defenses.
-
-**Mechanical defenses**: Thorns, hard shells, spines. They impose a cost (the plant can't allocate that energy to growth; the animal carries armoring weight).
-
-**Chemical defenses**: Toxins. The foxglove is poisonous when eaten. Poisonous frogs advertise bright colors to predators—don't eat me, I'm toxic. This *aposematic* (warning) coloration works only if predators learn to avoid it.
-
-**Behavioral defenses**: Traveling in groups (predators have harder time isolating prey). Playing dead. Camouflage (blending in to the background, like a walking stick insect that looks like a twig).
-
-Then comes mimicry—a non-toxic organism mimics the warning colors of a toxic one. *Batesian mimicry*: a harmless butterfly mimics a wasp's yellow-and-black stripes, benefiting from the wasp's reputation without paying the cost of venom. It works as long as predators don't learn the difference. *Müllerian mimicry*: multiple toxic species share the same warning colors, so every predator encounter teaches the same lesson. The cost of learning is distributed.
-
-### Competition and niche
-
-Two protozoan species, *Paramecium aurelia* and *Paramecium caudatum*, both thrive alone in a test tube. Together, *P. aurelia* outcompetes *P. caudatum* for the same food, driving it extinct. This is *competitive exclusion*: two species competing for identical resources in identical space cannot coexist indefinitely. One wins.
-
-But species can avoid this by partitioning resources: using different parts of the habitat, feeding at different times, or exploiting different food sources. They move from the same niche to different *microniches* and coexist. A niche is not a place—it's a role: how you acquire resources, how you interact with the community. Competitive exclusion principle says niches must differ for coexistence.
-
-### Symbiosis: mutualism, commensalism, parasitism
-
-**Mutualism**: both species benefit. Termites harbor protozoa in their gut. The protozoa digest cellulose, which the termite cannot digest. The termite provides the protozoa a warm, safe, food-rich home. Neither could survive in this food source without the other.
-
-Lichens are a fungus + algae. The algae photosynthesize. The fungus provides structure, water retention, and mineral absorption. The partnership thrives on bare rock where neither thrives alone.
-
-Flowering plants and pollinating insects: the insect gets nectar (energy), the plant gets reproduction (pollen transport). The trade-off is explicit.
-
-**Commensalism**: one benefits, one is unaffected. A bird nests in a tree. The bird is protected; the tree is unchanged (the nest is light, doesn't harm branches, doesn't block light to most of the canopy). The pilot fish follows a shark, eating scraps; the shark doesn't notice.
-
-**Parasitism**: one benefits, one is harmed. A tapeworm lives in a host's intestine, absorbing nutrients the host would otherwise use. The parasite benefits; the host is weakened. But the parasite usually doesn't kill the host quickly—doing so would end the food supply and prevent the parasite's reproduction and spread.
+<!-- → [TABLE: four-quadrant community interaction summary — rows: species A effect (+, −, 0); columns: species B effect (+, −, 0). Cells: mutualism (+/+), predation/parasitism (+/−), competition (−/−), commensalism (+/0), amensalism (−/0). Each cell includes one example organism pair. Student should be able to classify any described interaction by identifying the sign of the effect on each participant.] -->
 
 ---
 
-## 6. Community Structure and Succession
+## Community Structure: What Holds Communities Together
 
-### What makes a community stable?
+Some species matter more than their abundance suggests. Sea otters off the Pacific coast consume urchins. Remove the otters, and urchin populations explode. Urchins eat kelp. The kelp forest disappears. With the kelp gone, the hundreds of species that shelter, breed, and feed in the kelp forest lose their habitat. One predator, present in modest numbers, was maintaining the entire structure of the community by suppressing a species that would otherwise dominate and simplify it. This is a keystone species: disproportionate influence on community composition relative to abundance.
 
-Some species have disproportionate influence. *Foundation species*—usually primary producers like kelp forests or photosynthetic corals—form the structural base. Their energy powers the community. Corals don't photosynthesize, but they harbor photosynthetic dinoflagellates (zooxanthellae) in their tissues. The algae feed the corals; the corals provide structure and protection. That structure—the reef itself—shelters thousands of other species.
+Foundation species work differently. A coral reef is built by the coral — physically. The reef structure itself is the foundation for thousands of other species. Without the coral, the structure disappears and so does everything depending on it. Foundation species create habitat. Keystone species prevent competitive exclusion.
 
-*Keystone species* maintain biodiversity out of proportion to their abundance. The sea star *Pisaster ochraceus* preys on mussels. Remove the stars, and mussels dominate the intertidal zone, outcompeting other species. Biodiversity crashes. The stars kept mussels in check, allowing room for others.
+Biodiversity in a community is measured two ways: species richness, the count of distinct species present, and species evenness, how equitably abundance is distributed across those species. A forest with 200 species, 199 of which are rare and one of which represents 90 percent of all individuals, has high richness but low evenness. Ecologists often combine these into diversity indices, but the two components are conceptually distinct and respond differently to disturbance.
 
-*Biodiversity* combines two measures: *species richness* (number of species) and *species evenness* (how evenly abundance is distributed). A rainforest near the equator has high richness and high evenness. A glacier has low richness but the few species present have even abundance. Biodiversity varies with latitude (equator richest), with climate stability, and with disturbance history.
-
-### Succession: communities assembling and reassembling
-
-When a habitat is disturbed—forest fire, volcanic eruption, ecological restoration—the community reorganizes in a predictable sequence called *succession*.
-
-**Primary succession** begins on bare or newly exposed land: lava flows, exposed rock, retreating glaciers. Nothing is there. The first arrivals are *pioneer species*: hardy organisms requiring little soil. Lichens and mosses break down rock chemically and physically. They add organic matter as they grow and die. Gradually, weathering and decay create soil. More demanding plants arrive. These organisms modify the environment, preparing it for their successors. Over decades or centuries, the habitat reaches an equilibrium state—the *climax community*—where species composition stabilizes.
-
-[FIGURE: Primary succession from bare lava to mature forest, showing pioneer lichens → grasses → shrubs → trees]
-
-**Secondary succession** begins after disturbance to an established community: fire clears a forest, but soil remains, seeds lie dormant, roots survive. Recovery is faster than primary succession. After a wildfire in an oak-hickory forest, annual plants colonize first. Grasses and fast-growing pioneer species follow. Over decades, shrubs and small trees (intermediate species) arrive, gradually shading out the pioneers. Within 150 years, the forest resembles the pre-fire climax community: tall oaks and hickories dominating the canopy, shade-tolerant species below, until the next fire.
-
-The mechanism is simple: early colonists are good at dispersal and growth in open spaces but poor competitors. They modify the environment (shade the ground, stabilize soil, accumulate nutrients), making conditions better for competitors. They are replaced by what they enabled.
+Diversity follows latitude. The richest communities on Earth are tropical rainforests and coral reefs, both near the equator. The poles are species-poor. The gradient is consistent across taxonomic groups — not just trees but birds, insects, mammals, fungi, all peak near the equator. The explanation is contested, but climate stability, high productivity, and evolutionary time all likely contribute. Climates near the equator have been stable enough for long enough that speciation has accumulated without mass extinction resetting the count.
 
 ---
 
-## 7. Invasive Species: When Community Regulation Fails
+## Succession: Communities Rebuilding Themselves
 
-The Asian carp from the opening returns here as a case study in community disruption. The fish were introduced deliberately—their filter-feeding ability was valued. Some escaped. With few predators and abundant prey (plankton, small fish, aquatic plants), they thrived. They reproduce quickly. They're voracious.
+When a habitat is emptied — by a lava flow, a glacier's retreat, a forest fire — the community rebuilds in a predictable sequence called succession.
 
-In some stretches of the Illinois River, they now comprise 95 percent of the biomass. They outcompete native mussels and snails for plankton. They eat native fishes' eggs and larvae. They disrupt the ecological structure that native species depend on.
+Primary succession begins on bare mineral substrate where no soil exists. Pioneer species arrive first: lichens and mosses that can grip rock directly, extracting minerals by chemical weathering. They die. Their bodies accumulate. Organic matter mixes with weathered mineral particles. Soil forms. Once soil exists, more demanding plants can establish. They shade the pioneers, which cannot tolerate shade. New species arrive. They modify the environment further. Over centuries, the community deepens and diversifies, eventually reaching a climax community — a relatively stable assemblage that persists until the next major disturbance.
 
-Why can't the community absorb them? Because they fill a niche efficiently and aggressively while the native community was not adapted to that competition. With no predators capable of controlling them and no resource scarcity in a newly invaded habitat, they grow exponentially. Attempting to eradicate them at this stage is nearly impossible. The question now is containment and management—whether the Great Lakes can be kept carp-free through barriers and policy, or whether the fisheries those lakes support will suffer the same collapse as the Mississippi basin.
+Secondary succession begins where disturbance has removed the existing community but soil persists. A forest fire clears the trees and kills the canopy, but soil remains, root systems survive, and seed banks wait in the ground. Annual plants colonize first — weedy, fast-growing, good at dispersal. They stabilize bare soil. Grasses and perennials follow. Shrubs establish and shade out the annuals. Small trees colonize. Over decades, a closed-canopy forest rebuilds. Within a century in favorable climates, the pre-fire tree community is largely restored.
 
-It's a visible demonstration of how communities can be destabilized when a new species arrives with traits optimized for a different context. This is not just a fish problem—it's the machinery of succession and competitive exclusion viewed through a human-caused disruption.
+The mechanism of succession is consistent: early colonists are adapted for empty space, not for competition. They grow fast, disperse widely, and tolerate poor conditions. By growing, they modify those conditions — building soil, adding shade, providing structural complexity — and create the environment that allows their successors to establish and eventually outcompete them. Succession is self-erasing at each stage. The pioneer enables its own replacement.
 
----
+<!-- → [INFOGRAPHIC: primary succession timeline — horizontal time axis from 0 to ~500 years. Sequential community stages shown as vertical slices: bare rock → pioneer lichens/mosses (0–50 years) → grasses and herbs (50–150 years) → shrubs (150–250 years) → early forest with pioneer trees (250–400 years) → climax forest with late-successional species (400+ years). Soil depth shown as a bar growing beneath the timeline. Student should see that soil accumulation is both the product of succession and the prerequisite for each subsequent stage.] -->
 
-## Integration and Closure
+The Asian carp story is succession disrupted. The Illinois River had a community structure built over thousands of years. The carp arrived as a novel competitor, ecologically similar to no native species, with no native predators capable of controlling it, in a habitat rich in the plankton it filters. It grew exponentially. Native species, adapted to a different competitive regime, could not respond. The community did not reorganize into a new stable state. It simplified — less diversity, less evenness, more carp. Competitive exclusion at ecosystem scale.
 
-Population and community ecology reveal that organisms are not isolated. Populations grow and shrink according to birth rates, death rates, and available resources. Carrying capacity emerges from density-dependent regulation—competition, predation, disease. Communities are woven from interactions: feeding relationships, mimicry, mutualism, parasitism, competition. Disturbances reset the system; succession rebuilds it. The speed of assembly depends on what survived.
-
-The work matters because humans are populations and communities too. We've expanded human carrying capacity through technology, but we've also damaged the systems that support it. The Asian carp, no longer a nuisance in their native range, became a catastrophe in Illinois. The lesson isn't that humans are bad—it's that systems can only absorb change up to a point, and once a new species or dynamic establishes, reversal is hard.
-
-The machinery visible in lynx-hare cycles and in fire-driven forest succession is the machinery of all ecosystems, including our own. Understand it and you understand how the living world persists despite constant pressure to change.
-
-**What would change my mind:** Evidence that carrying capacity is a fundamentally unstable concept in real systems—that mathematical models capture something important but populations aren't actually regulated by the mechanisms the models assume. Recent work on hare-lynx cycling suggests this might be partly true, so I'm not as confident in the model as textbooks suggest I should be.
-
-**Still puzzling:** Why competitive exclusion is so common in the lab but coexistence is so common in the field. The principle predicts one outcome; nature shows another. Microniches and resource partitioning are the answer, but the question of how fine-grained these niches can be—how similar two species can be and still coexist—remains unsettled.
+This is what communities look like when one of their regulatory mechanisms fails: not chaos, but simplification. The most effective competitor wins. The diversity that took centuries to accumulate can collapse in a decade. Understanding why communities are diverse — why competitive exclusion doesn't simplify everything to the best competitor — is partly understanding why the carp disaster was a disaster rather than a normal community shift.
 
 ---
 
-## Graduated Exercises
+## The Machinery at Scale
 
-**Warm-up:** A population of 1,000 bacteria reproduces asexually, doubling every hour for 8 hours with no deaths. Calculate the population size after 8 hours. What is the *r*-value (intrinsic rate of increase) for this population?
+Here is the view from a distance.
 
-**Application:** An ecologist samples a river using mark and recapture. She marks 50 fish, releases them, and two weeks later captures 80 fish, of which 10 are marked. Estimate the total population size. What assumptions must hold for this estimate to be accurate? What could go wrong?
+Populations grow because individual organisms reproduce. They stop growing because resources run out, disease spreads, predators aggregate, or competitors succeed. The mathematics of growth — exponential when unconstrained, logistic when constrained — describes the envelope within which populations exist. Real populations oscillate inside that envelope, sometimes crashing below it in bad years, sometimes overshooting and crashing back.
 
-**Synthesis:** A lake has a carrying capacity of 5,000 fish. The current population is 2,000. The intrinsic rate of increase is 0.5 per year. Using the logistic equation, calculate the expected population growth rate (dN/dt) when the population is 2,000. How would the growth rate change if the population were 4,500 (close to carrying capacity)?
+Communities are the outcome of those populations interacting. Predators shape prey populations. Competition for shared resources drives species apart into different niches. Mutualists create dependencies that make both species more successful and harder to separate. Parasites modulate host populations. Keystone species prevent competitive exclusion from simplifying the community. Foundation species create the physical structure that others inhabit.
 
-**Challenge:** A newly discovered tropical island has no native mammals. An invasive rat species arrives and thrives, outcompeting native insectivores and small reptiles. Over 10 years, biodiversity drops sharply. Explain this using concepts of competitive exclusion, invasive species, and community structure. What would have to happen for the native species to persist alongside the rats?
+Disturbance resets the system. Succession rebuilds it. The speed of rebuilding depends on what survived — whether soil persists, whether seed banks remain, whether the disturbance was local or total. Primary succession is slow because it must build soil from rock. Secondary succession is faster because the biological infrastructure survived.
 
----
+And everywhere in this system, humans have become the dominant force. We expanded our own carrying capacity through agriculture, medicine, and engineering, and in doing so we altered the carrying capacity of every other species — sometimes expanding it, as in the carp's case, more often contracting it. The dynamics are the same. The mathematics is indifferent to what species is growing exponentially. It describes the Asian carp and the human population with the same equations.
 
-## Summary
+The question population ecology is now asking in earnest is whether human modification of the planet has shifted the ceiling lower — whether we have expanded our own carrying capacity while damaging the systems that set it. The lynx-hare cycle teaches that even simple two-species predator-prey systems are harder to predict than the equations suggest. An ecosystem of millions of interacting species, under novel pressures, is harder still.
 
-Populations are dynamic. They grow when births exceed deaths, stabilize when regulated by density-dependent factors, and crash when resources disappear or disturbance strikes. Life histories—reproductive strategies, parental care, timing of reproduction—evolve under selection pressure from the environment and available energy. Communities emerge from interactions: predation, competition, mutualism, parasitism. Invasive species disrupt these carefully balanced systems. Succession rebuilds communities predictably after disturbance. The mathematics of population growth (exponential and logistic models) captures real dynamics, though real systems add complexity. Understanding this machinery is essential for ecology, conservation, and predicting how human activity reshapes the living world.
-
----
-
-## Connections Forward
-
-This chapter pairs with the evolution chapter: life histories are evolutionary outcomes. Population growth models reappear in epidemiology (disease spread). Community dynamics inform conservation biology and restoration ecology. The concept of carrying capacity extends to human populations, climate change, and resource limits.
+Understanding the machinery does not make the outcomes predictable. But it makes them legible.
 
 ---
 
-## Tags
+## Exercises
 
-`population-dynamics` `exponential-growth` `logistic-growth` `carrying-capacity` `predator-prey` `competitive-exclusion` `symbiosis` `succession` `invasive-species` `community-structure`
+**Warm-up**
+
+1. An ecologist marks 120 salamanders in a forest pond, releases them, and two weeks later captures 90 salamanders, of which 18 are marked. Estimate the population size using the mark-recapture formula. Then identify two field conditions that could cause this estimate to be higher than the true population size, and two that could cause it to be lower. *Tests: mark-recapture calculation and understanding of which assumption violations bias the estimate in which direction.*
+
+2. A population of bacteria is growing exponentially with $r = 0.7$ per hour. Starting from $N = 500$, calculate $dN/dt$ at $t = 0$. Now suppose the carrying capacity is $K = 10{,}000$ and the population is currently at $N = 500$. Using the logistic equation, calculate $dN/dt$ at this same starting point. Compare the two values and explain any difference. *Tests: mechanical application of both growth equations; understanding why the two values are nearly identical at low density.*
+
+3. Three plant communities are surveyed. Community A has 10 species with 100 individuals each (1,000 total). Community B has 10 species, one with 910 individuals and nine with 10 each (1,000 total). Community C has 2 species with 500 individuals each (1,000 total). Rank these communities from highest to lowest biodiversity. Explain why your ranking requires considering both components of biodiversity rather than either alone. *Tests: species richness vs. species evenness; understanding that diversity is two-dimensional.*
+
+**Application**
+
+4. A lake has a carrying capacity of $K = 8{,}000$ trout. The current population is $N = 2{,}000$ and the intrinsic rate of increase is $r = 0.4$ per year. (a) Calculate the current growth rate $dN/dt$. (b) At what population size would the growth rate be highest, and what is that maximum growth rate? (c) A drought reduces the lake's carrying capacity to $K = 4{,}000$. If the population is currently at $N = 6{,}000$ (above the new $K$), what does the logistic equation predict about the sign of $dN/dt$, and what does this mean biologically? *Tests: logistic equation fluency; understanding that K is not fixed and that populations above K decline.*
+
+5. In a rocky intertidal zone, sea stars (*Pisaster ochraceus*) are experimentally removed from one section of the coast while the adjacent section is left undisturbed. Over two years, the manipulated section becomes dominated by a single mussel species, while the control section retains 15 species. (a) What does this experiment demonstrate about the role of sea stars in this community? Name the ecological term for this type of species. (b) Explain the mechanism by which sea star removal led to the loss of 14 species, using the concept of competitive exclusion. (c) If sea stars were reintroduced after two years of mussel dominance, predict what would happen and over what timescale, using the concept of succession. *Tests: keystone species concept; competitive exclusion as the mechanism of community simplification; succession as recovery.*
+
+6. A grassland is burned by a wildfire. One year later, the burned area is colonized by fast-growing annual plants. Five years later, perennial grasses dominate. Twenty years later, shrubs and small trees are establishing. (a) What type of succession is this, and how do you know? (b) Identify one specific way that each successional stage modifies the environment to make conditions more favorable for the next stage. (c) The pioneer annuals cannot survive in the community they helped create. Explain why this is not a paradox but a consequence of the selection pressures on pioneer species. *Tests: secondary succession mechanics; facilitation as the mechanism of stage replacement; the adaptive logic of pioneer traits.*
+
+**Synthesis**
+
+7. Asian carp were introduced to filter waste ponds and escaped into river systems where they now dominate. Using the logistic growth model, explain why the carp population initially grew nearly exponentially after introduction. Then explain why native filter-feeders (mussels, paddlefish) declined, using competitive exclusion. Finally, predict what ecological conditions would need to be in place — natural or engineered — to bring the carp population under logistic control, and explain which density-dependent factors would need to be activated. *Tests: integrating exponential and logistic growth, competitive exclusion, and density-dependent regulation in a real-world invasive species context.*
+
+8. Two frog species breed in the same pond. Species A lays 3,000 eggs per breeding season with no parental care; Species B lays 12 eggs per season and guards the nest aggressively until hatching. (a) Classify each species' reproductive strategy as high-fecundity/low-care or low-fecundity/high-care and explain the energy budget logic behind each. (b) A prolonged drought reduces the pond's water level, causing nest-guarding to become highly effective (Species B's tadpoles survive at 80%) while exposed egg masses suffer catastrophic mortality (Species A's eggs survive at 0.5%). Calculate the expected number of surviving offspring for each species per breeding season and identify which strategy is more successful under these conditions. (c) If the drought ended and the pond returned to normal the following year, predict how selection would shift, and explain what this tells you about why both strategies persist in nature. *Tests: life history trade-offs; quantitative application of offspring number × survival; the environmental contingency of reproductive strategy fitness.*
+
+**Challenge**
+
+9. You are a conservation biologist advising on whether to reintroduce wolves (*Canis lupus*) to a river valley ecosystem where they have been absent for 70 years. In their absence, elk populations have grown large and have overgrazed riparian vegetation (willows, aspens) along riverbanks. Loss of riparian vegetation has caused stream banks to erode, water temperature to rise, and trout populations to decline. (a) Trace the trophic cascade from wolf absence to trout decline, identifying each link in the chain and classifying each interaction type. (b) If wolves are reintroduced, opponents argue the elk population will crash and damage ranching. Supporters argue the system will reach a new equilibrium beneficial to overall biodiversity. Using logistic growth and predator-prey dynamics, explain what conditions would determine which prediction is more accurate. (c) Wolves were reintroduced to Yellowstone in 1995. Riparian vegetation recovered, stream banks stabilized, and trout populations increased — not only because elk were reduced in number, but because elk changed their behavior, avoiding riverbanks where they were vulnerable. This behavioral effect is called the "landscape of fear." Explain how this behavioral mechanism could produce stronger ecosystem effects than simple population reduction, and why population models alone would not have predicted it. *Tests: trophic cascades across multiple links; logistic predator-prey dynamics and equilibrium conditions; behavioral ecology as a mechanism beyond population models; synthesis of multiple chapter concepts in a documented real-world case.*
