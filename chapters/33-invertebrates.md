@@ -142,3 +142,55 @@ The magazine photographs are beautiful. But they are not the answer to what "ani
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Sponges as the simplest animals**
+Prompt a model: *"Sponges (Porifera) lack true tissues, organs, nervous system, and bilateral symmetry — they consist of loose collections of cells with limited specialization. Walk me through why sponges are nonetheless considered animals rather than colonial protists, and what their cellular machinery (choanocytes — collar cells that filter food from water — strikingly similar to choanoflagellate protists) tells us about animal origins. Why is the absence of true tissues considered a primitive condition rather than a secondary loss?"*
+
+Evaluate whether the model correctly identifies the key animal features sponges retain (multicellularity, sexual reproduction with gametes, embryonic development), and engages with the sponge-choanoflagellate link (choanocytes look almost identical to free-living choanoflagellate protists, suggesting choanoflagellates are the closest unicellular relatives of animals).
+
+**Exercise 2 — Cnidarians and the radial body plan in action**
+Prompt: *"Cnidarians (jellyfish, hydra, sea anemones, corals) are radially symmetric, diploblastic (two embryonic germ layers), and possess specialized stinging cells called cnidocytes. Walk me through how the cnidocyte fires — a barbed harpoon-like nematocyst that pierces and injects venom into prey or threats — and explain why this is a remarkable single-cell trigger mechanism. Then engage with the polyp-medusa life cycle and why corals have a remarkable association with photosynthetic dinoflagellates (zooxanthellae)."*
+
+Evaluate whether the model engages with the nematocyst mechanism (a single cell containing a coiled, pressurized capsule that everts at speeds reaching 18 m/s [verify], one of the fastest cellular processes in biology), and the coral-zooxanthellae symbiosis: corals depend on the photosynthetic dinoflagellates living in their tissues for most of their nutrition, which is why coral bleaching (loss of zooxanthellae under heat stress) is so devastating.
+
+**Exercise 3 — Mollusks and the body-plan modification problem**
+Prompt: *"Mollusks (snails, clams, octopuses, squids) all share a common ancestor but show wildly different body plans — gastropods with single coiled shells, bivalves with two-valve shells, cephalopods with reduced shells (or none) and dramatically modified body plans. Walk me through how the ancestral mollusk body plan (foot, mantle, visceral mass, shell) has been modified in each lineage, and explain why cephalopods specifically evolved camera-type eyes and large brains. Are cephalopod eyes evolved by the same developmental mechanism as vertebrate eyes?"*
+
+Evaluate whether the model engages with the camera-eye convergence (cephalopod and vertebrate eyes look similar but evolved independently — different developmental pathways producing similar functional morphology), and whether it correctly identifies that the cephalopod retina has photoreceptors facing the light (no inverted retina, no blind spot — arguably a better design than the vertebrate eye).
+
+**Exercise 4 — Arthropods as the dominant animal group**
+Prompt: *"Arthropods (insects, crustaceans, arachnids, myriapods) account for over 80% of named animal species — perhaps a million described species, with estimates of 5-10 million total [verify]. Walk me through three features that have enabled this dominance: (1) the chitinous exoskeleton, (2) jointed appendages (the name 'arthropod' means jointed foot), (3) the molting (ecdysis) growth strategy. What is the major constraint that exoskeletons impose, and how do arthropods work around it?"*
+
+Evaluate whether the model correctly identifies the molting constraint: a rigid exoskeleton means the animal must shed and replace its entire skeleton periodically, leaving it temporarily soft and vulnerable. Arthropods have evolved careful molting behaviors and physiology (hormone-controlled, often nocturnal, often hidden) to survive this vulnerable period. The exoskeleton also limits maximum body size — large terrestrial arthropods (like Carboniferous millipedes 2 meters long) only thrive when oxygen levels are unusually high.
+
+**Exercise 5 — Echinoderms and the puzzle of secondary radial symmetry**
+Prompt: *"Echinoderms (sea stars, sea urchins, sand dollars, sea cucumbers) are bilateral as larvae but radial (typically pentaradial — 5-fold symmetry) as adults. Walk me through what this body-plan transformation tells us about evolution: bilateral symmetry came first, and echinoderms developed radial symmetry secondarily. Why might this transformation have occurred — what advantage does radial symmetry offer to a slow-moving or sessile animal that bilateral symmetry does not? Then explain the water vascular system that enables echinoderm locomotion."*
+
+Evaluate whether the model engages with the lifestyle argument (radial symmetry suits the sessile to slow-moving lifestyle echinoderms adopted, where threats and food can come from any direction), and whether it correctly explains the water vascular system: a hydraulic network using seawater pumped through a unique organ system to extend tube feet for locomotion and feeding — found nowhere else in the animal kingdom.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Jean-Henri Fabre** spent decades watching insects in his Provençal garden — wasps, beetles, spiders, mantises — and produced the ten-volume *Souvenirs Entomologiques* between 1879 and 1909, the founding work of behavioral entomology. He insisted on field observation when most zoologists worked with dead specimens.
+
+**Run this:**
+
+```
+Who was Jean-Henri Fabre, and how does his field-based entomology connect to the invertebrate biology we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Jean-Henri Fabre"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to describe one of Fabre's observation experiments on a single wasp species — what hypothesis did he test, what did the wasp do?
+- Ask it to compare Fabre's "watch the animal" approach with the modern lab-based study of invertebrate behavior.
+
+What changes? What gets better? What gets worse?

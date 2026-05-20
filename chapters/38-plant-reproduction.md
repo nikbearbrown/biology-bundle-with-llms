@@ -164,3 +164,55 @@ The flower is the solution. The solution is the geometry.
 9. Self-incompatibility is a genetic mechanism in many plant species that prevents a pollen grain from fertilizing an egg cell in the same plant or in plants with the same self-incompatibility alleles. This is enforced biochemically at the stigma: the stigma recognizes "self" pollen and prevents the pollen tube from growing. Explain what evolutionary problem self-incompatibility solves, and predict what would happen to the genetic diversity of a small isolated plant population if a mutation eliminated the self-incompatibility mechanism entirely. Consider both short-term and long-term effects. *Tests: applying outbreeding logic to a molecular mechanism, and reasoning about the trade-off between guaranteed fertilization and genetic diversity.*
 
 10. Seed dormancy breaks in response to specific environmental cues in different species: prolonged cold (stratification), fire (heat and smoke chemicals), scarification (passage through a gut), and light reaching the soil surface. For each cue, propose the ecological scenario in which that cue reliably predicts conditions favorable for germination, and explain why natural selection would favor seeds that wait for that specific signal rather than germinating immediately after dispersal. *Tests: reasoning about the ecological logic of dormancy-breaking signals as predictors of favorable conditions — requires integrating seed biology with population ecology.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — The flower as integrated reproductive system**
+Prompt a model: *"A flower contains four whorls of structures: sepals (outer green leaves protecting the bud), petals (typically colored to attract pollinators), stamens (male — anther + filament), and carpels (female — stigma, style, ovary). Walk me through how these parts coordinate to enable cross-pollination: pollen production in anthers, transport by pollinators, delivery to stigma, growth of pollen tube down style, fertilization of ovule. Then explain why most plants have evolved mechanisms (separate timing of male and female maturation, self-incompatibility) to prevent self-fertilization."*
+
+Evaluate whether the model engages with the inbreeding-avoidance argument: self-fertilization produces homozygous offspring with reduced fitness (inbreeding depression), so most plants evolved temporal separation (dichogamy — male and female parts mature at different times), spatial separation (heterostyly), or molecular self-incompatibility (recognition systems that reject pollen from the same plant).
+
+**Exercise 2 — Pollen tube growth as cellular engineering**
+Prompt: *"A pollen grain landing on the right stigma germinates and grows a pollen tube down through the style to deliver sperm cells to the ovule. Walk me through how this tube — which can grow at remarkable rates (1-2 cm/h in some species [verify]) — extends only at its tip while the rest of the cell remains static. What molecular machinery (actin cytoskeleton, calcium gradients, secretory vesicles) drives this directional growth? Why is the pollen tube one of the fastest-growing plant cells?"*
+
+Evaluate whether the model correctly identifies the tip-growth mechanism (continuous secretion of cell wall material at the apex, with new membrane and wall added by Golgi-derived vesicles), and the calcium gradient (high at the tip, declining toward the base, regulating actin and vesicle dynamics). The speed reflects the strong selection pressure — pollen tubes from different pollen grains are racing to reach the ovule first.
+
+**Exercise 3 — Double fertilization as angiosperm innovation**
+Prompt: *"Angiosperms perform double fertilization: one sperm fertilizes the egg cell to produce the zygote, and a second sperm fuses with the central cell (containing two polar nuclei) to produce a triploid endosperm. The endosperm provides nutrition for the developing embryo. Walk me through why this two-fertilization system is more efficient than the gymnosperm alternative (where nutritive tissue is already present in the haploid female gametophyte before fertilization). What does it accomplish that gymnosperms cannot?"*
+
+Evaluate whether the model engages with the resource-allocation efficiency: angiosperms only invest in endosperm production after fertilization confirms a viable embryo, while gymnosperms invest in nutritive tissue that may go unused if fertilization fails. This is one mechanism that contributed to angiosperm reproductive efficiency and dominance.
+
+**Exercise 4 — Fruits as dispersal-vector apparatus**
+Prompt: *"Fruits are mature ovaries — fleshy or dry, sweet or bitter, smooth or barbed — each adapted to a specific dispersal strategy. Walk me through three contrasting examples: (1) berries (fleshy, sweet, brightly colored — attract birds for endozoochoric dispersal), (2) burrs (barbed, hooked — attach to mammal fur for epizoochoric dispersal), (3) wind-dispersed achenes like dandelion (lightweight with parachute structure — anemochory). For each, what specific morphological features and what specific ecological partners are required for the strategy to succeed?"*
+
+Evaluate whether the model engages with the morphology-strategy match (sugar content for animal attraction; barb angle for fur attachment; achene mass-to-area ratio for wind transport), and whether it correctly identifies that fruit-eating animals often disperse seeds many kilometers from the parent plant — far beyond what is achievable by wind or gravity alone.
+
+**Exercise 5 — Asexual reproduction in plants and the trade-off with sex**
+Prompt: *"Many plants reproduce both sexually (via flowers and seeds) and asexually (via runners, rhizomes, bulbs, tubers, or apomixis — seeds produced without fertilization). Walk me through the trade-offs: asexual reproduction is faster, more energy-efficient, and produces genetically identical copies (preserving locally adapted genotypes), but it lacks the genetic diversity that enables long-term adaptation. Why has asexual reproduction been so successful in some plant lineages (clonal aspen forests, dandelion populations) despite its limits?"*
+
+Evaluate whether the model engages with the dual-strategy logic: many plants use asexual reproduction for short-term local expansion (when conditions are stable and the plant is well-adapted) and reserve sexual reproduction for periods of stress or environmental change (when novel allele combinations may be needed). The Pando aspen clone in Utah — perhaps the largest organism on Earth, covering 43 hectares as a single genetic individual — illustrates how successful asexual reproduction can be in stable environments.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Eduard Strasburger** discovered double fertilization in flowering plants in 1884 — and worked out the basics of mitosis and meiosis in plant cells. Most of the cytology vocabulary in modern textbooks (cytoplasm, nucleoplasm, chromosome behavior) traces back to him.
+
+**Run this:**
+
+```
+Who was Eduard Strasburger, and how does his discovery of double fertilization and plant cytology connect to the plant reproduction we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Eduard Strasburger"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through double fertilization in an angiosperm — both fertilization events, what they produce, and why it matters.
+- Ask it to compare Strasburger's drawings of mitosis with the modern fluorescence microscopy images of the same process.
+
+What changes? What gets better? What gets worse?

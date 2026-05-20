@@ -206,3 +206,55 @@ The instruction becomes the machine. Every second, in every living cell, the sam
 **Challenge**
 
 9. You are given the following information about a short protein and two mutant versions of its gene. The wild-type protein is 8 amino acids long: Met-Ala-Gly-Trp-Lys-Asp-Phe-Ser. Mutant 1 produces: Met-Ala-Gly-Trp-STOP (4 amino acids, truncated). Mutant 2 produces: Met-Val-Gly-Trp-Lys-Asp-Phe-Ser (8 amino acids, second position changed from Ala to Val). (a) Classify each mutation as silent, missense, or nonsense, and explain your reasoning. (b) For Mutant 1, propose the minimum single nucleotide change in the mRNA that could produce a premature stop codon at position 5. Show the codon change explicitly. (c) For Mutant 2, the change is Ala → Val. Using the genetic code, propose a single nucleotide change in the second codon that could cause this. Is there more than one possible change? (d) Which mutant protein is more likely to have a severely disrupted function, and why? What additional information about the protein's structure would change your answer? *Tests: comprehensive mutation analysis working backward from protein to mRNA to DNA; applying the genetic code in reverse; reasoning about functional consequences of different mutation types.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Why three bases per codon**
+Prompt a model: *"The genetic code uses 3-nucleotide codons to specify 20 amino acids plus stop signals. Walk me through the combinatorial logic: why doesn't the cell use 2-base codons (which would give only 16 combinations — not enough for 20 amino acids), or 4-base codons (which would give 256 — wastefully many)? Then explain why the redundancy of the code (multiple codons specifying the same amino acid) is not a flaw but an evolved feature."*
+
+Evaluate whether the model correctly identifies that 2 bases (4² = 16) is insufficient and 3 bases (4³ = 64) provides the smallest viable system, and engages with the redundancy as a buffer against single-base mutations — particularly third-position changes (the wobble position) often cause silent mutations that don't affect the amino acid sequence.
+
+**Exercise 2 — Transcription and the directionality of RNA polymerase**
+Prompt: *"RNA polymerase synthesizes mRNA in the 5'→3' direction, reading the template DNA strand in the 3'→5' direction. Walk me through why this directionality is mechanistically required — specifically, why nucleotide addition uses the 3'-OH of the growing strand and the 5'-phosphate of the incoming nucleotide. What would happen biochemically if RNA polymerase tried to add in the opposite direction? Why does this same constraint apply to DNA polymerase, but with consequences for replication that don't apply to transcription?"*
+
+Evaluate whether the model engages with the energy-of-bond-formation argument (the high-energy phosphate bond of the incoming triphosphate provides the energy for ester bond formation with the existing 3'-OH), and whether it correctly identifies that this directionality forces DNA replication to use a leading-strand / lagging-strand asymmetric mechanism (since both DNA strands must be replicated 5'→3' but they run antiparallel) — a problem transcription doesn't face because only one strand is transcribed.
+
+**Exercise 3 — Splicing and the alternative-splicing puzzle**
+Prompt: *"Eukaryotic genes typically contain coding regions (exons) interrupted by non-coding regions (introns). The spliceosome removes introns from pre-mRNA before translation. Walk me through why introns exist at all — what evolutionary or functional benefit they provide. Then explain alternative splicing: how the cell uses different splicing patterns to produce multiple proteins from a single gene, and why this mechanism allows a relatively small genome (about 20,000 protein-coding human genes [verify]) to produce a much larger proteome (perhaps 100,000+ distinct proteins [verify])."*
+
+Evaluate whether the model engages with the evolutionary benefit of introns (recombination within introns can shuffle exons, accelerating evolution of novel proteins), the spliceosome mechanism (snRNPs recognize 5' splice site, 3' splice site, branch point), and the alternative-splicing complexity (tissue-specific splicing patterns produce tissue-specific protein isoforms).
+
+**Exercise 4 — Translation and the ribosome as ribozyme**
+Prompt: *"The ribosome catalyzes peptide bond formation during translation — but the active site for peptide-bond formation is composed of RNA, not protein. Walk me through what this discovery (the ribosome is a ribozyme) tells us about the origin of life and the relationship between RNA and protein. Then explain the proofreading mechanism: how does the ribosome distinguish correct from incorrect tRNA-codon pairings, and why is this discrimination harder than DNA replication's discrimination?"*
+
+Evaluate whether the model engages with the RNA-world hypothesis (RNA can both store information and catalyze reactions, suggesting a primordial era when proteins didn't yet exist), and whether it correctly identifies the kinetic-proofreading mechanism (incorrect tRNAs dissociate faster than correct ones, providing a discrimination window). Translation discrimination is harder than replication because there is no template-directed Watson-Crick partner — just the codon-anticodon pairing.
+
+**Exercise 5 — From mutation to phenotype**
+Prompt: *"A point mutation in the beta-globin gene changes a single nucleotide (GAG → GTG), changing the encoded amino acid from glutamate to valine at position 6 of the beta-globin protein. This single change causes sickle cell disease. Walk me through the cascade: how does this change at the DNA level produce the observed phenotype (sickle-shaped red blood cells, vaso-occlusive crises)? Engage with the structural change in hemoglobin, the conditions under which sickling occurs, and why heterozygotes are largely unaffected but receive partial protection from malaria."*
+
+Evaluate whether the model traces the cascade clearly: glutamate (charged) → valine (hydrophobic) → exposed hydrophobic patch on beta-globin surface → polymerization of deoxygenated hemoglobin → distorted red blood cell → vaso-occlusion. The malaria-protection mechanism in heterozygotes involves accelerated clearance of parasitized cells before the parasite completes its lifecycle.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Marshall Nirenberg** broke the first codon of the genetic code in 1961 — showing that UUU codes for phenylalanine, by adding a synthetic poly-U RNA to a cell-free translation system. He and his colleagues cracked the rest within five years.
+
+**Run this:**
+
+```
+Who was Marshall Nirenberg, and how does his code-breaking work connect to the relationship between genes and proteins we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Marshall Warren Nirenberg"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through Nirenberg's 1961 poly-U experiment — the specific reagents and the specific readout.
+- Ask it to compare Nirenberg's "biochemical" code-breaking approach with the more theoretical "genetic" approach used by Crick and colleagues at the same time.
+
+What changes? What gets better? What gets worse?

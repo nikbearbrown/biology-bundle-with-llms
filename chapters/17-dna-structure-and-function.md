@@ -174,3 +174,55 @@ Below the cell is chemistry. At the cell is life. And threading through both, co
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Why double helix, geometrically**
+Prompt a model: *"The Watson-Crick double helix is right-handed, with about 10 base pairs per turn and a diameter of approximately 2 nm. Walk me through why each of these geometric features is functionally important — not arbitrary. Specifically: why does a single-stranded molecule make a poor candidate for stable information storage, why does a triple helix make a poor candidate for replication, and why does the specific 2-nm diameter matter for the proteins that interact with DNA?"*
+
+Evaluate whether the model engages with the structural-stability argument for the double helix (hydrogen bonds reinforced by base stacking), the access-during-replication problem with triple helices, and the protein-recognition argument for the consistent diameter (proteins that bind major and minor grooves can recognize sequences without unwinding the helix). Push for engagement with the "information storage AND retrievable" trade-off.
+
+**Exercise 2 — Semiconservative replication and the Meselson-Stahl experiment**
+Prompt: *"The Meselson-Stahl experiment (1958) distinguished three possible models of DNA replication: conservative, semiconservative, and dispersive. The semiconservative model won. Walk me through the experimental design — specifically, the use of heavy nitrogen (¹⁵N) labeling and density-gradient centrifugation — and explain how the observed banding patterns at one and two generations of replication ruled out the alternatives. Why was this called 'the most beautiful experiment in biology'?"*
+
+Evaluate whether the model correctly identifies that semiconservative replication predicts a single intermediate-density band at one generation and two bands (intermediate + light) at two generations, while conservative would have predicted heavy + light at one generation and dispersive would have predicted progressively lighter intermediate at each generation. The "beautiful" framing reflects the experiment's three-way discrimination from a single elegant approach.
+
+**Exercise 3 — DNA polymerase fidelity**
+Prompt: *"DNA polymerase III in E. coli has an error rate of approximately 1 mistake per 10⁵-10⁶ base pairs incorporated, but proofreading reduces this to about 1 in 10⁷, and mismatch repair brings it to about 1 in 10⁹-10¹⁰. Walk me through each layer of accuracy: (1) the geometric and electrostatic discrimination at the active site, (2) the 3'→5' exonuclease proofreading activity, and (3) post-replication mismatch repair. Why does the cell need three layers — wouldn't a single very-accurate polymerase suffice?"*
+
+Evaluate whether the model engages with the diminishing-returns argument: each additional layer of accuracy is more expensive (in time and energy) than the last. The cell evolved to a level where the residual error rate matches the optimal mutation rate for the species — too low and adaptation slows, too high and lethal mutations accumulate.
+
+**Exercise 4 — Telomeres and the end-replication problem**
+Prompt: *"Linear chromosomes face a problem prokaryotes (with circular chromosomes) do not: each round of DNA replication shortens the chromosome ends because DNA polymerase cannot fill in the gap left by removal of the final RNA primer on the lagging strand. Walk me through why this 'end-replication problem' is necessary, why telomeres provide a partial solution, and why telomerase reactivation is a near-universal feature of cancer. What would be the consequence for somatic cells if telomerase were constitutively active?"*
+
+Evaluate whether the model correctly identifies that telomeres are repetitive non-coding sequences that act as buffers — they shorten with each division, but the loss is non-coding until the buffer is exhausted (Hayflick limit, ~50 divisions). Constitutive telomerase removes this brake, contributing to cancer cell immortality. Stem cells normally express telomerase; somatic cells generally do not.
+
+**Exercise 5 — DNA repair pathways, distinguished**
+Prompt: *"The cell uses different repair pathways for different types of DNA damage: nucleotide excision repair (NER) for bulky lesions like UV-induced thymine dimers; base excision repair (BER) for small chemical modifications like deamination; mismatch repair (MMR) for replication errors; homologous recombination (HR) and non-homologous end joining (NHEJ) for double-strand breaks. Walk me through the molecular logic of each pathway and explain why HR is high-fidelity while NHEJ is error-prone. Identify one human disease caused by failure of each pathway."*
+
+Evaluate whether the model correctly identifies that HR uses a homologous template (sister chromatid) for accurate repair, while NHEJ directly ligates broken ends with potential loss of nucleotides. Disease examples: xeroderma pigmentosum (NER defect), MUTYH-associated polyposis (BER defect), Lynch syndrome (MMR defect), BRCA1/2-associated cancers (HR defect).
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Erwin Chargaff** established in the late 1940s that in any sample of DNA, the amount of adenine equals thymine and guanine equals cytosine — Chargaff's rules. The pairing rules were Watson and Crick's most important clue, though Chargaff felt they never gave him proper credit.
+
+**Run this:**
+
+```
+Who was Erwin Chargaff, and how do Chargaff's rules connect to the DNA structure we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Erwin Chargaff"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through how A=T and G=C base pairing follows from Chargaff's quantitative rules — the inferential leap Watson and Crick made.
+- Add a constraint: "Answer including Chargaff's famous bitterness about Watson and Crick, and what he felt was missing from their model."
+
+What changes? What gets better? What gets worse?

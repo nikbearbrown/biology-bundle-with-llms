@@ -168,3 +168,55 @@ That is the deep strangeness that I find worth sitting with at the end of this c
 9. A new RNA virus is discovered that causes a chronic infection lasting decades with no acute symptoms. The immune system produces antibodies against the virus, but the infection persists anyway. Propose three distinct mechanisms — each at a different level of viral biology covered in this chapter — by which the virus might evade immune clearance despite the presence of antibodies. For each mechanism, identify which feature of viral structure or replication strategy enables it. *Tests: synthesizing viral structure, replication, and infection patterns to reason about immune evasion.*
 
 10. Eight percent of the human genome consists of endogenous retroviruses — remnants of retroviruses that infected our ancestors and integrated into the germline. These sequences are generally not expressed, but some have been co-opted for host functions (for example, syncytins, proteins derived from retroviral envelope genes, are now essential for placental development in mammals). What does the existence of syncytins tell you about how evolution can work? What conditions would have to be met for a viral gene to transition from a parasite's tool to a host's essential function? *Tests: reasoning about evolutionary co-option of viral sequence, integrating retrovirus biology with evolutionary logic.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — The "are viruses alive" question**
+Prompt a model: *"Viruses lack metabolism, cannot reproduce without a host cell, and have no ribosomes or other independent machinery. Walk me through the case for and against classifying viruses as 'alive.' Then move past the definitional question to the more interesting one: what biological role do viruses play in evolution and ecology if we treat them as organism-adjacent entities? Engage with the contribution of viruses to horizontal gene transfer and the role of endogenous retroviruses in host genomes."*
+
+Evaluate whether the model engages with both sides honestly (viruses fail several criteria for life — no metabolism, no autonomous reproduction; but they replicate, mutate, and undergo selection), and whether it engages with the substantive biology: roughly 8% of the human genome is endogenous retrovirus sequence [verify], and viruses are major drivers of microbial evolution through HGT.
+
+**Exercise 2 — Why viruses must be specific**
+Prompt: *"Viruses typically infect a narrow range of host species and cell types — HIV infects CD4+ T cells; influenza infects respiratory epithelium; rabies infects neurons. Walk me through the molecular basis of host specificity (receptor recognition, fusion or endocytosis, intracellular replication requirements), and explain why this specificity makes most viruses unable to jump between distantly related species. What needs to happen for a successful zoonotic jump (animal to human)?"*
+
+Evaluate whether the model correctly identifies the receptor-specificity step (e.g., SARS-CoV-2 uses ACE2 receptor, which is expressed similarly in bats, civets, and humans), and engages with the mutation requirements for cross-species jumps. A spillover requires not just initial infection but sustained human-to-human transmission, which often requires further adaptation.
+
+**Exercise 3 — RNA viruses and the high mutation rate**
+Prompt: *"RNA viruses (HIV, influenza, SARS-CoV-2) typically have mutation rates of 10⁻³ to 10⁻⁴ per nucleotide per replication, compared to 10⁻⁹ for cellular DNA replication [verify]. Walk me through why RNA viruses tolerate this much higher error rate, and what consequences follow: rapid evolution of drug resistance, antigenic variation enabling immune escape, and the evolutionary pressure toward small genomes. Why is the SARS-CoV-2 genome (~30 kb) considered close to the upper limit for RNA viruses?"*
+
+Evaluate whether the model engages with the proofreading absence (most RNA-dependent RNA polymerases lack proofreading; SARS-CoV-2 is exceptional in having a partial proofreading capacity, which is why its genome is larger than most RNA viruses), and the genome-size limit: at the standard mutation rate, genomes much larger than 30 kb would accumulate too many lethal mutations per replication.
+
+**Exercise 4 — Lysogenic vs. lytic strategies**
+Prompt: *"Bacteriophages have two reproductive strategies: lytic (immediate replication and host destruction) and lysogenic (integrate into host genome, replicate passively for many generations, then activate under stress). Walk me through the trade-offs — when would each strategy maximize fitness, and what triggers the switch from lysogenic to lytic? Then explain the medical consequence: how phage-encoded toxins (cholera toxin, diphtheria toxin) entered their bacterial hosts."*
+
+Evaluate whether the model engages with the trade-off (lytic = high reproduction immediately, but burns through hosts; lysogenic = lower per-generation production, but ensures survival when host abundance is low), and whether it correctly identifies that the SOS response in stressed bacteria activates lysogenic phages — and that toxin genes from these phages have given certain bacterial strains their pathogenic properties.
+
+**Exercise 5 — Viroids and prions as the simplest infectious agents**
+Prompt: *"Viroids are even simpler than viruses — circular single-stranded RNA molecules of only 200-400 nucleotides, with no protein coat, that infect plants. Prions are simpler still — just a misfolded protein that catalyzes misfolding of normal versions of itself. Walk me through how these entities can be infectious without genetic material as the agent of replication. For prions, explain how diseases like Creutzfeldt-Jakob, BSE, and chronic wasting disease propagate, and why they are uniquely difficult to inactivate."*
+
+Evaluate whether the model correctly identifies that viroids replicate using host RNA polymerase (the genetic material is RNA but no proteins are encoded), and that prions propagate through conformational templating: the misfolded protein induces normal proteins to adopt the misfolded conformation. Prions resist heat, UV, formaldehyde, and most disinfectants because they lack the nucleic acids these agents target.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Martha Chase** worked with Alfred Hershey in 1952 on the blender experiment that proved DNA — not protein — is the genetic material. She used radioactive labels on phage protein and DNA, ran them through a kitchen blender, and showed that only the DNA entered bacterial cells.
+
+**Run this:**
+
+```
+Who was Martha Chase, and how does the Hershey–Chase blender experiment connect to the virus biology we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Martha Chase"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through the blender experiment step by step — the two radioactive labels, what got sheared off, what stayed inside.
+- Ask it to compare how Hershey and Chase are usually credited (Hershey's 1969 Nobel, Chase's quiet later career).
+
+What changes? What gets better? What gets worse?

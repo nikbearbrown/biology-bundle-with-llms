@@ -170,3 +170,55 @@ The bee on the echinacea flower, with which this chapter began, really is your r
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Reading a phylogenetic tree carefully**
+Prompt a model: *"Given a rooted phylogenetic tree of vertebrates with branches for fish, amphibians, reptiles, birds, and mammals, walk me through what the tree does and does not tell me. Specifically: (1) does sister-taxon relationship between A and B mean A is more 'related to' B than to C? (2) Can I read the order of evolution from left-to-right at any node? (3) Does branch length necessarily correspond to time? Then identify one common misreading of a phylogenetic tree."*
+
+Evaluate whether the model correctly identifies that (1) sister-taxon relationships reflect recency of common ancestor (yes — A and B share a more recent common ancestor with each other than either does with C), (2) left-to-right ordering at a node is arbitrary (the tree can be rotated at any node without changing relationships), and (3) branch length depends on the type of tree — chronograms have time-proportional branches; cladograms have arbitrary branch lengths; phylograms scale to molecular distance. The common misreading is treating extant taxa at the tips as ancestral to other extant taxa.
+
+**Exercise 2 — Cladistics and the principle of parsimony**
+Prompt: *"Cladistic analysis builds phylogenetic trees by minimizing the number of evolutionary changes (parsimony) required to explain observed character distributions. Walk me through this approach using a small example: given three taxa with binary characters, how do you determine which tree is most parsimonious? Then explain why parsimony has limits — what if the true history involved many parallel evolutions or reversals that parsimony would miss?"*
+
+Evaluate whether the model correctly explains the basic parsimony algorithm and engages with the long-branch attraction problem: when evolutionary rates differ dramatically among lineages, parsimony can mistakenly group two long branches together because they share many independent (not homologous) changes. Modern methods (maximum likelihood, Bayesian inference) explicitly model evolutionary rates to avoid this.
+
+**Exercise 3 — Molecular clocks and their calibration**
+Prompt: *"Molecular clocks estimate divergence times by counting genetic differences between species and converting to time using a calibrated mutation rate. Walk me through the calibration problem: how do biologists choose calibration points, what assumptions does the molecular clock make, and what happens to time estimates when those assumptions are violated? Use the human-chimp split (~5-7 million years ago [verify]) as an example."*
+
+Evaluate whether the model engages with the calibration challenges (most calibrations come from fossil dates, which provide minimum but not maximum ages; rates vary among genes, lineages, and time periods), and whether it correctly identifies that the human-chimp divergence date has been revised multiple times as both fossil dating and molecular clock methods have improved.
+
+**Exercise 4 — Convergence vs. homology in tree-building**
+Prompt: *"Building a phylogenetic tree requires distinguishing homologous traits (shared due to common ancestry) from analogous traits (shared due to convergent evolution). Walk me through how researchers distinguish the two — particularly when morphological traits are misleading. Why is molecular data often more reliable for tree-building than morphological data, and what are the cases where molecular data can also mislead?"*
+
+Evaluate whether the model engages with the practical heuristics (look at multiple traits, check for similar developmental origin, examine the geographic and temporal context), and engages with molecular convergence (e.g., similar substitution patterns can arise in independent lineages under similar selection pressures, particularly in mitochondrial genes under metabolic constraints).
+
+**Exercise 5 — Horizontal gene transfer and the 'tree of life'**
+Prompt: *"In bacteria and archaea, horizontal gene transfer (HGT) is so common that perhaps 20-30% of genes in some species came from other organisms rather than from inheritance [verify]. This complicates the 'tree of life' metaphor — for prokaryotes, the appropriate metaphor may be a 'web of life' rather than a tree. Walk me through three mechanisms of HGT (transformation, transduction, conjugation) and explain what HGT means for phylogenetic analysis: which genes can still be used to build trees, and which cannot?"*
+
+Evaluate whether the model engages with the mechanisms (transformation = uptake of free DNA; transduction = phage-mediated; conjugation = direct cell-to-cell via pili), and whether it correctly identifies that ribosomal RNA genes are typically not subject to HGT (they're essential, conserved, and any change would disrupt function), making them the gold standard for prokaryotic phylogeny. Genes encoding metabolism, antibiotic resistance, and many surface proteins are commonly transferred.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Willi Hennig** founded cladistics in his 1950 German monograph — proposing that classification should reflect shared derived characters and branching events, not overall similarity. His method now underlies essentially every phylogenetic tree in modern biology.
+
+**Run this:**
+
+```
+Who was Willi Hennig, and how does cladistics connect to the phylogenies and history of life we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Willi Hennig"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through what "shared derived character" (synapomorphy) means using a vertebrate example — what counts, what doesn't.
+- Ask it to compare Hennig's cladistic method with the older "evolutionary systematics" of Mayr and Simpson.
+
+What changes? What gets better? What gets worse?

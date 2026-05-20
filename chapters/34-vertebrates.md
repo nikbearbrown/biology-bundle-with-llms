@@ -156,3 +156,55 @@ I find this genuinely remarkable: that four specific structural changes, accumul
 9. The fossil record of the fin-to-limb transition shows a gradual sequence: Eusthenopteron → Panderichthys → Tiktaalik → Acanthostega → Ichthyostega. However, fossil evidence also shows that Acanthostega and similar early tetrapods were still primarily aquatic. Some researchers argue that limbs evolved initially for aquatic locomotion in shallow, vegetated habitats rather than for walking on land. Evaluate this hypothesis using the skeletal evidence from Acanthostega and Tiktaalik. What does each animal's anatomy support, and what does it not support? *Tests: evaluating competing evolutionary hypotheses against skeletal evidence.*
 
 10. In placental mammals, the amniotic egg was "internalized" — the embryo develops inside the mother rather than in an external egg. The amnion, chorion, and allantois all persist, but the shell was lost and the chorion fused with the uterine wall to form the placenta. Identify two advantages and two disadvantages of internal development compared to external egg-laying, and predict the conditions under which natural selection would favor the internal strategy. Connect your answer to both the embryo's developmental needs and the mother's ecological constraints. *Tests: reasoning about the evolutionary trade-offs of viviparity vs. oviparity using the amniotic membrane system as the starting point.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — The vertebrate innovations on the chordate body plan**
+Prompt a model: *"Chordates share four features at some life stage: notochord, dorsal hollow nerve cord, pharyngeal slits, and post-anal tail. Vertebrates added a vertebral column (replacing or surrounding the notochord), a cranium (protecting a centralized brain), and the neural crest (a unique embryonic cell population that gives rise to many vertebrate-specific structures). Walk me through what neural crest produces specifically — bones of the face and skull, peripheral nervous system, melanocytes, smooth muscle, adrenal medulla — and why this single cell lineage is considered one of the key vertebrate innovations."*
+
+Evaluate whether the model correctly identifies neural crest as a population of pluripotent migratory cells that delaminate from the dorsal neural tube during development, and engages with the implication: many vertebrate-specific features (jaws, head, sensory organs, complex face) developed from neural crest, so this innovation enabled the vertebrate radiation.
+
+**Exercise 2 — Jaws as a major evolutionary breakthrough**
+Prompt: *"The first vertebrates (jawless fish, like modern lampreys and hagfish) had no jaws and were limited to sucking or filter-feeding. Jawed vertebrates (gnathostomes) evolved roughly 450 million years ago [verify] from modifications of the anterior pharyngeal arches that previously supported gill structures. Walk me through how jaws transformed vertebrate ecology: predation, dietary range, and the evolutionary arms race with prey. Why are jawless vertebrates (lampreys, hagfish) still around if jaws are such a major advantage?"*
+
+Evaluate whether the model engages with the niche-partitioning argument: jawless vertebrates persist by exploiting niches jawed vertebrates do not (lampreys as parasites attaching to other fish, hagfish as deep-sea scavengers). The advantage of jaws is large in many contexts but not universal — specialized lifestyles can outperform generalists in specific niches.
+
+**Exercise 3 — The tetrapod transition: walking on land**
+Prompt: *"The tetrapod transition (~375 million years ago, Tiktaalik and related fossils) involved adapting fish-like ancestors to terrestrial locomotion. Walk me through what specifically had to change: limbs derived from lobed fins, lungs derived from swim bladders (or vice versa), the loss or modification of gill respiration, and the evolution of weight-bearing skeletons. What was the strongest selection pressure driving land colonization — escape from aquatic predators, access to terrestrial food, or some combination?"*
+
+Evaluate whether the model engages with the transitional morphology preserved in fossils like Tiktaalik (limb-like fins with wrist joints, lungs, neck capable of independent head movement), and the multiple-cause argument for terrestrial colonization (insects had already colonized land and provided food; shallow swamps with declining oxygen may have selected for air-breathing; predators may have been less common in shallow waters).
+
+**Exercise 4 — Amniotic egg and the conquest of dry land**
+Prompt: *"Amphibians remain dependent on water for reproduction (eggs typically laid in water; juvenile larvae often aquatic). The amniotic egg — evolved in the ancestor of reptiles, birds, and mammals — frees vertebrates from this water dependency by enclosing the embryo in a self-contained aquatic environment with food and waste storage. Walk me through the four extra-embryonic membranes (amnion, chorion, allantois, yolk sac) and what each accomplishes. Why is the amniotic egg considered one of the major evolutionary innovations of vertebrate evolution?"*
+
+Evaluate whether the model correctly identifies the function of each membrane (amnion = water environment for embryo; chorion = gas exchange and structural protection; allantois = waste storage and additional gas exchange; yolk sac = nutrition), and engages with the consequence: amniotes (including mammals, where the membranes have been modified for placental development) can lay eggs in dry environments far from standing water, opening up entire continental interiors that amphibians cannot exploit.
+
+**Exercise 5 — Why were dinosaurs so successful, and why did mammals replace them**
+Prompt: *"Dinosaurs dominated terrestrial ecosystems for approximately 165 million years (Triassic to end-Cretaceous), while mammals coexisted with them but remained small and inconspicuous. After the K-Pg extinction (~66 million years ago) eliminated non-avian dinosaurs, mammals diversified rapidly to fill the vacated niches. Walk me through what the dinosaurs had that gave them such long ecological dominance, and what the K-Pg extinction selected for among the survivors. Why are birds (the only surviving dinosaur lineage) so successful today?"*
+
+Evaluate whether the model engages with the dinosaur traits (efficient lung architecture, possibly endothermy in some lineages, body sizes ranging from small to gigantic) and the K-Pg extinction selection (small body size, ability to survive on dormant resources, possibly behavioral flexibility), and whether it correctly identifies that birds inherited the air-niche almost without competition. Their flight, endothermy, and small size made them survivors of the Cretaceous extinction and beneficiaries of the post-extinction ecological reorganization.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Mary Anning** was a working-class English fossil collector who, between 1810 and 1830, discovered the first complete ichthyosaur, the first plesiosaur, and the first British pterosaur — fossils that founded the science of vertebrate paleontology. She was excluded from the Geological Society of London because she was a woman.
+
+**Run this:**
+
+```
+Who was Mary Anning, and how does her vertebrate fossil discoveries connect to what we know about vertebrate evolution in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Mary Anning"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to describe one of Anning's major finds — what she dug up, who later interpreted it, and how the credit was distributed.
+- Add a constraint: "Answer including the class and gender barriers Anning navigated as a fossilist in 1820s Lyme Regis."
+
+What changes? What gets better? What gets worse?

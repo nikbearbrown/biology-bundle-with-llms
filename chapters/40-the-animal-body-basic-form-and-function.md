@@ -149,3 +149,55 @@ Physics does the accounting. The fox does the work.
 **Challenge**
 
 9. Arctic foxes have a countercurrent heat exchanger in their limbs: warm arterial blood flowing to the paw transfers heat to cold venous blood returning to the core, so that venous blood arrives at the core pre-warmed rather than cold. (a) Explain quantitatively why this reduces the metabolic cost of maintaining circulation to the extremities — what specific energy expenditure does it avoid? (b) The same exchanger means that the fox's paws are nearly as cold as the ambient air. The fox stands in -40°C snow. Calculate the approximate temperature gradient across the paw tissue if paw temperature is −5°C and snow temperature is −40°C, and explain why this does not cause tissue damage the way it would in a human. What cellular adaptation allows fox paw tissue to function at near-freezing temperatures? (c) A bioengineer proposes implanting artificial countercurrent exchangers in humans for cold-climate use. Identify two physiological complications this intervention would face that the fox avoids through evolved adaptations, and for each, describe what additional biological change would be required to make the intervention viable. *Tests: countercurrent heat exchanger mechanism quantitatively; cellular cold-tolerance adaptations; engineering reasoning about transplanting a biological solution to a new context.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Why animals have organs**
+Prompt a model: *"Organisms below a certain size (single cells, very small invertebrates) can manage all life functions through diffusion across their entire surface. Above that size, dedicated organs and circulatory systems become necessary. Walk me through the surface-area-to-volume problem that makes this transition unavoidable, and identify the size scale at which dedicated organs typically appear. Why does the same logic that constrains cells also constrain whole-body design at larger scales?"*
+
+Evaluate whether the model engages with the surface-area-to-volume scaling (volume scales as r³, surface area as r²; the ratio decreases as r increases), and whether it correctly identifies that animals above a few millimeters typically need dedicated respiratory and circulatory systems because diffusion alone cannot supply oxygen and remove waste fast enough across body interiors.
+
+**Exercise 2 — Tissues as engineering specializations**
+Prompt: *"Animal cells are organized into four basic tissue types: epithelial (covering and lining), connective (support and binding), muscle (contraction), and nervous (signaling). Walk me through what each tissue specializes in mechanically, and explain why this division of labor is so universal across animal phyla. What would a hypothetical animal lacking one of these tissue types be able and unable to do?"*
+
+Evaluate whether the model correctly identifies the mechanical specializations (epithelial = barriers and selective transport, polarized cells with tight junctions; connective = strength under tension/compression, abundant extracellular matrix; muscle = mechanical work via actin-myosin contraction; nervous = fast electrical signaling via excitable membranes), and engages with the universality argument: every animal needs barriers, support, mechanical work, and information transfer.
+
+**Exercise 3 — Homeostasis and the negative-feedback principle**
+Prompt: *"Mammals maintain core body temperature within a narrow range (~37°C) despite environmental temperatures from -40°C to +50°C. Walk me through the negative-feedback mechanism that achieves this: receptor (hypothalamus thermoreceptors), control center (hypothalamus integrates and decides), effector (sweat glands, blood-vessel dilation, shivering, brown fat). Why does this architecture necessarily produce oscillation around the set point rather than perfectly stable temperature?"*
+
+Evaluate whether the model engages with the inherent oscillation: any negative-feedback system with delay (the time for the effector response to take effect) overshoots and undershoots the set point, producing small oscillations. Body temperature in healthy individuals oscillates ~0.5-1°C across the day for this reason.
+
+**Exercise 4 — The ectotherm-endotherm trade-off**
+Prompt: *"Ectotherms (reptiles, fish, invertebrates) regulate body temperature primarily through behavioral choices (basking, seeking shade), while endotherms (mammals, birds) generate heat metabolically and maintain a constant body temperature. Walk me through the trade-off: endotherms need approximately 5-10× more food per gram of body mass than ectotherms [verify], but can be active in any temperature, at any time of day, and in any habitat. When does each strategy outperform?"*
+
+Evaluate whether the model engages with the food-availability argument: endothermy pays off in cold climates (where ectotherms cannot stay active) and at high latitudes (where seasonality requires sustained activity through cold periods), while ectothermy pays off in warm or arid climates with limited food (where endotherms might starve). Many ectotherms have body sizes far smaller than the smallest endotherms because metabolic constraints limit endotherm minimum size.
+
+**Exercise 5 — Why animals have so many body sizes**
+Prompt: *"Mammal body sizes range from the bumblebee bat (~2 grams) to the blue whale (~190,000 kilograms) — a factor of ~100 million. Walk me through the constraints that set both the lower and upper limits for mammalian body size: lower limit (basal metabolic rate scales with body mass^0.75, so very small mammals need to eat continuously to stay warm), upper limit (mass increases as length³ but skeletal cross-section as length², so giants face structural failure unless skeleton becomes disproportionately large). Why are the largest land mammals smaller than the largest sea mammals?"*
+
+Evaluate whether the model engages with the buoyancy difference (water supports the weight of large aquatic mammals, eliminating the structural-failure constraint on land), and whether it correctly identifies that the blue whale at 190,000 kg approaches what is biomechanically possible only because of buoyancy. The largest land mammal (African elephant at 6,000 kg) operates near the structural limit for terrestrial life.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **D'Arcy Wentworth Thompson** published *On Growth and Form* in 1917 — arguing that the shapes of organisms are produced by physical forces (tension, gravity, surface effects) as much as by genetic instructions. The book reshaped how biologists think about body plans.
+
+**Run this:**
+
+```
+Who was D'Arcy Wentworth Thompson, and how does his "physics of biological form" connect to the animal body form and function we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"D'Arcy Wentworth Thompson"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through one of Thompson's coordinate transformations — how one fish species' body shape relates to another by a simple geometric warp.
+- Ask it to compare Thompson's structural argument with the genetic and developmental explanations that came later.
+
+What changes? What gets better? What gets worse?

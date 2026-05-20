@@ -194,3 +194,55 @@ The innovation that freed reproduction from water — pollen and the pollen tube
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — The land-plant transition: what had to evolve**
+Prompt a model: *"The first plants to colonize land approximately 470 million years ago [verify] faced a set of physical problems their algal ancestors did not — desiccation, gravity, gas exchange in air vs. water, UV exposure, water transport without a surrounding aqueous medium. Walk me through what specific innovations made terrestrial life possible: the cuticle, stomata, vascular tissue, and the alternation-of-generations life cycle. Which of these was likely the single most consequential innovation?"*
+
+Evaluate whether the model engages with each adaptation's specific function and trade-off (cuticle prevents water loss but requires stomata for gas exchange; vascular tissue enables internal water transport but requires significant biomass investment), and whether it correctly identifies that the cuticle-stomata system was likely the gatekeeper innovation — without it, exposure to air would dehydrate cells faster than they could be hydrated.
+
+**Exercise 2 — Mosses, liverworts, and the persistent gametophyte**
+Prompt: *"In mosses and liverworts (bryophytes), the gametophyte (haploid) is the dominant life-cycle stage, while in vascular plants the sporophyte (diploid) dominates. Walk me through why this distinction matters for terrestrial life: what advantages does each stage provide, and why is gametophyte dominance considered the ancestral condition? Engage with the role of mosses as primary colonizers in disturbed habitats — bare rock, glacial retreat zones, fire-cleared forest floors."*
+
+Evaluate whether the model correctly identifies that bryophyte gametophytes are typically small (centimeters), photosynthetic, and grow directly from spores without internal water transport, while bryophyte sporophytes are dependent on the gametophyte for nutrition. The gametophyte dominance limits bryophyte size — they cannot achieve the canopy-forming structures of vascular plants — but enables rapid colonization of nutrient-poor substrates.
+
+**Exercise 3 — Sphagnum and the carbon-storage role of peatlands**
+Prompt: *"Sphagnum moss has unique water-holding capacity — its dead cells (hyaline cells) are water-storage cells that can hold approximately 20 times the moss's dry weight in water [verify]. This produces peatlands that store roughly 30% of global soil carbon despite covering only ~3% of land area [verify]. Walk me through the mechanism: how does Sphagnum acidify its environment to suppress decomposition, and what would happen to atmospheric CO₂ if peatland drainage and burning continued at current rates?"*
+
+Evaluate whether the model correctly identifies that Sphagnum releases hydrogen ions in exchange for cation uptake, lowering pH to 3-4 and inhibiting microbial decomposition, and that the carbon stored as undecomposed peat over thousands of years would re-enter the atmosphere if drained or burned. This is a significant climate concern — Indonesian peat fires of 2015 alone released approximately 1 GtCO₂.
+
+**Exercise 4 — Ferns and the Carboniferous coal-forest era**
+Prompt: *"During the Carboniferous period (~360-300 mya), enormous tree-sized ferns and lycophytes (e.g., Lepidodendron, reaching 40-50 meters tall) dominated forested landscapes. Atmospheric oxygen reached approximately 35% (vs. 21% today), enabling insects of unprecedented size — dragonflies (Meganeura) with 60-70 cm wingspans, millipedes 2 meters long. Walk me through why these conditions arose, and what happened at the end of the Carboniferous to reduce oxygen levels and end this era. Why didn't a Carboniferous-style coal-forest ecosystem reestablish later?"*
+
+Evaluate whether the model correctly engages with the lignin-decay hypothesis (white-rot fungi capable of digesting lignin had not yet evolved or were rare, so dead wood accumulated rather than decomposed; this both built up coal deposits and removed CO₂ from the atmosphere, eventually causing climate cooling and the end of the era), and whether it engages with subsequent evolutionary changes (seed plants, dinosaurs, fungi) that prevented re-establishment.
+
+**Exercise 5 — Why most plants are not seedless today**
+Prompt: *"Seedless plants (mosses, ferns, lycophytes) once dominated terrestrial ecosystems but now represent a minority of plant species — perhaps 12,000 species vs. 300,000+ for seed plants [verify]. Walk me through the specific evolutionary advantages seeds provided: protection of the embryo, food supply for the seedling, dispersal mechanisms (wind, water, animal vectors), and dormancy enabling germination at favorable times. Which of these advantages is most important for survival in seasonally dry environments?"*
+
+Evaluate whether the model correctly identifies dormancy as critical for seasonal environments (a seed can wait through dry seasons until conditions are favorable; spores typically lack this capacity), and whether it engages with the additional advantages — pollen-mediated fertilization (vs. spore-released gametes that need water for fertilization in many seedless plants) eliminates a major dependency on standing water for sexual reproduction.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Agnes Arber** was a British plant morphologist who wrote *Water Plants* (1920) and *The Gramineae* (1934) — book-length anatomical studies of flowering monocots — and was one of the first women elected to the Royal Society. Her 1954 book *The Mind and the Eye* still reads as a philosophy of biological observation.
+
+**Run this:**
+
+```
+Who was Agnes Arber, and how does her plant morphology work connect to the seedless plants and plant anatomy we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Agnes Arber"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to describe how Arber compared the body plans of mosses, ferns, and flowering plants — what conserved features did she identify?
+- Add a constraint: "Answer as Arber's preface to *The Mind and the Eye*, in her voice."
+
+What changes? What gets better? What gets worse?

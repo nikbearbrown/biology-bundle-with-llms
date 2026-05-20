@@ -168,3 +168,55 @@ That is the honest end of this chapter, and there is no tidier version of it.
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Three levels of biodiversity**
+Prompt a model: *"Biodiversity is conventionally measured at three levels: genetic diversity (within species), species diversity (within ecosystems), and ecosystem diversity (across regions). Walk me through why each level matters for conservation: genetic diversity provides the raw material for evolutionary adaptation; species diversity supports ecosystem function; ecosystem diversity provides regional resilience. Why are conservation strategies that focus only on charismatic species (pandas, tigers) inadequate for preserving biodiversity overall?"*
+
+Evaluate whether the model engages with the multi-level conservation argument: charismatic-species focus is politically successful but biologically narrow — saving pandas does not save the bamboo forests or the soil microbes that support them. Effective conservation must address ecosystem-level processes and habitat protection, not just iconic species.
+
+**Exercise 2 — The five major mass extinctions and the sixth in progress**
+Prompt: *"Earth has experienced five major mass extinctions in its history: end-Ordovician (~440 mya), late-Devonian (~370 mya), end-Permian (~252 mya — the largest, eliminating ~95% of marine species), end-Triassic (~201 mya), and end-Cretaceous (~66 mya — the K-Pg extinction that ended non-avian dinosaurs). Many biologists argue we are currently in a sixth mass extinction driven by human activity. Walk me through the evidence: extinction rates currently 100-1000× the background rate [verify], with vertebrate populations down ~70% since 1970 [verify]. What distinguishes the current extinction from previous ones?"*
+
+Evaluate whether the model engages with the rate evidence and the cause-distinction: previous mass extinctions were driven by abiotic causes (volcanism, asteroid impacts, climate shifts); the current one is uniquely driven by a single biological agent (humans). The good news is that this agent could in principle change its behavior; the bad news is that it has not yet done so at the scale required.
+
+**Exercise 3 — HIPPO threats: which is largest**
+Prompt: *"E.O. Wilson's HIPPO acronym names the major threats to biodiversity: Habitat destruction, Invasive species, Pollution, Population (human), and Overharvesting. Walk me through how to rank these threats by current impact, and explain why the rankings differ across taxa: habitat destruction is the largest threat to terrestrial vertebrates and most plants; overharvesting is the largest threat to commercial marine fish; invasive species can be devastating in island ecosystems but minor in continental settings. Why is climate change increasingly recognized as a sixth major threat?"*
+
+Evaluate whether the model engages with the taxa-specific threat rankings and the climate-change addition: habitat destruction has historically been the dominant threat for most species, but climate change is rapidly escalating because it cannot be addressed by habitat protection alone (a protected area where conditions become unsuitable still loses its species). Climate change interacts with all the other HIPPO threats, often amplifying them.
+
+**Exercise 4 — De-extinction and the reintroduction question**
+Prompt: *"Several research programs have proposed bringing back extinct species through cloning or genome reconstruction (woolly mammoth, passenger pigeon, thylacine). Walk me through the technical and ecological challenges: (1) most extinct species do not have well-preserved DNA, requiring reconstruction from related species' genomes; (2) the resulting organisms would be approximations rather than the original species; (3) the ecosystems these species occupied no longer exist as they were. Should de-extinction be a conservation priority, or a distraction from more urgent work?"*
+
+Evaluate whether the model engages with the technical limits (DNA degrades over millennia; genome reconstruction is more like creating a new species similar to the extinct one than reviving the original) and the priority debate: critics argue de-extinction diverts attention and resources from preventing current extinctions, which is more cost-effective and ethically less complicated. Proponents argue it could restore lost ecosystem function and inspire conservation action.
+
+**Exercise 5 — Why species we have not even named matter**
+Prompt: *"Roughly 1.5 million species have been formally described, but estimates of total Earth biodiversity range from 7-8 million eukaryotic species [verify]. Most undescribed species are in tropical forests, deep oceans, and microbial communities — the very places experiencing the most rapid biodiversity loss. Walk me through why species we have never named matter: ecosystem function depends on species diversity rather than just charismatic species, and species we have not yet identified may be the source of future medicines (taxol from Pacific yew bark, penicillin from Penicillium mold), agricultural pest control, and other unforeseen benefits. How does this connect to the precautionary principle in conservation?"*
+
+Evaluate whether the model engages with the unknown-utility argument (we cannot foresee which species will turn out to matter for human well-being or ecosystem function) and the precautionary principle: protecting biodiversity preserves options whose value we cannot yet calculate. The cost-benefit analysis of protecting a species is necessarily incomplete because we cannot enumerate all the future benefits.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Wangari Maathai** founded the Green Belt Movement in Kenya in 1977 — a tree-planting and women's-empowerment program that linked conservation to political resistance. She was the first African woman to win the Nobel Peace Prize, in 2004.
+
+**Run this:**
+
+```
+Who was Wangari Maathai, and how does her work on the Green Belt Movement connect to the conservation biology and biodiversity we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Wangari Maathai"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain how Maathai's reforestation work also functioned as a women's-rights and pro-democracy organizing tool.
+- Ask it to compare Maathai's grassroots conservation model with top-down protected-area approaches.
+
+What changes? What gets better? What gets worse?

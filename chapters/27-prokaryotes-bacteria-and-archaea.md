@@ -175,3 +175,55 @@ Three billion years is a long time to get good at something.
 **Challenge**
 
 9. You are a microbiologist in 2045 studying a newly discovered deep-subsurface ecosystem 3 km underground. The ecosystem has no sunlight, very low temperatures (4 °C), extremely high pressure, and chemistry dominated by hydrogen gas and iron compounds. You isolate three organisms: Organism X (Gram-positive, optimum temperature 70 °C), Organism Y (no cell wall, grows only with 3 M NaCl, membrane is a monolayer), Organism Z (Gram-negative, uses H₂ as electron donor and CO₂ as carbon source). (a) Classify each organism: assign it to a domain (Bacteria or Archaea), name its extremophile category or categories, and classify its metabolism using the two-dimensional framework. Justify each assignment with specific molecular or metabolic evidence from the chapter. (b) Organism Z produces a novel enzyme that remains active at 4 °C and high pressure but is inactivated above 25 °C. A biotech company wants to use this enzyme for cold-chain pharmaceutical manufacturing. Identify two structural features at the molecular level that likely account for this cold-activity/heat-sensitivity profile, and predict what would happen to the enzyme's activity curve if you introduced several leucine residues (hydrophobic, bulky) at flexible loop regions. (c) You attempt to culture Organism Y in the laboratory using standard hypersaline medium at 3 M NaCl and 70 °C. Growth is poor. Propose three specific modifications to the culture conditions, each based on a distinct biological principle from the chapter, that might improve growth. *Tests: comprehensive integration of domain classification, extremophile biology, metabolic typing, molecular adaptation, and cultivation principles in a novel scenario.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Why three domains, not two**
+Prompt a model: *"For most of the 20th century, life was divided into Prokarya (bacteria) and Eukarya. In 1977, Carl Woese reorganized this into three domains: Bacteria, Archaea, and Eukarya, based on rRNA sequences. Walk me through what specific molecular features distinguish Archaea from Bacteria — beyond their shared lack of a nucleus — and explain why some of these features (membrane lipids, ribosomes, transcription/translation machinery) make Archaea more similar to Eukarya than to Bacteria in some respects."*
+
+Evaluate whether the model correctly identifies the key archaeal features: ether-linked membrane lipids (vs. ester-linked in Bacteria), unique RNA polymerase resembling eukaryotic Pol II, histone-like proteins, sensitivity to different antibiotics. The eukaryote-archaea similarity in transcription/translation supports the hypothesis that eukaryotes evolved from an archaeal ancestor that engulfed a bacterial ancestor (mitochondrion).
+
+**Exercise 2 — Bacterial diversity and the metabolic toolkit**
+Prompt: *"Bacteria collectively perform metabolic feats no eukaryote can match — fixing nitrogen from atmospheric N₂, oxidizing methane, photosynthesizing without water (anoxygenic photosynthesis), respiring with sulfur or iron. Walk me through three of these metabolic specializations and explain what they enable ecologically — specifically, what bacterial metabolism makes possible that the rest of the biosphere depends on. What would happen to terrestrial ecosystems if nitrogen-fixing bacteria disappeared?"*
+
+Evaluate whether the model engages with the nitrogen-fixation specifics (only certain bacteria express nitrogenase; the enzyme is poisoned by oxygen; symbioses with legumes provide oxygen-protected niches in root nodules) and the ecological cascade: N-fixation provides the bioavailable nitrogen that all plants and animals require but cannot themselves produce. Without it, terrestrial productivity would collapse within years.
+
+**Exercise 3 — The bacterial cell wall as antibiotic target**
+Prompt: *"Most antibiotics target structures unique to bacteria — peptidoglycan cell walls (penicillin, vancomycin), 70S ribosomes (tetracyclines, aminoglycosides), bacterial DNA gyrase (fluoroquinolones), bacterial folate synthesis (sulfonamides). Walk me through why each of these targets provides a therapeutic window — high toxicity to bacteria, low toxicity to host. Then explain the resistance mechanisms that have emerged for each class, and why methicillin-resistant S. aureus (MRSA) is a particularly difficult resistance phenotype."*
+
+Evaluate whether the model engages with each target's selectivity (peptidoglycan absent in animals; 70S vs. 80S ribosomes; bacterial vs. eukaryotic DNA topoisomerases; bacterial vs. mammalian folate metabolism) and resistance mechanisms (β-lactamase enzymes, efflux pumps, target modification, alternative metabolic pathways). MRSA's resistance to methicillin (a β-lactam) comes from a modified penicillin-binding protein (PBP2a) that doesn't bind β-lactams.
+
+**Exercise 4 — Extremophiles and the limits of life**
+Prompt: *"Bacteria and Archaea inhabit conditions that would kill any eukaryote — boiling hot springs (Pyrococcus, ~95°C), Antarctic ice (~ −20°C), saturated salt brines (Halobacterium), deep-sea hydrothermal vents (~120°C with high pressure), highly acidic mine tailings (pH < 1). Walk me through the molecular adaptations that make life possible at these extremes — heat-stable proteins, compatible solutes, modified membranes — and explain why these mechanisms have not been adopted by complex multicellular organisms. What prevents a eukaryote from being a hyperthermophile?"*
+
+Evaluate whether the model engages with specific molecular adaptations (proteins from thermophiles often have more salt bridges, more proline residues, more compact folds; psychrophiles have higher glycine content and unsaturated lipids), and whether it correctly identifies the constraint on eukaryotes: the cellular machinery (mitochondria, nucleus, cytoskeleton, organelle membranes) is genetically more complex and provides more failure modes than the simpler prokaryotic cell.
+
+**Exercise 5 — The microbiome as functional ecosystem**
+Prompt: *"The human gut microbiome contains roughly 10¹³-10¹⁴ bacterial cells [verify] from hundreds of species, weighing perhaps 1-2 kg total. Walk me through three categories of function the microbiome provides: (1) digestion of compounds humans cannot metabolize (fiber → short-chain fatty acids), (2) synthesis of essential vitamins (K, several B vitamins), and (3) immune system development and pathogen resistance. Then engage with the limits of current microbiome science — what causal claims (causation of obesity, autism, depression) are well-supported, and which are mostly correlation?"*
+
+Evaluate whether the model correctly engages with the well-supported functions and is cautious about contested causal claims. The microbiome-disease association literature is large but causal evidence is much smaller — many "microbiome-X" claims are based on correlational studies with confounding variables or on mouse models with limited human translatability.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Carl Woese** discovered in 1977 that life is divided into three domains — Bacteria, Archaea, and Eukarya — not two, by comparing ribosomal RNA sequences. The field dismissed the result for years before it became textbook biology.
+
+**Run this:**
+
+```
+Who was Carl Woese, and how does his three-domain classification of life connect to the prokaryote biology we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Carl Woese"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain why 16S ribosomal RNA is the molecule Woese used — what makes it the right tool for deep phylogeny?
+- Ask it to compare the original two-kingdom (prokaryote/eukaryote) view with the three-domain framework Woese established.
+
+What changes? What gets better? What gets worse?

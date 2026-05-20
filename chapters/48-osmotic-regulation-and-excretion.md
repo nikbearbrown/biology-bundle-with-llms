@@ -185,3 +185,55 @@ The body is not at equilibrium with the world. It is a system that spends energy
 **Challenge**
 
 9. You are a doctor advising a patient with diabetes insipidus — a condition in which the posterior pituitary fails to produce ADH. (a) Predict the patient's urine osmolarity, urine volume, and blood osmolarity relative to normal. Explain the mechanism behind each abnormality. (b) The patient is given a synthetic ADH analog. Trace the molecular pathway from ADH binding to the collecting duct to the final change in urine osmolarity, naming every step. (c) A different patient has diabetes insipidus caused not by ADH deficiency but by a mutation in the aquaporin-2 gene (the water channel inserted into the collecting duct in response to ADH). Would the synthetic ADH analog help this patient? Explain why or why not, and identify what level of the mechanism is disrupted. (d) Propose a treatment strategy that would bypass the defective molecular step in the aquaporin-2 mutation patient and explain what it would need to accomplish at the cellular level. *Tests: ADH feedback loop and mechanism; aquaporin-2 as the effector of ADH action; mechanistic reasoning about where interventions can and cannot work.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Why mammals have to make urine**
+Prompt a model: *"Cellular metabolism produces nitrogenous waste (ammonia, urea, uric acid) that must be eliminated. Mammals primarily produce urea; reptiles and birds primarily uric acid; fish primarily ammonia. Walk me through why each animal group makes a different choice: ammonia is most water-soluble (suits aquatic animals); urea is moderately water-soluble (suits mammals — must dissolve in urine but tolerable to concentrate); uric acid is nearly insoluble (suits dry-environment animals — can be excreted as paste with minimal water loss). What does this tell us about the relationship between excretory chemistry and water availability?"*
+
+Evaluate whether the model correctly identifies the toxicity-vs-solubility-vs-energy-cost trade-off: ammonia is highly toxic, requires immediate dilution and removal (only feasible in aquatic environments); urea is less toxic, requires less water; uric acid is least toxic and least water-demanding but requires the most metabolic energy to synthesize. Each animal lineage chose its waste molecule based on local water availability.
+
+**Exercise 2 — The nephron as a filter-and-recovery system**
+Prompt: *"The kidney's basic functional unit is the nephron — about 1 million per kidney. Each nephron filters blood at the glomerulus (producing 180 L of filtrate per day [verify]), then selectively reabsorbs water, ions, and useful solutes through the proximal tubule, loop of Henle, distal tubule, and collecting duct. Walk me through why this 'filter-then-recover' strategy is preferred over selectively excreting only what needs to go: the energy and engineering cost vs. the regulatory flexibility. Why do humans produce only ~1.5 L of urine per day from 180 L of filtrate?"*
+
+Evaluate whether the model engages with the regulatory-flexibility argument: indiscriminate filtration creates a system where the body can adjust reabsorption (controlled by hormones like ADH and aldosterone) to fine-tune urine composition. Selective filtration would require the kidney to recognize every solute individually, which is more complex than the filter-then-recover approach. ~99% of filtrate is reabsorbed.
+
+**Exercise 3 — The countercurrent multiplier and concentrated urine**
+Prompt: *"Mammals produce urine more concentrated than blood plasma — up to 1200 mOsm/L in humans, far higher in desert mammals (kangaroo rat at ~5000 mOsm/L). The countercurrent multiplier in the loop of Henle is the mechanism. Walk me through how the descending limb (water-permeable, salt-impermeable) and ascending limb (salt-permeable, water-impermeable) interact to create the medullary osmotic gradient that drives water reabsorption. Why does urine concentration depend on loop length?"*
+
+Evaluate whether the model correctly traces the loop architecture and engages with the loop-length-determines-concentration relationship: animals with longer loops of Henle (desert species) can build steeper osmotic gradients in the medulla, enabling more concentrated urine. The kangaroo rat's extreme concentration capacity reflects loops that reach much deeper into the medulla than human nephrons.
+
+**Exercise 4 — Hormonal control of fluid balance**
+Prompt: *"ADH (antidiuretic hormone) increases water reabsorption in the collecting duct; aldosterone increases sodium reabsorption (and water follows osmotically); ANP (atrial natriuretic peptide) decreases sodium reabsorption. Walk me through how these three hormones coordinate: ADH released when blood is too concentrated; aldosterone released when blood pressure or sodium is low; ANP released when blood volume is high. Why is each hormone targeted at a specific point in the nephron, and what happens when they conflict (e.g., during acute hemorrhage)?"*
+
+Evaluate whether the model engages with the location-specific control (ADH on collecting-duct water permeability; aldosterone on distal-tubule sodium pumps; ANP on multiple sites) and the conflict-resolution priority: in acute hemorrhage, the body prioritizes blood pressure preservation over osmotic balance, so aldosterone and ADH both rise to retain fluid even as plasma sodium concentration may shift.
+
+**Exercise 5 — Diabetes mellitus vs. diabetes insipidus**
+Prompt: *"'Diabetes' literally means 'siphon' — both diabetes mellitus and diabetes insipidus produce excessive urination, but for entirely different reasons. Walk me through the mechanisms: diabetes mellitus has high blood glucose that overwhelms the kidney's reabsorption capacity (glucose stays in urine, drawing water with it osmotically). Diabetes insipidus has either failure of ADH production (central) or failure of ADH receptor function (nephrogenic), so collecting ducts cannot reabsorb water effectively. How would you clinically distinguish the two — and why does urine taste different (the original differential diagnosis)?"*
+
+Evaluate whether the model correctly identifies that diabetes mellitus produces sweet urine (containing glucose; the original 'mellitus' = honey-sweet observation), while diabetes insipidus produces dilute, tasteless urine (insipidus = without taste). The clinical workup distinguishes them with blood glucose tests and water-deprivation tests; the mechanisms are entirely separate despite the shared name.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **August Krogh** worked out how capillaries open and close to match local oxygen demand — winning the 1920 Nobel Prize — and his lab studied osmotic regulation across an enormous range of species, from frogs and eels to insects and humans.
+
+**Run this:**
+
+```
+Who was August Krogh, and how does his comparative work on osmotic regulation connect to the excretion and water-balance topics we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"August Krogh"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through how a freshwater eel handles osmotic challenge differently from a saltwater eel — Krogh's classic comparative case.
+- Ask it to compare what Krogh could measure in his Copenhagen lab with what we measure today with isotope tracers and patch clamps.
+
+What changes? What gets better? What gets worse?

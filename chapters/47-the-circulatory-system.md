@@ -192,3 +192,55 @@ That is the machinery of being alive.
 9. Giraffes have necks up to 2.5 meters long. Their hearts must generate blood pressure high enough to pump blood upward against gravity to the brain — reported systolic pressures of around 250 mm Hg compared to ~120 mm Hg in humans. Propose two anatomical or physiological adaptations a giraffe must have to prevent (a) capillary rupture in the legs, where blood pressure at the foot could exceed 400 mm Hg due to gravity, and (b) excessive blood flow to the brain when the giraffe bends its neck down to drink. *Tests: applying pressure physiology and vascular adaptation to an extreme morphological case.*
 
 10. A fetus in the womb cannot use its lungs for gas exchange — the placenta performs that function. Fetal circulation includes the foramen ovale (a hole between the right and left atria) and the ductus arteriosus (a vessel connecting the pulmonary artery to the aorta), both of which allow blood to bypass the lungs. Using what you know about the four-chambered heart and pressure differentials, explain (a) why these bypasses are necessary before birth and (b) what pressure changes at birth cause them to close, and what happens if the foramen ovale fails to close properly. *Tests: applying circuit architecture and pressure logic to fetal anatomy, requiring the student to reason about why a normally functional bypass becomes a pathology in the wrong context.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Open vs. closed circulation, justified**
+Prompt a model: *"Insects and most arthropods have open circulatory systems — hemolymph flows through the body cavity rather than dedicated vessels. Vertebrates have closed circulation. Walk me through the trade-offs: open systems require less vessel infrastructure but provide less precise control of blood distribution; closed systems can route blood selectively to active tissues but require more vessel surface area. Why does the choice depend on body size and metabolic rate?"*
+
+Evaluate whether the model engages with the metabolic-rate argument: insects can use open circulation because they (1) are small enough that diffusion supplements bulk flow and (2) deliver oxygen separately through tracheae rather than blood, so circulation only carries nutrients and waste. Larger, more metabolically active vertebrates need targeted blood flow, requiring closed vessels.
+
+**Exercise 2 — Why four chambers in mammals and birds**
+Prompt: *"Fish have two-chambered hearts (one atrium, one ventricle); amphibians have three (two atria, one mixed ventricle); mammals and birds have four (two atria, two ventricles, completely separated). Walk me through what each transition accomplishes: the four-chamber design completely separates oxygenated from deoxygenated blood, enabling higher pressures in the systemic circuit (where pressure is needed for distribution) than in the pulmonary circuit (where high pressure would damage delicate alveolar capillaries). Why did this design evolve independently in mammals and birds?"*
+
+Evaluate whether the model engages with the convergent-evolution observation (mammals and birds both achieved four-chamber hearts independently — meaning the design solves a recurring engineering problem in endothermic, high-metabolism animals), and whether it correctly identifies that complete separation enables the pressure differential between the two circuits (systemic ~120/80 mmHg, pulmonary ~25/8 mmHg in humans).
+
+**Exercise 3 — The cardiac cycle and electrical pacemaker**
+Prompt: *"The heart contracts in a coordinated sequence: SA node fires → atria contract → AV node delays the signal → bundle of His → Purkinje fibers → ventricles contract. Walk me through why this specific architecture is necessary: the SA node sets the pace; the AV delay (~100 ms) ensures the atria finish emptying before ventricles contract; the Purkinje fiber speed (~4 m/s vs. ~0.5 m/s for normal myocardium) ensures the ventricles contract from apex toward base, efficiently ejecting blood. What goes wrong in heart block, and how does an artificial pacemaker compensate?"*
+
+Evaluate whether the model engages with the bottom-up ventricular contraction logic (squeezing blood from the apex toward the outflow valves, like squeezing a tube of toothpaste), and whether it correctly identifies that heart block (failure of the AV node) prevents normal coordination — the ventricles default to a slow intrinsic pacemaker (Purkinje cells at ~30-40 bpm), insufficient for normal activity. Pacemakers provide artificial timing signals.
+
+**Exercise 4 — Capillaries, diffusion, and the limit on tissue distance**
+Prompt: *"At the capillary level, gas and nutrient exchange occurs by diffusion. Walk me through why no cell in a normal mammalian tissue is more than approximately 100-200 μm from a capillary — what is the diffusion-limited maximum distance for adequate oxygen delivery, and why does this constraint shape tissue architecture? What happens to tissues that exceed this distance (e.g., growing tumor centers, swollen tissue), and how does this connect to angiogenesis?"*
+
+Evaluate whether the model correctly identifies that beyond ~100-200 μm from a capillary, oxygen diffusion becomes inadequate, leading to hypoxia and necrosis. Tumors above this size must induce angiogenesis (new blood vessel formation) to grow further; this is why anti-angiogenic drugs (bevacizumab) target tumor vasculature as a treatment strategy.
+
+**Exercise 5 — Blood pressure regulation and the integration problem**
+Prompt: *"Blood pressure is regulated by multiple overlapping systems: baroreceptors (rapid, neural — seconds), renin-angiotensin-aldosterone system (slower, hormonal — minutes to hours), and long-term volume regulation by kidneys (days to weeks). Walk me through how these three systems integrate and why so many redundant control loops are needed for a single variable. Then explain why hypertension is so hard to treat: most antihypertensive drugs target one system, but the others compensate by adjusting their setpoints."*
+
+Evaluate whether the model engages with the redundancy argument (BP is so essential that no single system can be allowed to fail; multiple overlapping controls provide resilience), and the treatment challenge: blocking one regulatory pathway often produces compensatory upregulation of others (e.g., diuretics activate the renin-angiotensin system; beta-blockers provoke vasoconstriction). Combination therapy targets multiple systems simultaneously to overcome compensation.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **André Cournand** co-developed cardiac catheterization at Bellevue Hospital in the 1940s — making it possible to measure blood gases, pressure, and flow directly in the heart's chambers. He shared the 1956 Nobel Prize with Werner Forssmann and Dickinson Richards.
+
+**Run this:**
+
+```
+Who was André Cournand, and how does his work on cardiac catheterization connect to the circulatory system we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"André Frédéric Cournand"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to describe what one of Cournand's early catheterization runs measured — what data came out of a 1942 right-heart cath that wasn't measurable before?
+- Ask it to compare Cournand's invasive measurements with the modern noninvasive cardiac MRI.
+
+What changes? What gets better? What gets worse?

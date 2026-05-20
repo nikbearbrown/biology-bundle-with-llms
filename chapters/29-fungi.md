@@ -155,3 +155,55 @@ Three hundred and fifty million years of evolution shaped this. The cells are si
 **Challenge**
 
 9. You are studying a newly discovered fungal species from deep-sea hydrothermal vent sediments. It grows at 70 °C, requires sulfur compounds as its sole carbon and energy source (it cannot use organic matter at all), and produces no visible fruiting bodies. Its hyphae are unusually thin (2 μm diameter) and branch far more extensively than typical fungi. (a) This organism's nutritional strategy appears to violate the definition of fungi as chemoorganoheterotrophs. Propose two hypotheses about what is actually happening metabolically, and describe one experiment for each that would distinguish your hypotheses from each other. (b) The organism's hyphae are thinner and more densely branched than surface fungi. Using the surface-area-to-volume logic from the chapter, predict what this architecture is optimized for in the context of hydrothermal vent chemistry, and identify one structural constraint this extreme thinness might impose on the cell. (c) This organism has never been observed to reproduce sexually. You cannot culture it in the laboratory. Propose a research strategy to determine whether sexual reproduction occurs in this species, using only non-culture methods. Identify what molecular evidence you would look for and what result would confirm or rule out sexual reproduction. *Tests: comprehensive integration of fungal body plan, metabolic diversity, absorptive nutrition, and reproductive biology in a novel context; experimental design with non-culturable organisms; surface area reasoning applied to an extreme environment.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Fungi as decomposers and the carbon cycle**
+Prompt a model: *"Fungi are the dominant decomposers of lignin — the structural polymer in wood that bacteria largely cannot digest. Walk me through what makes lignin uniquely difficult to break down, what enzymes (lignin peroxidase, manganese peroxidase, laccase) fungi use to attack it, and what would happen to terrestrial carbon cycling if fungi could not decompose wood. Engage with the proposed link between the evolution of lignin-digesting fungi and the end of the Carboniferous coal-deposit era."*
+
+Evaluate whether the model engages with lignin's recalcitrance (cross-linked aromatic ring structure, racemic stereochemistry, no enzymes for direct hydrolysis), and the Carboniferous hypothesis: when wood-decay fungi were absent or rare, dead trees accumulated rather than decomposed, producing the coal deposits we mine today. The hypothesis is contested but engages real questions about the connection between fungal evolution and atmospheric carbon.
+
+**Exercise 2 — The mycorrhizal partnership**
+Prompt: *"Approximately 90% of land plant species [verify] form mutualistic associations with mycorrhizal fungi, exchanging plant-derived sugars for fungal-acquired water and nutrients (especially phosphorus). Walk me through the two major mycorrhizal types (arbuscular mycorrhizae and ectomycorrhizae) and the molecular signaling that establishes the partnership. Why is this association considered one of the most important symbioses on Earth, and what would happen to terrestrial ecosystems if it were eliminated?"*
+
+Evaluate whether the model engages with the difference between the two types (AMF penetrate root cells with arbuscules, found in ~80% of plant species; ECM form a sheath around root tips, found in trees), and the ecological scale of the relationship: many tree species cannot grow without their specific fungal partners, and the "wood-wide web" of mycorrhizal networks transfers nutrients between trees of different species.
+
+**Exercise 3 — Lichens as miniature ecosystems**
+Prompt: *"A lichen is not one organism but two (or three) — a fungus living in symbiosis with a green alga or cyanobacterium (sometimes both). Walk me through what each partner contributes: the photosynthetic partner provides carbohydrates; the fungus provides structure, water retention, and nutrient access. Why are lichens particularly sensitive bioindicators of air pollution, and how do they survive in environments (Antarctic rock surfaces, exposed northern boreal terrain) where neither partner could survive alone?"*
+
+Evaluate whether the model engages with the stress-tolerance argument (the partnership succeeds because each partner tolerates conditions the other cannot, and together they exploit habitats neither could alone), and the sulfur dioxide sensitivity of many lichens — they accumulate atmospheric pollutants because they have no roots and absorb everything from the air directly.
+
+**Exercise 4 — Pathogenic fungi and the antifungal challenge**
+Prompt: *"Compared to the dozens of effective antibacterial drug classes, there are only about 4-5 widely used antifungal classes (azoles, echinocandins, polyenes, allylamines). Walk me through why developing antifungal drugs is harder than developing antibacterial drugs — specifically, why the eukaryotic nature of fungi makes selective toxicity more difficult to achieve. Identify three current challenges in clinical mycology: rising azole resistance in Candida, Aspergillus, and Cryptococcus; the emergence of Candida auris; and the lack of vaccines for any human fungal pathogen."*
+
+Evaluate whether the model correctly identifies the eukaryotic-similarity problem (fungi share many cellular features with humans, so most cellular targets are also human targets), and engages with the specific resistance trends — Candida auris is multidrug-resistant and difficult to identify with standard methods, contributing to its outbreak status in healthcare settings since ~2013.
+
+**Exercise 5 — Yeast as a model organism and a biotech tool**
+Prompt: *"Saccharomyces cerevisiae is one of the most studied eukaryotes in biology — its genome was the first eukaryotic genome sequenced (1996), and it serves as a model for cell cycle, gene expression, protein folding, and aging research. Walk me through why yeast is such a useful model: rapid generation time, ease of genetic manipulation (mating, sporulation, gene knockout), and conserved cellular machinery with humans. Then explain the industrial applications: brewing, baking, biofuel production, and recombinant protein expression."*
+
+Evaluate whether the model engages with the genetics-tractability argument (yeast can be grown as haploid OR diploid, mated to study heterozygote phenotypes, transformed easily, and gene-knocked-out efficiently), and whether it correctly identifies that ~30-40% of yeast genes have human homologs [verify], making yeast experiments often informative for human biology — particularly for cell cycle, DNA repair, and protein folding pathways.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Beatrix Potter** — yes, the *Peter Rabbit* author — wrote a serious paper on lichen symbiosis in 1897 proposing that lichens are partnerships between fungi and algae. The Linnean Society refused to admit a woman to present it. The hypothesis turned out to be correct.
+
+**Run this:**
+
+```
+Who was Beatrix Potter, and how does her lichen symbiosis work connect to the fungal biology we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Beatrix Potter"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain how a lichen is structured — fungal partner, algal or cyanobacterial partner, division of labor.
+- Add a constraint: "Answer including the Linnean Society's 1897 refusal to admit Potter and how the situation parallels other 19th-century barriers to women in biology."
+
+What changes? What gets better? What gets worse?

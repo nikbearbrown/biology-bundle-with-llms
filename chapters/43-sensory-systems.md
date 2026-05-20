@@ -177,3 +177,55 @@ The receptor is the translator. The brain is the storyteller. What you call expe
 **Challenge**
 
 9. You are designing a sensory prosthetic — an artificial eye that would restore vision by detecting photons and stimulating retinal ganglion cells electrically. The device skips the entire photoreceptor and bipolar cell layer and delivers signals directly to ganglion cells. (a) Identify three specific aspects of normal retinal processing that your device bypasses, and for each, predict how this would affect the quality of the artificial vision. (b) The device can only stimulate 1,000 ganglion cells, compared to the 1 million in a normal retina. Using the concept of receptor density and spatial resolution, predict what visual tasks would be impaired most severely and which would be least affected. (c) A patient using the device reports seeing colors, even though the device detects only a single broadband light intensity per cell with no wavelength discrimination. Propose a mechanism by which the brain could interpret electrical ganglion cell stimulation as color even without cone-specific input, and identify what aspect of normal visual processing this exploits. *Tests: comprehensive integration of retinal processing, compression, spatial resolution, and opponent-color processing in a novel engineering context; predicting perceptual consequences of bypassing biological processing stages.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — The five senses: an underestimate**
+Prompt a model: *"The traditional 'five senses' (sight, hearing, smell, taste, touch) are an oversimplification. Walk me through additional sensory modalities that humans actually have: proprioception (position of body parts), vestibular sense (balance and head orientation), thermoception (temperature), nociception (pain), interoception (internal organ states). Then identify three sensory modalities that some other animals have but humans do not — magnetoreception, electroreception, infrared detection, polarized light vision."*
+
+Evaluate whether the model correctly identifies the additional human senses (often counting 9-15 distinct sensory channels rather than 5), and engages with the comparative examples: birds and turtles have magnetoreception (likely cryptochromes in the eye providing quantum-coupled magnetic sensing), sharks and platypuses have electroreception (specialized organs detecting electric fields from prey), pit vipers have infrared imaging (thermal detection of warm prey).
+
+**Exercise 2 — Vision: the photoreceptor mechanism**
+Prompt: *"Vertebrate vision starts with light absorption by retinal-protein complexes in photoreceptor cells (rods for low light, cones for color in three types in humans). The absorbed photon causes a conformational change in retinal (cis-to-trans isomerization), which triggers a G-protein cascade that closes ion channels and hyperpolarizes the photoreceptor. Walk me through this cascade and explain why vertebrate photoreceptors hyperpolarize in response to light, while invertebrate photoreceptors typically depolarize. What is the consequence of this difference?"*
+
+Evaluate whether the model engages with the cascade (rhodopsin → transducin → phosphodiesterase → reduced cGMP → cGMP-gated ion channels close → hyperpolarization), and the comparative biology: invertebrate photoreceptors use a different cascade (phospholipase C-based) that depolarizes. Both systems work; the vertebrate version evolved separately and produces equivalent results through different molecular logic.
+
+**Exercise 3 — Color vision and the trichromacy puzzle**
+Prompt: *"Most humans have three cone types (S, M, L) with peak sensitivities around 420, 530, and 560 nm [verify]. The brain reconstructs the visible spectrum from the relative activation ratios. Walk me through why three receptor types are sufficient (not five or eight) and what specific limits this places on human color discrimination. Why are some people color-blind, and why is red-green color blindness much more common in males?"*
+
+Evaluate whether the model correctly identifies that three receptor types is the minimum to perceive a 3D color space (the brain can compute infinite colors as ratios of three signals), and that red-green color blindness is X-linked: the genes for L and M cones are on the X chromosome, so males with one defective allele lack the function entirely (no second copy to compensate), while females need both X chromosomes affected to be color-blind. This is why ~8% of males vs. ~0.5% of females have red-green color blindness.
+
+**Exercise 4 — Hearing and the cochlear frequency map**
+Prompt: *"Sound waves enter the ear and are converted to neural signals in the cochlea, where the basilar membrane has different stiffness along its length — high frequencies displace the base, low frequencies the apex. Hair cells sit along the membrane and convert mechanical vibration to neural firing. Walk me through this 'place principle' for frequency encoding, and explain why noise-induced hearing loss typically begins at high frequencies (~4 kHz) rather than uniformly across the spectrum. What does this pattern tell us about the cochlear mechanism?"*
+
+Evaluate whether the model engages with the basilar membrane mechanics (high-frequency hair cells at the base experience the most cumulative mechanical stress over a lifetime), and whether it correctly identifies that the 4 kHz peak in noise-induced hearing loss reflects both the cumulative-stress principle and the specific resonance properties of the outer ear at that frequency (which amplifies sound near 3-4 kHz).
+
+**Exercise 5 — Pain as multidimensional sensation**
+Prompt: *"Pain is not a single sensation but at least three: nociceptive (sharp, localized — from tissue damage), inflammatory (dull, sensitizing — from immune mediators), and neuropathic (burning, electric — from nerve damage). Walk me through what differentiates these at the receptor and pathway level, and explain why opioid analgesics work better for some pain types than others. Why is chronic pain (persisting after the original injury heals) considered a maladaptive form of the system rather than a continuation of normal pain sensing?"*
+
+Evaluate whether the model engages with the distinct pathway architecture (nociceptive = direct C and A-delta fibers; inflammatory = sensitization of nociceptors by prostaglandins, cytokines; neuropathic = aberrant firing in damaged nerves), and the chronic-pain mechanism: central sensitization (spinal cord and brain become hyperresponsive over time), microglial activation, and changes in pain-processing networks that persist after peripheral damage resolves.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Georg von Békésy** worked out how the cochlea separates sound frequencies along its length — the traveling wave mechanism — winning the 1961 Nobel Prize for the discovery. He used his own homemade models of the inner ear made from rubber, water, and skin from human cadavers.
+
+**Run this:**
+
+```
+Who was Georg von Békésy, and how does his work on cochlear mechanics connect to the sensory systems we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Georg von Békésy"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through how a high-frequency tone is encoded in the cochlea differently from a low-frequency tone — using Békésy's traveling-wave picture.
+- Ask it to compare Békésy's mechanical model approach with modern hair-cell electrophysiology.
+
+What changes? What gets better? What gets worse?

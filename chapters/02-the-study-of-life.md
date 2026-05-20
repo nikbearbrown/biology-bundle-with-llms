@@ -170,3 +170,55 @@ That is not a small observation. It is the foundation of the entire science.
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — The eight things, stress-tested**
+Prompt a model: *"I want to test whether the eight characteristics of life — order, response, reproduction, growth, regulation, homeostasis, energy use, and evolution — are actually a clean classifier. Identify three borderline cases (a virus, a fire, a self-replicating computer program) and walk through which of the eight criteria each one meets and fails. Then propose: is this list the right boundary, or does it leak in either direction?"*
+
+Evaluate whether the model treats the eight criteria as a checklist or as a set of intersecting necessary conditions, and whether it engages with virus-as-edge-case mechanistically (lacks metabolism, requires host machinery) rather than declaring viruses "non-living" without reasoning.
+
+**Exercise 2 — Levels of organization, climbed**
+Prompt: *"Take one specific molecule — a hemoglobin protein — and trace it up through every level of biological organization from atom to biosphere, naming what changes at each level. At which level does the molecule's identity dissolve into a property of the higher level? Where does the bottom-up chain break down and require a top-down explanation?"*
+
+Evaluate whether the model identifies the level at which emergent properties appear (oxygen transport at the organism level, oxygen-distribution patterns at the population level), and whether it acknowledges that some properties cannot be derived from molecular structure alone.
+
+**Exercise 3 — The descent rule**
+Prompt: *"All life on Earth shares a universal genetic code, the same chirality of amino acids and sugars, and the same basic energy currency (ATP). What is the most parsimonious explanation? What would be the consequences if we discovered an organism on Earth using a mirror-image genetic code or a different ATP equivalent? Would that single discovery overturn common descent, or could it be accommodated?"*
+
+Evaluate whether the model engages with the parsimony argument explicitly, and whether it correctly distinguishes the strongest version of common descent (single LUCA) from weaker versions (multiple early origins, since-fused).
+
+**Exercise 4 — What is a hypothesis test**
+Prompt: *"A researcher claims that a new dietary intervention extends mouse lifespan by 12 percent. The study used 50 mice in the treatment group and 50 in control. Walk me through what would need to be true of the experimental design — randomization, blinding, controls, statistical power, replication, pre-registration — for this finding to be a meaningful test of a hypothesis rather than a hypothesis-generating observation. What is the strongest single piece of evidence that would force me to revise my prior?"*
+
+Evaluate whether the model distinguishes hypothesis-testing from hypothesis-generating studies, and whether it correctly identifies the role of pre-registration and replication in the contemporary reproducibility framework.
+
+**Exercise 5 — Taxonomic placement, justified**
+Prompt: *"A team has discovered an organism in a deep-sea hydrothermal vent that appears multicellular, photosynthetic, and lacks a cell wall. Walk through the decision tree for assigning it to a domain (Bacteria, Archaea, or Eukarya) and a kingdom. Which traits are reliable diagnostic markers and which are convergent? What single piece of molecular evidence would settle the placement?"*
+
+Evaluate whether the model correctly identifies ribosomal RNA sequencing as the gold standard for high-level placement, and whether it engages with the convergence-vs-homology distinction rather than relying on morphological gestalt.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Maria Sibylla Merian** was a 17th-century German naturalist who, in 1699, traveled alone to Suriname to document insect metamorphosis from caterpillar through pupa to adult — work that was decades ahead of European entomology and reshaped what people understood living systems to be.
+
+**Run this:**
+
+```
+Who was Maria Sibylla Merian, and how does her work on insect metamorphosis and tropical natural history connect to the study of life we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Maria Sibylla Merian"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to describe one of Merian's Suriname plates — what species, what life stages, what host plants?
+- Ask it to compare Merian's observation-driven biology with the experimental method that came later.
+
+What changes? What gets better? What gets worse?

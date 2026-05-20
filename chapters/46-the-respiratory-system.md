@@ -193,3 +193,55 @@ The cuttlefish on your hands is suffocating because its gill architecture cannot
 **Challenge**
 
 9. You are asked to design an artificial gill for a human diver — a device that extracts dissolved oxygen from seawater and delivers it to the bloodstream, making tanks unnecessary. Using Fick's law and the biology described in this chapter, answer the following: (a) Seawater contains about 8 ppm dissolved oxygen (~0.0003 atm partial pressure). Blood entering the artificial gill from the diver's body has O₂ saturation of about 75% (partial pressure ~40 mm Hg = 0.05 atm). There is no concentration gradient in the right direction — blood oxygen partial pressure far exceeds dissolved oxygen in water. Identify this fundamental problem and explain why fish gills work despite the same apparent issue. (b) One proposed solution is to actively remove oxygen from the water side by pumping it to a lower pressure. What would this require in terms of energy, and how does the fish solve the same problem passively through countercurrent flow? (c) If you overcame the gradient problem, identify two additional biological constraints — from the tissue level to the molecular level — that would need to be solved before a human could rely on a gill-type device at rest, let alone during exercise. *Tests: applying Fick's law to a genuine engineering challenge; understanding why countercurrent flow creates the gradient rather than merely exploiting it; integrating multiple levels of respiratory physiology.]*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Diffusion-limited gas exchange and the surface-area solution**
+Prompt a model: *"At the alveolar level, oxygen and CO₂ exchange occurs purely by diffusion across a thin membrane (~0.5 μm thick) between alveolar air and capillary blood. Walk me through Fick's law of diffusion and explain why human lungs need approximately 70-100 m² of surface area (about a tennis court) to support resting metabolism. What evolutionary engineering produced this surface area in the small volume of the chest cavity, and what would happen if the alveolar membrane became thicker (as in pulmonary fibrosis)?"*
+
+Evaluate whether the model engages with Fick's law (rate ∝ surface area × concentration gradient ÷ thickness) and the specific architecture that achieves the surface area: roughly 300-500 million alveoli, each ~200 μm in diameter, packed into the lung volume. Pulmonary fibrosis directly reduces gas exchange by increasing membrane thickness, with predictable consequences for exercise tolerance.
+
+**Exercise 2 — Hemoglobin and the cooperative binding curve**
+Prompt: *"Hemoglobin's affinity for oxygen depends on how much oxygen is already bound — the famous sigmoidal binding curve. Walk me through the cooperativity mechanism: binding of one O₂ to one of the four heme groups changes the conformation of the entire protein (T state → R state), increasing affinity for subsequent O₂ binding. Why is this cooperativity essential for hemoglobin's function? What would happen to oxygen delivery if hemoglobin had simple linear binding instead?"*
+
+Evaluate whether the model engages with the cooperative-binding-as-toggle-switch insight: cooperativity creates a binding curve that nearly fully saturates at high pO₂ (lungs) and nearly fully releases at low pO₂ (tissues), maximizing the fraction of bound oxygen that can be delivered. Without cooperativity, hemoglobin would always be partially loaded, reducing delivery efficiency dramatically.
+
+**Exercise 3 — The Bohr effect and exercise**
+Prompt: *"During exercise, working muscles produce CO₂ and lactic acid, lowering local pH. The Bohr effect describes how lower pH and higher CO₂ both reduce hemoglobin's oxygen affinity, shifting the binding curve to the right. Walk me through how this elegantly couples oxygen delivery to demand: the harder a tissue is working, the more aggressively it lowers local pH, the more O₂ hemoglobin releases there. What is the molecular mechanism, and how does it relate to fetal hemoglobin's higher affinity for oxygen?"*
+
+Evaluate whether the model engages with the H⁺ stabilization of the T state (hemoglobin protonation favors the lower-affinity conformation), and the fetal-hemoglobin connection: fetal hemoglobin has a leftward-shifted curve (higher affinity), so it can extract O₂ from maternal blood at the placenta. The same Bohr-effect machinery that helps adults works in reverse for the fetus.
+
+**Exercise 4 — Why birds have one-way airflow lungs**
+Prompt: *"Mammals have tidal breathing — air flows in and out the same passages, mixing fresh air with residual stale air. Birds have a unique flow-through respiratory system using air sacs that ensure unidirectional airflow across the gas-exchange surfaces. Walk me through this architecture and explain why birds can sustain higher activity levels at high altitude (e.g., bar-headed geese flying over the Himalayas at 7,000+ m) than mammals can. What is the evolutionary connection to dinosaurs?"*
+
+Evaluate whether the model engages with the efficiency advantage of one-way airflow (the gas exchange surface always sees fresh air, never mixed with exhaled CO₂-rich air) and the dinosaur connection: bird respiratory architecture is ancestrally inherited from theropod dinosaurs, and may have been a factor in dinosaur dominance during the Mesozoic when oxygen levels were sometimes lower than today.
+
+**Exercise 5 — Why hyperventilating doesn't deliver more oxygen**
+Prompt: *"Voluntarily hyperventilating before holding your breath can extend the time before you feel air hunger — but it does not actually deliver more oxygen to your tissues. Walk me through what hyperventilation actually accomplishes: it lowers blood CO₂ (hypocapnia), which delays the urge to breathe (driven by CO₂ rising). Meanwhile, hemoglobin was already nearly saturated with oxygen at normal breathing rates. Why is shallow-water blackout (drowning while diving after hyperventilation) a real and dangerous phenomenon?"*
+
+Evaluate whether the model correctly identifies that hemoglobin saturation is the limiting factor for O₂ delivery (already ~97% saturated at rest, so deeper or faster breathing cannot meaningfully increase it), and engages with the shallow-water blackout mechanism: hyperventilation removes the CO₂-driven urge to breathe, so the diver can keep holding their breath until O₂ has dropped low enough to cause loss of consciousness — without ever feeling the warning sensation.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Christian Bohr** discovered the "Bohr effect" in 1904 — that hemoglobin releases oxygen more readily in acidic, CO₂-rich tissue conditions, exactly where it is needed most. He was a Danish physiologist and the father of physicist Niels Bohr.
+
+**Run this:**
+
+```
+Who was Christian Bohr, and how does the Bohr effect connect to the respiratory system biology we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Christian Bohr"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through what happens to the hemoglobin–oxygen dissociation curve when CO₂ levels rise — and why that's adaptive.
+- Add a constraint: "Answer as Bohr's 1904 lab notebook on the morning the curves' pH-dependence finally became clear."
+
+What changes? What gets better? What gets worse?

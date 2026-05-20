@@ -189,3 +189,55 @@ The membrane is where that expenditure happens.
 **Challenge**
 
 9. A neuron is treated with ouabain, which blocks the potassium-binding step of the sodium-potassium pump. Trace the sequence of events from pump inhibition to the loss of the neuron's ability to fire an action potential. Your answer should name the specific gradients involved, the direction each collapses, and the consequence for membrane potential. At what point in this sequence would you expect the neuron to become unable to generate a signal, and why at that point rather than earlier or later? *Tests: causal chain from molecular mechanism to cellular failure; integrates pump stoichiometry, electrochemical gradients, and the electrical basis of neural signaling.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Membrane fluidity, two ways**
+Prompt a model: *"A bacterium living at 4°C and a bacterium living at 37°C both need their membranes to be fluid enough for proteins to move and rigid enough to maintain integrity. Predict which fatty-acid composition each would maintain in its membrane lipids — saturated vs. unsaturated, long-chain vs. short-chain — and explain the physical mechanism. Then predict what the cold-adapted bacterium would do if it were suddenly transferred to 37°C, and how long acclimation might take."*
+
+Evaluate whether the model correctly identifies that cold-adapted membranes contain more unsaturated and shorter-chain fatty acids (preserving fluidity at low temperature), and whether it engages with the timescale of membrane remodeling (hours to days) rather than treating it as instantaneous.
+
+**Exercise 2 — Why facilitated diffusion, why active transport**
+Prompt: *"A cell needs to move glucose across its membrane. Sometimes facilitated diffusion is sufficient; sometimes the cell uses ATP-powered active transport. Walk me through the conditions under which each strategy is viable, with a specific concentration scenario. At what point does the energetic cost of active transport become worth the benefit?"*
+
+Evaluate whether the model engages with the concentration-gradient direction explicitly: facilitated diffusion can only move solute down its gradient (toward equilibrium), while active transport can move solute against the gradient at a cost of approximately one ATP per molecule (varies by transporter — flag with [verify]).
+
+**Exercise 3 — The sodium-potassium pump as engine**
+Prompt: *"The sodium-potassium pump moves 3 Na⁺ out and 2 K⁺ in per ATP hydrolyzed. Explain why this stoichiometric imbalance creates an electrical gradient across the membrane in addition to a chemical one, and trace how cells use this combined electrochemical gradient to power secondary active transport (e.g., glucose-sodium symporters in the gut). What would happen to glucose absorption in the small intestine if the sodium-potassium pump were inhibited by ouabain?"*
+
+Evaluate whether the model correctly distinguishes primary active transport (uses ATP directly) from secondary active transport (uses the gradient established by primary transport), and whether it traces the cascade clearly: pump → Na⁺ gradient → glucose-Na⁺ symporter → glucose accumulation in gut epithelium.
+
+**Exercise 4 — Endocytosis varieties, distinguished**
+Prompt: *"Phagocytosis, pinocytosis, and receptor-mediated endocytosis are three forms of bulk import. For each, give a specific cellular example, identify the size scale (in micrometers or nanometers) of the cargo, and explain what determines whether a cell uses one mechanism or another. Why would receptor-mediated endocytosis be the only viable mechanism for importing a specific scarce molecule like LDL cholesterol?"*
+
+Evaluate whether the model correctly assigns scale (phagocytosis for whole cells/large particles ~1+ µm, pinocytosis for fluid droplets ~100 nm, RME for specific molecules at much lower concentrations) and engages with the selectivity-vs-volume trade-off.
+
+**Exercise 5 — Tonicity, applied**
+Prompt: *"A red blood cell is placed in three solutions: 0.9% NaCl, 2.0% NaCl, and pure water. Predict what happens to the cell in each solution, with specific reference to water movement and final cell shape (crenated, normal, lysed). Then explain why a plant cell placed in the same three solutions would respond differently in two of the three cases — and how the central vacuole and cell wall change the outcome."*
+
+Evaluate whether the model correctly predicts crenation in hypertonic NaCl, lysis in pure water, and isotonic equilibrium in 0.9% saline. For plant cells, push for engagement with plasmolysis (cell membrane pulls away from wall in hypertonic solution) versus turgor pressure (which prevents cell-wall expansion in hypotonic solution rather than allowing lysis).
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **S. J. Singer** proposed the fluid mosaic model of the plasma membrane in 1972 with Garth Nicolson — picturing the membrane as a two-dimensional fluid in which proteins float freely. It replaced the rigid "sandwich" model that had ruled for two decades.
+
+**Run this:**
+
+```
+Who was S. J. Singer, and how does the fluid mosaic model connect to the plasma membrane structure and function we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Seymour Jonathan Singer"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through the freeze-fracture electron microscopy evidence Singer and Nicolson used to argue for protein mobility within the bilayer.
+- Ask it to compare the original fluid mosaic model with the modern "lipid raft" refinements.
+
+What changes? What gets better? What gets worse?

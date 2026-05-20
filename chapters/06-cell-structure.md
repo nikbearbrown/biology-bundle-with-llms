@@ -164,3 +164,55 @@ Below the cell is chemistry. At the cell is life. The cell wall is where that tr
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — The size limit**
+Prompt a model: *"A typical eukaryotic cell is roughly 10-100 micrometers across, while prokaryotes are typically 1-10 micrometers. The mathematical ratio of surface area to volume scales as 1/r — meaning larger cells have proportionally less surface for the volume they need to feed. Walk me through how compartmentalization (organelles), cytoskeletal transport, and infolded membranes (rough ER, cristae) allow eukaryotes to overcome this scaling problem. Which of these adaptations is most consequential, and why?"*
+
+Evaluate whether the model engages with the surface-area-to-volume ratio as a quantitative constraint, and whether it correctly identifies internal membrane systems as the way eukaryotes effectively multiply their available membrane surface within a fixed cell volume.
+
+**Exercise 2 — Mitochondrial origin and the puzzle**
+Prompt: *"The endosymbiotic theory says mitochondria descended from free-living bacteria engulfed by an ancestor of eukaryotic cells. Identify five specific pieces of evidence that support this theory — including evidence from genome size, ribosomes, membrane structure, and replication timing. Then identify the strongest piece of evidence against the theory or that requires modification, and explain how the theory has been adjusted to accommodate it."*
+
+Evaluate whether the model identifies the double membrane (inner = bacterial, outer = host vesicle), 70S ribosomes, circular DNA, and binary fission. Push back if it omits the gene-transfer-to-nucleus complication that makes pure endosymbiotic ancestry hard to verify directly.
+
+**Exercise 3 — The cytoskeleton in three roles**
+Prompt: *"Microtubules, microfilaments, and intermediate filaments perform structurally distinct jobs in a cell. Take one specific cellular process — chromosome segregation, cell crawling, or cell shape maintenance — and explain which cytoskeletal element drives it, what motor proteins are involved (if any), and what would happen to the process if the relevant filament could not assemble or disassemble."*
+
+Evaluate whether the model correctly assigns processes to filament types (microtubules to mitosis, microfilaments to motility, intermediate filaments to mechanical resilience) and whether it distinguishes structural roles (intermediate filaments) from dynamic roles (the other two).
+
+**Exercise 4 — Why nuclei have membranes**
+Prompt: *"Prokaryotes lack a nuclear membrane; eukaryotes have one. What problem does the nuclear membrane solve, and what problem does it create? Specifically: how does compartmentalization of transcription away from translation enable RNA splicing, and why is the existence of the nuclear pore complex itself a non-trivial engineering achievement?"*
+
+Evaluate whether the model identifies the temporal and spatial separation of transcription from translation as enabling RNA processing (capping, splicing, polyadenylation) before export, and whether it engages with nuclear pore complexes as gated channels rather than open holes.
+
+**Exercise 5 — Plant cell features earned**
+Prompt: *"Plant cells have a cell wall, a large central vacuole, and chloroplasts. Animal cells lack all three. For each plant-specific structure, explain the functional benefit and the cost — what does each structure enable that an animal cell cannot do, and what does it constrain that an animal cell can?"*
+
+Evaluate whether the model correctly identifies the cell wall's role in turgor-pressure-based mechanical support (and the corresponding loss of cell motility), the central vacuole's role in maintaining turgor (and the metabolic cost of constant osmotic management), and the chloroplast's role in autotrophy (and the metabolic specialization required to host it).
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Lynn Margulis** proposed in 1967 that mitochondria and chloroplasts began as free-living bacteria that were engulfed by ancestral cells — endosymbiotic theory. The paper was rejected fifteen times before publication. It's now textbook biology.
+
+**Run this:**
+
+```
+Who was Lynn Margulis, and how does her endosymbiotic theory connect to the cell structures and organelles we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Lynn Margulis"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to list four specific pieces of evidence that mitochondria descended from free-living bacteria.
+- Ask it to compare Margulis's "serial endosymbiosis" framework with the standard neo-Darwinian account she repeatedly clashed with.
+
+What changes? What gets better? What gets worse?

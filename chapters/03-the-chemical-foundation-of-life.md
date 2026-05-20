@@ -183,3 +183,24 @@ Ask: "If water molecules were linear instead of bent — if the H-O-H angle were
 
 **Exercise 5: Design an organism**
 Give a language model this problem: "Suppose you wanted to design a single-celled organism that functions at pH 4 instead of pH 7. What would need to change about its proteins? What would need to change about its buffering systems? What advantages and disadvantages would this organism have compared to one that functions at neutral pH?" Use the response to identify where the model is reasoning and where it is retrieving.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Dorothy Crowfoot Hodgkin** solved the three-dimensional structures of penicillin, vitamin B12, and insulin using X-ray crystallography — work that won the 1964 Nobel Prize. She finished the insulin structure 35 years after starting it.
+
+**Run this:**
+
+```
+Who was Dorothy Crowfoot Hodgkin, and how does her X-ray crystallography work connect to the chemical foundation of life we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Dorothy Hodgkin"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain in plain language how X-ray crystallography reveals the 3D structure of a molecule.
+- Ask it to compare Hodgkin's penicillin structure (1945) with the modern cryo-EM techniques used today.
+
+What changes? What gets better? What gets worse?

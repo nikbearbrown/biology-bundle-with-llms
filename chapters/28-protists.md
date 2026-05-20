@@ -138,3 +138,55 @@ That is the lesson protists teach. Not that they are primitive, not that they ar
 9. Secondary endosymbiosis occurred independently in multiple protist lineages (diatoms from red algae, euglenids from green algae, etc.). If secondary endosymbiosis is possible and beneficial, why has it not happened a hundred times more, producing an even greater diversity of photosynthetic protists? What limits or constraints might prevent most secondary endosymbiosis attempts from being preserved by natural selection? Identify at least three specific challenges a host cell would face after engulfing a photosynthetic eukaryote. *Tests: reasoning from mechanism to evolutionary constraint — not just what happened, but why it did not happen more often.*
 
 10. Zooxanthellae (dinoflagellate protists) live inside coral cells and provide photosynthetically-fixed carbon in exchange for shelter and nutrients. Ocean warming causes coral bleaching — the expulsion of zooxanthellae — which eventually kills the coral. A researcher proposes engineering heat-tolerant zooxanthellae strains that could recolonize bleached corals and resist future warming. Using what you know about protist cell biology, endosymbiosis, and the coral-zooxanthellae relationship, identify two specific biological challenges that would need to be solved for this approach to work, and explain why each challenge exists at the cellular or molecular level. *Tests: applying protist biology to a novel applied scenario, requiring integration of mixotrophy, symbiosis, and endosymbiotic cell biology.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Protists as a paraphyletic catch-all**
+Prompt a model: *"'Protist' is not a true taxonomic category — it is a paraphyletic grouping of all eukaryotes that are not plants, animals, or fungi. Walk me through why this catch-all exists despite not reflecting evolutionary relationships, and propose how the field has been reorganizing protists into more meaningful supergroups (Excavata, SAR, Archaeplastida, Amoebozoa, Opisthokonta). Why does it matter for the textbook treatment that protists do not form a clade?"*
+
+Evaluate whether the model correctly identifies the paraphyletic problem (protists share the negative property of "not being plant/animal/fungus" but do not share a common ancestor distinct from those groups), and whether it engages with the supergroups as the contemporary phylogenetic framework — though notes that this framework continues to be revised.
+
+**Exercise 2 — Endosymbiotic origins of secondary chloroplasts**
+Prompt: *"Some protists (diatoms, dinoflagellates, brown algae) have chloroplasts surrounded by 4 membranes instead of 2. Walk me through the secondary endosymbiosis hypothesis: how an ancestral eukaryote that had already engulfed a cyanobacterium (giving rise to red or green algae) was itself engulfed by another eukaryote — producing a chloroplast surrounded by membranes from both engulfment events plus the original bacterial membrane. What evidence supports this story?"*
+
+Evaluate whether the model correctly identifies the four-membrane structure as the key morphological evidence (outer membrane = host phagosome; second-from-outer = original engulfed eukaryote's membrane; inner two = original chloroplast's two membranes from primary endosymbiosis), and supplements with the molecular evidence — vestigial nuclei (nucleomorph) sometimes preserved between the membrane layers, providing direct genetic evidence of the secondary engulfment.
+
+**Exercise 3 — Plasmodium and the apicomplexan life cycle**
+Prompt: *"Malaria parasites (Plasmodium) have one of the most complex life cycles in biology — alternating between mosquito and human hosts, with multiple distinct cell stages in each. Walk me through the life cycle: sporozoites injected by mosquito → liver stage → blood stage (merozoites infecting red blood cells) → gametocytes taken up by next mosquito → sexual reproduction in mosquito gut → sporozoites again. At which life-cycle stage is each major antimalarial drug (artemisinin, chloroquine, primaquine, atovaquone) most effective, and why?"*
+
+Evaluate whether the model correctly identifies that artemisinin and chloroquine target blood-stage forms (the symptomatic stage), primaquine targets liver-stage hypnozoites (the dormant relapse-causing stage in P. vivax), and atovaquone targets multiple stages by inhibiting mitochondrial electron transport. Drug-stage matching matters clinically — treating only blood stages with primaquine misses the entry point.
+
+**Exercise 4 — Slime molds and the multicellularity puzzle**
+Prompt: *"Slime molds (e.g., Dictyostelium discoideum) live as independent amoebae most of the time, but under starvation they aggregate into a multicellular slug that crawls toward light, then differentiates into a stalk-and-spore fruiting body. Some cells in the stalk die so others can disperse as spores. Walk me through what this lifecycle reveals about the evolution of multicellularity — specifically, the conditions under which independent cells benefit from cooperative behavior. Why does the stalk-formation strategy work despite some cells 'sacrificing' themselves?"*
+
+Evaluate whether the model engages with the kin-selection argument (Dictyostelium aggregations form preferentially among genetically similar cells, so the cells in the stalk are sacrificing for relatives whose spores carry their genes), and the conflict situation (when cells of different genotypes mix, some genotypes act as "cheaters" — preferentially becoming spores rather than stalk).
+
+**Exercise 5 — Trypanosomes and antigenic variation**
+Prompt: *"African sleeping sickness is caused by Trypanosoma brucei, which lives in the bloodstream of mammals. The parasite evades the immune system through antigenic variation — periodically switching its surface coat (variable surface glycoprotein, VSG) to a new variant that the immune system has not yet generated antibodies against. Walk me through the molecular mechanism: how does the parasite generate the diversity, why doesn't the immune response keep up, and why has it been so difficult to develop a vaccine? Estimate the size of the VSG repertoire."*
+
+Evaluate whether the model engages with the gene-conversion mechanism (T. brucei has roughly 1000-1500 VSG genes [verify], and switches by recombining a silent VSG into the active expression site), and the vaccine challenge: a vaccine targeting one VSG would only protect against that variant, and the parasite can switch to any of the others within days. Effective vaccines would need to target conserved (and thus less immunogenic) parasite antigens.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Antonie van Leeuwenhoek** built single-lens microscopes in 1670s Delft that achieved 270× magnification — better than any compound microscope of his era — and was the first human to see protozoa, bacteria, and human sperm cells. He was a draper with no formal scientific training.
+
+**Run this:**
+
+```
+Who was Antonie van Leeuwenhoek, and how does his early microscopy connect to the protist biology we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Antonie van Leeuwenhoek"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to describe what one of van Leeuwenhoek's pond-water samples looked like under his lens — what "animalcules" did he name?
+- Ask it to compare van Leeuwenhoek's single-lens design with the compound microscopes that eventually replaced it — what was each better at?
+
+What changes? What gets better? What gets worse?

@@ -162,3 +162,24 @@ Evaluate whether the model distinguishes between unfolding (reversible) and aggr
 ---
 
 *The next chapter introduces nucleic acids — the molecules that carry the sequences that determine which proteins get made, in what quantities, and when. The double helix is not a metaphor for information storage. It is a literal mechanism, and understanding why it works the way it does requires everything in this chapter.*
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Gertrude Elion** designed drugs by understanding how nucleotide biochemistry differs between healthy human cells, cancer cells, and pathogens — producing AZT, allopurinol, 6-mercaptopurine, and acyclovir. She had no PhD, was repeatedly rejected from graduate programs as a woman, and won the 1988 Nobel Prize.
+
+**Run this:**
+
+```
+Who was Gertrude Elion, and how does her rational drug design approach connect to the biological macromolecules we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Gertrude B. Elion"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through how 6-mercaptopurine mimics a natural nucleotide to interfere with leukemia cell division.
+- Ask it to compare Elion's "design by knowing the enzyme" approach with the modern high-throughput screening drug-discovery pipeline.
+
+What changes? What gets better? What gets worse?

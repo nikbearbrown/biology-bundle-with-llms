@@ -144,3 +144,55 @@ Those two questions — where is the energy going, and where is the matter going
 9. Bioaccumulation occurs when fat-soluble persistent toxins become more concentrated at each successive trophic level. Using the ten percent rule, explain quantitatively why a top predator accumulates roughly 10,000 times the toxin concentration of a primary producer in a five-level food chain, even if the toxin is present at only trace levels in the water or soil. Then explain why cold-water ecosystems like the Arctic are particularly vulnerable to bioaccumulation of pollutants that originate in temperate or tropical regions. *Tests: integrating trophic level transfer with bioaccumulation logic and geographic transport.*
 
 10. A coastal dead zone has persisted for 30 years despite modest reductions in agricultural nitrogen runoff. A researcher argues that the dead zone may have crossed a "tipping point" — a threshold beyond which the system is self-sustaining even if the external nitrogen input is reduced. Using what you know about nutrient cycles, decomposition, and oxygen dynamics, propose a mechanism by which a dead zone could become self-perpetuating. What intervention strategy would need to differ from simply "reducing fertilizer use" in order to restore the system? *Tests: reasoning about nonlinear ecosystem dynamics and cycle disruption thresholds.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Net primary productivity and the global pattern**
+Prompt a model: *"Net primary productivity (NPP) — the rate at which plants store energy as biomass, after subtracting their own respiration — varies enormously across biomes. Tropical rainforests are highest (~2200 g C/m²/year); deserts and tundra are lowest (~100-300 g/m²/year) [verify]. Walk me through the climate-productivity relationship: warmth and moisture are both required, and either alone is insufficient (deserts have warmth but no water; tundra has water but limited warmth). What does this pattern tell us about the energy budget of the biosphere?"*
+
+Evaluate whether the model engages with the multiplicative temperature-and-moisture argument and the productivity-driven biodiversity hypothesis: high productivity supports more individuals, more species, and more complex ecological structure. Tropical rainforests host most of Earth's species partly because their high NPP can sustain such complexity.
+
+**Exercise 2 — Decomposition and the nutrient cycling rate**
+Prompt: *"Decomposition rates vary dramatically across ecosystems: tropical rainforest leaf litter decomposes within months; temperate forest litter takes years; tundra and bog litter can persist for centuries to millennia. Walk me through what controls decomposition rates (temperature, moisture, oxygen availability, leaf chemistry — particularly C:N ratio and lignin content), and explain why this variation creates the dramatic differences in soil organic matter accumulation across biomes. Why are tropical soils nutrient-poor despite the high NPP above?"*
+
+Evaluate whether the model correctly identifies the apparent paradox (tropical forests produce huge biomass but their soils are often nutrient-poor) and the resolution: rapid decomposition releases nutrients but they are quickly taken up by living plants, leaving little stored in the soil. Most tropical-forest nutrients live in the biomass, not in the soil — which is why deforestation produces such poor agricultural land.
+
+**Exercise 3 — Aquatic ecosystem productivity and the limiting nutrient**
+Prompt: *"Marine ecosystems are typically nitrogen-limited; freshwater ecosystems are typically phosphorus-limited. Walk me through why this difference exists: seawater has different chemistry than freshwater, and the biogeochemical cycling of N vs. P is fundamentally different. Then explain why eutrophication (nutrient over-enrichment) produces algal blooms and dead zones — the Gulf of Mexico's seasonal dead zone (~15,000 km² in some years [verify]) being the largest such feature in U.S. waters."*
+
+Evaluate whether the model engages with the limiting-nutrient logic (productivity is constrained by whatever nutrient is scarcest; adding it triggers explosive algal growth) and the dead-zone mechanism: algal blooms eventually die and decompose; decomposition consumes oxygen; bottom waters become hypoxic and unable to support fish or invertebrates. The Gulf dead zone is fed by Mississippi River nutrient runoff from agricultural fertilizer use upstream.
+
+**Exercise 4 — Coral reefs and the bleaching cascade**
+Prompt: *"Coral reefs are among the most productive marine ecosystems despite living in nutrient-poor tropical waters. Walk me through the symbiosis that makes this possible: corals host photosynthetic dinoflagellates (zooxanthellae) within their tissues, sharing carbon and nutrients. Then explain coral bleaching: when ocean temperatures rise above ~1°C above normal summer maximum, corals expel their zooxanthellae, lose their primary energy source, and die if conditions don't recover quickly. Why does climate change pose existential risk to coral reefs globally?"*
+
+Evaluate whether the model engages with the bleaching-cascade specifics and the global pattern: even modest warming (1-2°C above pre-industrial) puts most coral reefs at risk; the 2014-2017 global bleaching event affected ~75% of all coral reefs, with about 30% suffering severe damage. Recovery requires extended cool periods that are becoming rarer.
+
+**Exercise 5 — Wetlands as ecosystem-service hubs**
+Prompt: *"Wetlands provide disproportionate ecosystem services relative to their area: water filtration, flood control, carbon storage, biodiversity habitat. Walk me through three specific services with quantitative or comparative magnitudes: (1) coastal wetlands store more carbon per area than tropical rainforests despite being smaller [verify], (2) the Mississippi River Delta marshes once protected New Orleans from storm surge but have lost ~25% of their area to subsidence and channelization, (3) inland freshwater wetlands have lost 50%+ of their original area in the contiguous U.S. since 1780 [verify]. What does this tell us about wetland conservation priorities?"*
+
+Evaluate whether the model engages with the disproportionate-service claim (wetlands cover ~6% of Earth's land area but hold ~30% of soil carbon) and the protection-vs-restoration tradeoff: protecting existing wetlands is far more cost-effective than restoring lost ones. The Mississippi Delta loss has direct human consequences in New Orleans's flood vulnerability — Hurricane Katrina (2005) damage was substantially worse because the protective marshes were no longer there.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Raymond Lindeman** published "The Trophic-Dynamic Aspect of Ecology" in 1942 — the founding paper of ecosystem ecology — at age 26. He died of liver disease before the paper appeared in print, and his advisor Hutchinson pushed it through to publication.
+
+**Run this:**
+
+```
+Who was Raymond Lindeman, and how does his trophic-dynamic ecosystem framework connect to the ecosystems we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Raymond Lindeman"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through one of Lindeman's energy-pyramid calculations on Cedar Bog Lake — the empirical case behind the theoretical framework.
+- Ask it to compare Lindeman's flow-of-energy approach with the modern view of ecosystems as networks of nutrient cycling.
+
+What changes? What gets better? What gets worse?

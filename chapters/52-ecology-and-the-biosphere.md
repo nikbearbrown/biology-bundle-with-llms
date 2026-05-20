@@ -174,3 +174,55 @@ Nothing in the biosphere operates at a single scale. The tick bite is a question
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Trophic levels and the 10% rule**
+Prompt a model: *"Energy flows through ecosystems from producers (plants) → primary consumers (herbivores) → secondary consumers (carnivores) → tertiary consumers (top predators). Approximately 10% of the energy at one trophic level is transferred to the next [verify], with the rest lost as metabolic heat. Walk me through what this means quantitatively: if 1,000,000 kcal are fixed by primary producers, how much reaches each subsequent trophic level? Why does this scaling explain why top predators are rare and why carnivorous diets require larger ecological footprints than herbivorous ones?"*
+
+Evaluate whether the model correctly applies the 10% rule (1M → 100k → 10k → 1k kcal across four levels) and engages with the area-requirement consequence: a 100-kg tiger requires roughly 50 km² of habitat to sustain its food chain, while a 100-kg cow needs perhaps 0.5 km² of pasture. The factor reflects the energy losses at each trophic transfer.
+
+**Exercise 2 — Biogeographic distribution and climate**
+Prompt: *"Earth's terrestrial biomes follow predictable patterns shaped by latitude, altitude, and continental position: tropical rainforests near the equator, deserts at ~30° latitude (descending air drives evaporation), temperate forests in mid-latitudes, taiga in subarctic regions, tundra in polar regions. Walk me through why this latitudinal pattern arises from atmospheric circulation (Hadley cells, Ferrel cells, polar cells), and explain why climate change is shifting biomes toward higher latitudes and elevations. What are the consequences for species that cannot move fast enough?"*
+
+Evaluate whether the model engages with the atmospheric-circulation drivers and the migration challenge: many species have limited dispersal ability (especially long-lived organisms like trees), so climate change can outpace their ability to track suitable conditions. This produces "extinction debt" — species that will eventually disappear because their current habitat is no longer climatically suitable, even though they persist for now.
+
+**Exercise 3 — The carbon cycle and human disruption**
+Prompt: *"The carbon cycle moves carbon between atmosphere, oceans, terrestrial biomass, soil, and rocks on timescales from years to millions of years. Pre-industrial atmospheric CO₂ was approximately 280 ppm; current atmospheric CO₂ is ~420+ ppm and rising [verify]. Walk me through where the additional carbon has come from (fossil fuel combustion, deforestation), where it has gone (about half remains in atmosphere, the rest absorbed by oceans and terrestrial biosphere), and why ocean absorption produces ocean acidification. What are the limits on continued ocean uptake?"*
+
+Evaluate whether the model engages with the ocean acidification chemistry (CO₂ + H₂O ⇌ H₂CO₃ ⇌ HCO₃⁻ + H⁺ — the released hydrogen ions lower pH), and the saturation problem: as ocean pH drops, the chemistry shifts to favor less CO₂ uptake. Continued absorption is also limited by the slow mixing of surface waters into the deep ocean (centuries to millennia).
+
+**Exercise 4 — Nitrogen cycle and human disruption (Haber-Bosch)**
+Prompt: *"The Haber-Bosch process (1909) industrially converts atmospheric N₂ to ammonia for fertilizer production. This single process now contributes more nitrogen fixation than all natural processes combined [verify], dramatically increasing terrestrial productivity. Walk me through the consequences: enabling the green revolution and the world's population growth from ~1.6 billion in 1900 to ~8 billion today; eutrophication of freshwater and coastal systems where excess nitrogen runs off; loss of biodiversity in ecosystems adapted to low-nitrogen conditions. What are the mitigation strategies for managing the surplus nitrogen?"*
+
+Evaluate whether the model engages with the dual nature of Haber-Bosch (essential for current food production but environmentally disruptive), and the mitigation strategies: precision agriculture (apply fertilizer only where needed), cover crops (reduce runoff), riparian buffers (capture nitrogen before it reaches waterways). The nitrogen cycle's modification by humans is one of the most significant biogeochemical changes in Earth's history.
+
+**Exercise 5 — Population dynamics and the limits to growth**
+Prompt: *"All populations have potential exponential growth but are limited by carrying capacity (K). Walk me through the logistic growth equation and explain what carrying capacity means biologically — it is not a single number but depends on resource availability, predation, disease, and other factors. Then explain why some populations show overshoot (briefly exceeding K and then crashing) while others approach K asymptotically. What determines which pattern a species exhibits?"*
+
+Evaluate whether the model engages with the time-delay argument: overshoot occurs when populations cannot detect or respond to resource depletion in time (e.g., reindeer introduced to St. Matthew Island reached ~6,000 then crashed to ~50 in a few years), while asymptotic approach occurs when reproduction is closely tied to current resource availability (most established populations). The time-lag between resource depletion and reproductive response determines the overshoot magnitude.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **G. Evelyn Hutchinson** founded modern ecology at Yale in the mid-20th century — formalizing the niche concept, distinguishing fundamental from realized niches, and asking "Why are there so many kinds of animals?" The students he trained reshaped the entire field.
+
+**Run this:**
+
+```
+Who was G. Evelyn Hutchinson, and how does his work on niche theory and limnology connect to the ecology and biosphere concepts we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"G. Evelyn Hutchinson"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain Hutchinson's "n-dimensional hypervolume" definition of a niche in plain language, using one specific species.
+- Ask it to compare Hutchinson's mentorship lineage (MacArthur, Margulis, Patrick, others) and what each former student went on to do.
+
+What changes? What gets better? What gets worse?

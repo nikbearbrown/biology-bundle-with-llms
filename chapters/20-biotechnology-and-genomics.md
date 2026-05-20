@@ -180,3 +180,55 @@ The thousand-dollar genome is not the destination. It is the ticket to start ask
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — PCR and the exponential amplification problem**
+Prompt a model: *"Polymerase chain reaction (PCR) amplifies a specific DNA sequence by approximately 2ⁿ-fold after n cycles of thermal cycling. Walk me through the three steps of each cycle (denaturation, annealing, extension) and the temperatures required. Then explain the genuinely critical innovation: thermostable Taq polymerase from Thermus aquaticus. Why was the discovery of an enzyme stable at 95°C necessary for PCR to work, and what would PCR look like without it?"*
+
+Evaluate whether the model correctly identifies the temperatures (~95°C denaturation, ~50-65°C annealing, ~72°C extension) and engages with the Taq-polymerase necessity: a non-thermostable polymerase would denature at the high temperatures required for DNA strand separation, requiring fresh enzyme to be added at every cycle. Taq enabled automation and made high-throughput sequencing possible.
+
+**Exercise 2 — CRISPR-Cas9 specificity and off-target risk**
+Prompt: *"CRISPR-Cas9 uses a guide RNA to target a specific DNA sequence (typically 20 nucleotides), then makes a double-strand cut. Walk me through how the system achieves specificity: what fraction of off-target binding sites in a typical mammalian genome would be recognized by a 20-nt guide RNA, in expectation? Estimate using the genome size (~3 billion base pairs) and the probability of a 20-nt match by chance. Then explain why the actual specificity is higher than this naive estimate but lower than perfect — engage with PAM site requirements, mismatch tolerance, and current strategies to reduce off-target effects."*
+
+Evaluate whether the model performs the calculation: (1/4)²⁰ ≈ 10⁻¹², so a perfect 20-nt match should occur by chance approximately 3 × 10⁻³ times per genome — meaning chance off-target sites are rare. But mismatch tolerance (especially in the seed region) and PAM availability change this calculation substantially. Engineered high-fidelity Cas9 variants and prime editing are current approaches to reduce off-targets further.
+
+**Exercise 3 — Sanger sequencing vs. next-generation sequencing**
+Prompt: *"Sanger sequencing was the gold standard from the 1970s through the early 2000s. Next-generation sequencing (NGS) — Illumina, PacBio, Oxford Nanopore — replaced it for most applications by approximately 2010. Walk me through the trade-offs: NGS reads are typically much shorter (50-300 bp for Illumina vs. up to 1000 bp for Sanger), but NGS produces millions of reads in parallel where Sanger produces one at a time. For what applications is Sanger still preferred, and what specific innovation is each NGS platform optimized for?"*
+
+Evaluate whether the model correctly identifies that Sanger is still preferred for short, single-locus sequencing where high accuracy and clear results matter (clinical confirmation, plasmid validation), while NGS dominates for whole-genome and transcriptome work. Illumina optimizes for high accuracy at short reads; PacBio and Nanopore for long reads (10-100kb+) at lower per-base accuracy.
+
+**Exercise 4 — GWAS and the missing-heritability puzzle**
+Prompt: *"Genome-wide association studies (GWAS) identify common genetic variants associated with traits or diseases. For most complex traits, the variants identified by GWAS together explain only 10-30% of the heritability estimated from twin studies — a gap known as 'missing heritability.' Walk me through three leading explanations for the gap: rare variants of large effect, gene-gene interactions (epistasis), and gene-environment interactions. Why is each particularly hard to detect with conventional GWAS?"*
+
+Evaluate whether the model engages with the statistical-power argument — GWAS is well-powered to detect common variants of moderate effect but underpowered for rare variants of large effect (insufficient carriers in study population) and for epistasis (combinatorial space too large to test exhaustively). Gene-environment interactions require environmental data that GWAS designs typically lack.
+
+**Exercise 5 — Synthetic biology and the question of intent**
+Prompt: *"Synthetic biology aims to design organisms with novel functions — biofuels, drug-producing yeast, biosensors, even minimal cells with the smallest viable genome. The Synthia (Mycoplasma laboratorium) project in 2010 was the first organism with a fully synthetic genome [verify]. Walk me through the technical achievements required for this work: chemical synthesis of long DNA, assembly into a functional chromosome, and successful 'booting' of a cell with the synthetic genome. Then identify the philosophical and biosafety questions raised by the field — what should be the regulatory framework for organisms that don't fit existing categories?"*
+
+Evaluate whether the model engages with the technical achievements (chemical synthesis is now feasible at megabase scale, but assembly and chassis-cell rebooting remain hard), and whether it raises substantive biosafety questions (gain-of-function research, dual-use concerns, accidental release) without defaulting to either naive enthusiasm or precautionary refusal.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Esther Lederberg** discovered lambda phage and invented replica plating in 1952 — a technique that became the foundation of bacterial genetics and the prototype for modern selection methods. She did much of the work credited to her then-husband Joshua Lederberg.
+
+**Run this:**
+
+```
+Who was Esther Lederberg, and how does her work on replica plating and lambda phage connect to the biotechnology methods we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Esther Lederberg"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through replica plating step by step — the velvet, the master plate, the selective conditions.
+- Ask it to compare the credit Esther Lederberg received with her husband's 1958 Nobel Prize.
+
+What changes? What gets better? What gets worse?

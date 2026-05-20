@@ -269,3 +269,55 @@ The rules he found are the rules of inheritance for every sexually reproducing o
 **Challenge**
 
 9. In mice, coat color depends on two genes. Gene $B$ controls pigment type (black $B$ dominant to brown $b$). Gene $C$ controls whether pigment is deposited at all (pigment deposited $C$ dominant to albino $c$). A mouse that is $cc$ will be albino regardless of its $B$ genotype. Two mice with black coats and unknown genotypes are crossed and produce the following offspring: 9 black, 3 brown, 4 albino. Deduce the genotypes of both parents. Show your reasoning using the expected ratios for each genotype class, and identify which of Mendel's two laws is operating at each gene. Explain why the ratio is 9:3:4 rather than 9:3:3:1, naming this phenomenon. *Tests: epistasis as a departure from independent assortment ratios; working backward from offspring phenotype ratios to parental genotypes; integrating both laws in a two-gene system.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Why peas, and why Mendel succeeded where others failed**
+Prompt a model: *"Mendel's success depended on choosing pea plants with discrete, easily classified traits (round vs. wrinkled seeds, purple vs. white flowers). Earlier breeders had observed inheritance patterns but failed to extract the underlying laws. Walk me through what specifically about Mendel's choice of traits and his quantitative approach made the laws extractable, and why the same approach applied to continuous traits (height, weight) would have failed at the time. Why is this methodological choice itself a teaching moment about science?"*
+
+Evaluate whether the model engages with the discrete-vs-continuous distinction (Mendel's traits had clear binary alternatives, allowing simple ratios), the quantitative-counting approach (he counted thousands of offspring rather than describing tendencies), and the polygenic complication that would have obscured his ratios for continuous traits.
+
+**Exercise 2 — Predicting offspring ratios from a dihybrid cross**
+Prompt: *"In a Mendelian dihybrid cross between two heterozygotes (RrYy × RrYy, where R = round dominant, Y = yellow dominant), the predicted phenotypic ratio is 9:3:3:1. Walk me through the derivation: how does this ratio emerge from the law of independent assortment, and what does it imply about the location of the two genes in the genome? What experimental result would falsify independent assortment in this cross, and how would you interpret the result?"*
+
+Evaluate whether the model correctly derives the 9:3:3:1 from independent probability multiplication (3:1 ratio for each trait independently, multiplied gives 9:3:3:1 combined), and whether it correctly identifies that genetic linkage (the two genes being on the same chromosome) would produce a ratio departing from 9:3:3:1 — typically with parental phenotypes overrepresented.
+
+**Exercise 3 — Incomplete dominance and codominance, distinguished**
+Prompt: *"Incomplete dominance and codominance both produce heterozygous phenotypes that differ from either homozygote, but they are mechanistically distinct. Use snapdragon flower color (red × white → pink, incomplete dominance) and ABO blood type (IᴬIᴮ → AB blood, codominance) as your examples. Walk me through what is happening at the molecular level in each case — specifically, what determines whether a heterozygote shows blending or both phenotypes simultaneously."*
+
+Evaluate whether the model correctly identifies that incomplete dominance reflects insufficient enzyme product from a single functional allele (less pigment = pink, not red), while codominance reflects the simultaneous expression of two distinct gene products (both A and B antigens displayed on red blood cells). The distinction is at the protein level, not at any "blending" of genetic information.
+
+**Exercise 4 — The chi-square test, applied to Mendel**
+Prompt: *"In a monohybrid cross between two heterozygotes, the predicted offspring ratio is 3:1. A researcher counts 165 dominant and 35 recessive offspring (200 total). Apply the chi-square test to determine whether this deviation from the expected 150:50 is statistically significant. What is your chi-square value, your degrees of freedom, and your p-value? Then interpret: does this result support or refute the Mendelian hypothesis?"*
+
+Evaluate whether the model correctly computes χ² ≈ (165-150)²/150 + (35-50)²/50 = 1.5 + 4.5 = 6.0 with 1 degree of freedom, giving a p-value of approximately 0.014. The result is statistically significant at the 0.05 level — meaning the deviation is unlikely to be chance and may suggest viability differences between phenotypes (selection during development) rather than disproving Mendel.
+
+**Exercise 5 — Why Mendel's work was ignored**
+Prompt: *"Mendel published his pea-plant work in 1866. It was largely ignored until 1900, when three independent botanists (de Vries, Correns, von Tschermak) rediscovered his findings. Walk me through why the field missed Mendel's work for 34 years. Engage with the contemporary scientific consensus on inheritance (blending inheritance), Mendel's choice of journal and audience (a regional natural-history society), and the conceptual difficulty of his framework (discrete particles when biology was thinking in fluids and gradients)."*
+
+Evaluate whether the model engages with all three factors and the deeper irony that Mendel's framework would have provided the missing variation source for Darwin's theory of natural selection (also published in 1859) — but the two ideas remained disconnected for decades because neither author was reading the other.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Hugo de Vries** rediscovered Mendel's laws in 1900, independently and almost simultaneously with two other botanists. He also coined the term "mutation" and built the early framework for the modern study of genetic variation.
+
+**Run this:**
+
+```
+Who was Hugo de Vries, and how does his rediscovery of Mendel's laws and mutation theory connect to the heredity concepts we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Hugo de Vries"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through one of de Vries's evening-primrose experiments that led him to the concept of mutation.
+- Ask it to compare de Vries's mutation theory with the modern molecular understanding of point mutations and chromosomal rearrangements.
+
+What changes? What gets better? What gets worse?

@@ -180,3 +180,55 @@ That is the answer to the question at the start. Not how you run without ignitin
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Glycolysis: the investment phase puzzle**
+Prompt a model: *"Glycolysis begins by spending 2 ATP to phosphorylate glucose and fructose-6-phosphate. The cell only nets 2 ATP per glucose at the end of glycolysis — meaning the gross production is 4 ATP, of which 2 are reinvested. Walk me through why the cell is willing to invest energy at the start of an energy-yielding pathway. What does the phosphorylation actually accomplish — beyond just 'preparing the molecule for breakdown'?"*
+
+Evaluate whether the model identifies the phosphorylation's three specific functions: (1) trapping glucose inside the cell (the charged phosphate cannot diffuse back out through the membrane), (2) destabilizing the molecule for cleavage, and (3) creating the high-energy intermediates that drive ATP synthesis later. The phrase "preparing the molecule" is correct but uninformative without these mechanisms.
+
+**Exercise 2 — The chemiosmotic theory in detail**
+Prompt: *"Peter Mitchell's chemiosmotic theory explained how the electron transport chain produces ATP without the direct chemical coupling that biochemists had been searching for. Walk me through the mechanism in three stages: (1) how electron transport pumps protons across the inner mitochondrial membrane, (2) how the resulting proton gradient stores energy in two distinct forms (chemical and electrical), and (3) how ATP synthase uses the proton flow back across the membrane to drive ATP formation. Estimate how many protons must flow through ATP synthase per ATP formed."*
+
+Evaluate whether the model correctly identifies that approximately 4 protons drive synthesis of 1 ATP through ATP synthase [verify — sources vary], whether it engages with the proton-motive force (PMF) as the sum of chemical and electrical potential, and whether it treats the ATP synthase F₀ subunit as a literal molecular rotor.
+
+**Exercise 3 — Why oxygen and only oxygen**
+Prompt: *"The terminal electron acceptor in aerobic cellular respiration is oxygen. Some bacteria can use sulfate, nitrate, or even iron as alternative electron acceptors. Estimate the energy yield difference: if a cell could use sulfate instead of oxygen as the terminal acceptor (with reduction potential approximately -0.22 V vs. +0.82 V for oxygen), what fraction of the energy yield from glucose oxidation would the sulfate-respiring cell capture? Why hasn't natural selection produced a more energetic terminal acceptor than oxygen on Earth?"*
+
+Evaluate whether the model engages with the reduction-potential difference quantitatively and identifies that oxygen's high reduction potential is what makes aerobic respiration so energetically rewarding. The "no better acceptor" answer requires understanding that fluorine has a higher reduction potential but is too reactive and rare to serve.
+
+**Exercise 4 — Lactic acid fermentation as backup**
+Prompt: *"During intense exercise, muscle cells run out of available oxygen and switch to lactic acid fermentation. The cell still completes glycolysis (2 ATP per glucose) but does not enter the citric acid cycle. Explain what happens to the pyruvate and the NADH that glycolysis produces, and why simply stopping at pyruvate is not viable for sustained ATP production. What is the rate-limiting bottleneck that fermentation solves, and at what cost?"*
+
+Evaluate whether the model correctly identifies that fermentation regenerates NAD⁺ from NADH (so glycolysis can continue), at the cost of converting pyruvate to lactate. The bottleneck is NAD⁺ availability — without regenerating NAD⁺, glycolysis halts within seconds.
+
+**Exercise 5 — Cyanide as a diagnostic poison**
+Prompt: *"Cyanide poisoning kills by binding to cytochrome c oxidase (Complex IV of the electron transport chain) and blocking electron flow to oxygen. Trace the cascade: (1) what happens immediately at the molecular level when Complex IV cannot accept electrons; (2) how this propagates upstream through the chain in seconds; (3) why ATP production drops to fermentation-level (about 2 ATP per glucose); (4) why high-oxygen environments (hyperbaric chambers) can partially compensate even though the cellular machinery cannot use the oxygen."*
+
+Evaluate whether the model correctly traces the upstream propagation: blocked Complex IV → accumulated electrons in upstream complexes → no proton pumping → no proton-motive force → no ATP synthesis. The hyperbaric oxygen helps because some non-cytochrome pathways can use dissolved oxygen, not because the cellular machinery is restored.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Peter D. Mitchell** proposed in 1961 that cellular respiration generates ATP by pumping protons across a membrane — chemiosmosis — and was dismissed as a crank for over a decade. He won the 1978 Nobel Prize from a private laboratory he ran out of a country house in Cornwall.
+
+**Run this:**
+
+```
+Who was Peter D. Mitchell, and how does his chemiosmotic theory connect to the cellular respiration mechanisms we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Peter D. Mitchell"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through one proton's journey from NADH to ATP synthase — using Mitchell's chemiosmotic framework.
+- Add a constraint: "Answer as Mitchell's 1961 *Nature* paper abstract, in his voice, defending an idea most of the field would reject for a decade."
+
+What changes? What gets better? What gets worse?

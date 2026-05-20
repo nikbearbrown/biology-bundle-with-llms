@@ -194,3 +194,55 @@ The nervous system is not elegant. It is tangled, redundant, and metabolically e
 9. Multiple sclerosis (MS) damages myelin in the CNS. Patients often experience symptoms that come and go — a period of weakness or vision loss, followed by partial recovery, followed by relapse. Using your understanding of saltatory conduction and myelin, propose a cellular-level explanation for why MS symptoms might partially remit (improve) before eventually worsening. What structural changes at the node of Ranvier or along the axon might explain partial recovery? *Tests: reasoning about myelin function and repair to explain a clinical pattern.*
 
 10. The nervous system uses frequency coding (rate of action potential firing) to encode stimulus intensity, yet action potentials have a refractory period that limits how fast a neuron can fire. A typical neuron can fire at most about 100–200 times per second. If a very intense stimulus needs to be encoded as "extremely strong," propose two mechanisms the nervous system might use to communicate intensity beyond the firing rate limit of a single neuron. Connect your answer to what you know about neural circuits and population coding. *Tests: reasoning beyond single-neuron mechanisms to circuit-level solutions for a coding problem.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — The action potential, mechanistically**
+Prompt a model: *"A neuron at rest holds a membrane potential of approximately -70 mV. When stimulated above threshold (~-55 mV), it fires an action potential — a brief reversal of polarity reaching ~+30 mV before returning to rest. Walk me through the molecular mechanism: which ion channels open in what sequence (voltage-gated Na⁺ channels first, voltage-gated K⁺ channels with delay), and what determines the action potential's duration (~1 ms in most neurons). Why is the action potential 'all or nothing' — what prevents partial firing?"*
+
+Evaluate whether the model correctly identifies the Na⁺/K⁺ channel sequence (Na⁺ inward producing depolarization → channel inactivation → K⁺ outward producing repolarization → return to rest), and engages with the all-or-nothing mechanism: voltage-gated Na⁺ channels create a positive feedback loop above threshold (more channels open → more depolarization → more channels open) until the membrane fully depolarizes. Below threshold, the same channels close and the perturbation dies out.
+
+**Exercise 2 — Synaptic transmission and the diversity of neurotransmitters**
+Prompt: *"At a chemical synapse, an arriving action potential triggers Ca²⁺ influx through voltage-gated channels, which causes neurotransmitter-filled vesicles to fuse with the presynaptic membrane and release their contents into the synaptic cleft. The neurotransmitter binds receptors on the postsynaptic neuron, triggering excitation (EPSP) or inhibition (IPSP). Walk me through three major neurotransmitters (glutamate, GABA, dopamine) and the receptor types they activate (ionotropic vs. metabotropic). Why does the brain use so many different chemical signals when one universal neurotransmitter could in principle suffice?"*
+
+Evaluate whether the model engages with the diversity-enables-specificity argument: different neurotransmitter-receptor pairs allow distinct signal types (fast excitation = glutamate; fast inhibition = GABA; slower neuromodulation = dopamine, serotonin, noradrenaline) to be carried independently through the same anatomical network. A single transmitter could not perform all these functions.
+
+**Exercise 3 — The myelin innovation and saltatory conduction**
+Prompt: *"Myelinated axons conduct action potentials much faster than unmyelinated axons of the same diameter — perhaps 100 m/s vs. 1-2 m/s [verify]. Walk me through the mechanism: how myelin (Schwann cells in the periphery, oligodendrocytes in the CNS) wraps the axon, leaving exposed nodes of Ranvier where action potentials regenerate. Why does this 'saltatory' conduction (jumping from node to node) allow such dramatic speedup, and what is the metabolic cost of the myelin investment?"*
+
+Evaluate whether the model engages with the capacitance reduction (myelin acts as electrical insulator, reducing the membrane's ability to leak current and allowing depolarization to spread further before regenerating), and the demyelinating-disease consequence: multiple sclerosis attacks myelin, slowing or blocking conduction, with neurological consequences depending on which axons are affected.
+
+**Exercise 4 — The brain's regional specialization**
+Prompt: *"The human brain has approximately 86 billion neurons [verify] organized into specialized regions: cerebellum for motor coordination, hippocampus for memory consolidation, prefrontal cortex for executive function, occipital cortex for vision, etc. Walk me through how strokes affecting specific brain regions produce predictable, localized deficits — and explain how this clinical pattern was historically used to map brain function (e.g., Paul Broca's 1861 case of 'Tan' that localized speech production to the left frontal cortex). Why has functional MRI not entirely replaced lesion studies in cognitive neuroscience?"*
+
+Evaluate whether the model engages with the lesion-method logic (specific damage producing specific deficit demonstrates that the damaged region was necessary for the lost function), and whether it correctly identifies that fMRI shows correlation (areas active during a task) but not necessity (could those areas be damaged without losing the function?). Lesion studies and fMRI complement each other.
+
+**Exercise 5 — Why is sleep universal across animals**
+Prompt: *"Every animal studied in sufficient detail appears to sleep — from fruit flies to elephants to whales. Walk me through what is known about sleep's biological functions: synaptic homeostasis, memory consolidation, metabolic clearance (including the recent discovery of glymphatic clearance during sleep). Why hasn't selection produced a sleepless animal — given that sleep makes animals vulnerable to predation, eliminates time for foraging, and requires safe sleeping locations?"*
+
+Evaluate whether the model engages with the universality argument (sleep's persistence across all studied animals suggests a function so essential that the costs are accepted) and the multiple-function hypothesis: sleep likely serves multiple roles (cellular maintenance, neural plasticity, metabolic processing) rather than one. The discovery of glymphatic flow (CSF circulation that clears metabolic waste) has been particularly influential in showing that sleep is not merely "rest" but active maintenance.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Charles Sherrington** coined the term "synapse" in 1897 and worked out the reflex arc and the principle of "integrative action" — that the nervous system is fundamentally a computing structure of competing inputs at synapses. He shared the 1932 Nobel Prize.
+
+**Run this:**
+
+```
+Who was Charles Sherrington, and how does his work on the synapse and integrative action connect to the nervous system biology we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Charles Scott Sherrington"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through one reflex arc — from sensory ending to motor output — using Sherrington's framework of summation at the synapse.
+- Ask it to compare Sherrington's "decerebrate cat" experiments with what we'd learn today from optogenetics.
+
+What changes? What gets better? What gets worse?

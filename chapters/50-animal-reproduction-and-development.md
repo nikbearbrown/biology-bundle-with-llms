@@ -218,3 +218,55 @@ That, I find genuinely remarkable. The same instruction that makes an eye in a m
 9. Pax6, a gene that specifies eye development, is so conserved that a mouse version can trigger eye formation in a fruit fly. However, the eyes produced are fly-type compound eyes, not mammalian camera eyes. Explain this result in terms of the distinction between the master regulatory switch (Pax6) and the downstream developmental program it activates. What does this tell you about how evolution can produce morphologically different structures using the same regulatory gene? *Tests: distinguishing the conserved regulatory logic from the diverged downstream programs — requires reasoning about modularity in gene regulatory networks.*
 
 10. Human twins can arise in two ways: monozygotic twins (from a single zygote that splits) and dizygotic twins (from two separate eggs fertilized by two separate sperm). Monozygotic twins are genetically identical; dizygotic twins share on average 50% of their genes. In very rare cases, monozygotic twins are not phenotypically identical despite identical DNA — one twin may develop a condition the other does not. Propose two mechanisms that could explain phenotypic differences between genetically identical individuals, and connect each mechanism to what you know about how gene expression is regulated during development. *Tests: applying developmental biology concepts (epigenetics, stochastic gene expression, developmental asymmetry) to explain variation that cannot be attributed to DNA sequence differences.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Sex determination and the variation across species**
+Prompt a model: *"In mammals, sex is determined by the SRY gene on the Y chromosome (XX = female, XY = male). In birds, the system is reversed (ZW = female, ZZ = male). In some reptiles, sex is determined by incubation temperature. In bees, haploid eggs become males and diploid eggs become females. Walk me through what this diversity tells us about sex determination: it is not a fundamental biological constraint but a tunable system. Why has natural selection produced such varied solutions to the same engineering problem?"*
+
+Evaluate whether the model engages with the lability of sex determination (the underlying gene networks for ovary or testis development are highly conserved across vertebrates, but the trigger that activates them differs widely), and whether it correctly identifies that temperature-dependent sex determination is climate-vulnerable: rising temperatures from climate change are skewing reptile sex ratios in some species, with population-level consequences.
+
+**Exercise 2 — Fertilization as cell-cell recognition problem**
+Prompt: *"Sperm-egg fusion is a tightly controlled cell-cell recognition event. Walk me through the steps: capacitation (sperm activation in the female reproductive tract), acrosome reaction (release of enzymes to penetrate the egg's outer layers), recognition by the egg's plasma membrane, and the cortical reaction (preventing additional sperm from fertilizing the same egg — polyspermy block). Why is the polyspermy block so urgent (multiple sperm fusing produces non-viable triploid embryos), and how does the rapid speed of the cortical reaction prevent failures?"*
+
+Evaluate whether the model engages with the polyspermy danger (multiple sperm penetration produces a polyploid zygote that cannot develop normally), and the speed of the cortical reaction (within seconds of first sperm entry, calcium waves trigger the cortical granules to release enzymes that modify the zona pellucida, blocking further sperm binding). The fast block (membrane depolarization) and slow block (zona modification) provide redundant protection.
+
+**Exercise 3 — Cleavage and the rapid early embryo**
+Prompt: *"After fertilization, the zygote undergoes rapid cell divisions called cleavage — the cells get smaller and smaller without growing in between, since the egg's stored materials are partitioned. Walk me through why cleavage is so much faster than later development (some species reach hundreds or thousands of cells within hours), and explain how the embryo transitions from maternal-control to zygotic-control of gene expression around the maternal-zygotic transition (MZT). Why is the MZT a particularly vulnerable developmental stage?"*
+
+Evaluate whether the model engages with the maternal contribution (maternal mRNAs and proteins stored in the egg drive early development; zygotic genes are not transcribed initially), and the MZT as the moment when the embryo's own genome takes over (typically around the 8-cell to blastula stage in mammals). Failures at the MZT are common causes of early miscarriage because zygotic gene expression must successfully replace maternal control.
+
+**Exercise 4 — Gastrulation and the formation of body plan**
+Prompt: *"Gastrulation is the process by which the early embryo (typically a hollow ball of cells, the blastula) reorganizes into three germ layers (ectoderm — future skin and nervous system; mesoderm — future muscle, bone, and blood; endoderm — future digestive tract and lungs). Walk me through this morphological transformation and explain why Lewis Wolpert is sometimes quoted as saying 'It is not birth, marriage, or death, but gastrulation, which is truly the most important time in your life.' What is so consequential about this brief embryonic period?"*
+
+Evaluate whether the model engages with the body-plan-establishment significance: gastrulation defines the basic vertebrate body plan (anterior-posterior, dorsal-ventral, three germ layers) that determines what every later structure can become. Failures at this stage are typically lethal or produce major birth defects, since later development depends on the correct gastrulation foundation.
+
+**Exercise 5 — Aging, senescence, and reproductive trade-offs**
+Prompt: *"Reproduction is energetically expensive. Many species show clear trade-offs between reproductive output and lifespan: organisms with high lifetime reproductive output (many offspring) tend to be shorter-lived, while organisms with low reproductive output tend to be longer-lived. Walk me through this trade-off using disposable soma theory: the body invests resources in either reproduction or somatic maintenance (DNA repair, cellular protection), and these compete for the same finite budget. Why do post-reproductive humans (especially women after menopause) live so long compared to other primates — what does this suggest about human evolution?"*
+
+Evaluate whether the model engages with the disposable soma theory and the post-reproductive longevity puzzle: humans have unusually long post-reproductive lifespans, particularly for women. The grandmother hypothesis proposes that helping raise grandchildren provides indirect reproductive benefit, selecting for extended lifespan beyond direct reproduction. This is one of the more interesting evolutionary puzzles about modern humans.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Anne McLaren** showed that mammalian embryos can survive outside the body in the 1950s — work that made human IVF possible two decades later. She was one of the architects of the UK's framework regulating embryo research and human fertility treatment.
+
+**Run this:**
+
+```
+Who was Anne McLaren, and how does her work on mammalian embryology connect to the animal reproduction and development we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Anne McLaren"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through the steps that take a mouse zygote from fertilization to implantation — McLaren's experimental terrain.
+- Ask it to compare McLaren's science with her policy work on the Warnock Committee and the 14-day rule on embryo research.
+
+What changes? What gets better? What gets worse?

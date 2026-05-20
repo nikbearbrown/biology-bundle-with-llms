@@ -186,3 +186,55 @@ That continuous expenditure of energy — that relentless opposition to equilibr
 9. Botulinum toxin (Botox) blocks the release of acetylcholine from motor neuron terminals by cleaving proteins required for vesicle fusion. Predict the clinical consequence of Botox injection into a skeletal muscle, and explain why this effect is temporary (lasting weeks to months) rather than permanent. Then predict what would happen if Botox were somehow delivered to cardiac muscle — and explain why cardiac muscle is resistant to botulinum toxin under normal clinical use. *Tests: applying neuromuscular junction mechanism to a clinical intervention, distinguishing skeletal from cardiac control architecture.*
 
 10. The sliding filament mechanism states that thick and thin filaments do not shorten — they slide. A student proposes an alternative hypothesis: what if, instead of sliding, the actin filaments were pulled toward the center by a completely different mechanism that did not involve myosin heads binding and pivoting? Design two experimental tests that would distinguish between the sliding filament model and this alternative, and explain what specific evidence from each test would support or refute each model. *Tests: reasoning from mechanism to experimental design — requires the student to identify what observations are uniquely predicted by the sliding filament model.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — The sliding filament theory, mechanistically**
+Prompt a model: *"Skeletal muscle contraction is driven by the sliding filament mechanism: actin and myosin filaments slide past each other, shortening the sarcomere. Walk me through the cycle: ATP binds myosin → myosin head detaches from actin → ATP hydrolysis cocks the head → head reattaches to actin at a new position → release of phosphate triggers the power stroke → ADP release. What does each step accomplish, and why does muscle relaxation specifically require ATP rather than just stopping the contraction signal?"*
+
+Evaluate whether the model correctly traces the cycle and engages with the rigor problem: without ATP, myosin remains bound to actin (rigor mortis after death). Calcium also requires ATP for return to the sarcoplasmic reticulum (SERCA pump is ATP-dependent), so muscle relaxation requires energy even though it appears passive.
+
+**Exercise 2 — Excitation-contraction coupling**
+Prompt: *"A motor neuron action potential triggers muscle contraction through a series of steps: neuromuscular junction → muscle action potential → T-tubule depolarization → calcium release from sarcoplasmic reticulum → calcium binding to troponin → tropomyosin shift exposing actin binding sites → contraction. Walk me through this cascade and explain why it can complete within milliseconds. What goes wrong in malignant hyperthermia (an inherited disorder of calcium release) and what is the mechanism of the antidote dantrolene?"*
+
+Evaluate whether the model engages with the speed of calcium release (the SR contains preloaded Ca²⁺ at high concentration, and ryanodine receptors release it rapidly when activated), and the malignant hyperthermia mechanism (mutated ryanodine receptors release excess Ca²⁺ in response to certain anesthetics, causing massive hypermetabolism, hyperthermia, and muscle rigidity; dantrolene blocks ryanodine receptors to halt the release).
+
+**Exercise 3 — Different muscle fiber types and athletic specialization**
+Prompt: *"Skeletal muscle has fast-twitch (Type II) and slow-twitch (Type I) fiber types, with biochemically distinct properties: slow-twitch is fatigue-resistant and oxidative; fast-twitch is high-power and glycolytic. Walk me through the distribution: marathon runners typically have 70-80% slow-twitch in leg muscles; sprinters have 70-80% fast-twitch [verify]. Is this distribution determined genetically, by training, or both? What does training actually change about muscle composition?"*
+
+Evaluate whether the model engages with the heritability of fiber-type distribution (substantially genetic — twin studies show high heritability of the basic distribution) but acknowledges training-induced changes (muscle fibers can shift along the slow-fast spectrum somewhat, and training increases mitochondrial density in slow-twitch and glycolytic capacity in fast-twitch). Total fiber number is set in early development; training changes fiber properties, not number.
+
+**Exercise 4 — Bone as living tissue**
+Prompt: *"Bone is not just a structural material — it is dynamic tissue continuously remodeled by osteoblasts (bone-building cells) and osteoclasts (bone-resorbing cells). Walk me through the remodeling cycle and explain why mature bone is replaced approximately every 7-10 years [verify]. What are the consequences of imbalanced remodeling: too much resorption (osteoporosis), too little resorption (osteopetrosis)? How do calcium homeostasis and the parathyroid hormone connect bone to the broader endocrine system?"*
+
+Evaluate whether the model engages with the remodeling-balance-determines-bone-density argument and the PTH connection: when blood calcium drops, PTH activates osteoclasts to release calcium from bone (along with mobilizing calcium from kidney and intestine). Chronic PTH elevation (hyperparathyroidism) causes bone loss; chronic suppression contributes to bone gain.
+
+**Exercise 5 — Joints, ligaments, and the failure modes of musculoskeletal injury**
+Prompt: *"The musculoskeletal system has several failure points: muscle (strain), tendon (tear), ligament (sprain), bone (fracture), cartilage (joint damage). Walk me through what tissue is involved in each common injury type — ACL tear, rotator cuff tear, hamstring strain, stress fracture, osteoarthritis. Why does cartilage have such poor healing capacity compared to bone or muscle, and what does this mean for the long-term outcome of cartilage injuries?"*
+
+Evaluate whether the model correctly identifies the tissue involved in each injury and engages with cartilage's poor healing: cartilage has minimal blood supply (chondrocytes get nutrition from synovial fluid via diffusion), so the inflammatory and regenerative response that heals other tissues cannot reach cartilage damage effectively. This is why cartilage injuries often progress to osteoarthritis and currently have no good biological repair.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Hugh Esmor Huxley** co-proposed the sliding-filament theory of muscle contraction in 1954 with Jean Hanson — and spent the next fifty years using X-ray diffraction and electron microscopy to confirm the molecular details. Not the same person as Nobel laureate Andrew Huxley (no relation).
+
+**Run this:**
+
+```
+Who was Hugh Esmor Huxley, and how does his work on muscle ultrastructure connect to the musculoskeletal system we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Hugh Huxley"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through what Huxley's X-ray diffraction patterns of contracting muscle actually showed.
+- Ask it to distinguish Hugh Huxley from Andrew Huxley — what each contributed to the sliding-filament theory.
+
+What changes? What gets better? What gets worse?

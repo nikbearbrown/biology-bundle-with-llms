@@ -199,3 +199,55 @@ The conversation is entirely molecular. The consequences are what you experience
 **Challenge**
 
 9. You are designing a therapeutic strategy for a cancer in which: (a) the EGF receptor is overexpressed and constitutively dimerizing; (b) RAS is mutated to be permanently active; (c) a phosphatase that normally terminates the MAPK/ERK cascade has been deleted; and (d) the gene encoding the pro-apoptotic caspase activator is silenced. For each of these four alterations, identify whether it affects signal initiation, amplification, termination, or outcome. Then explain why targeting any single one of these four nodes is unlikely to halt the cancer, and describe what a rational combination therapy would target and why. *Tests: comprehensive integration of the entire signaling chapter — initiation, amplification, termination, and outcome — applied to a multi-mutation cancer scenario.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Signal amplification, traced**
+Prompt a model: *"A single epinephrine molecule binding to a beta-adrenergic receptor on a liver cell can trigger the release of approximately 10⁸ glucose molecules from glycogen stores [verify — order of magnitude]. Walk me through the cascade that achieves this amplification — the G-protein activation, adenylyl cyclase, cAMP production, protein kinase A activation, and glycogen phosphorylase phosphorylation. At each step, estimate the amplification factor and identify where the largest amplification occurs."*
+
+Evaluate whether the model engages with the cascade as a series of catalytic steps (each enzyme acts on many substrate molecules), and whether it correctly identifies that the largest amplification typically occurs at the kinase steps where one PKA molecule phosphorylates many substrates.
+
+**Exercise 2 — Receptor specificity as a design problem**
+Prompt: *"A typical cell expresses receptors for approximately 20-100 different signaling molecules at any given time [verify]. Walk me through how the cell distinguishes between ligands of similar shape — for example, between epinephrine and norepinephrine, which differ by a single methyl group. What molecular features of the receptor active site enforce specificity, and why does this specificity sometimes break down (cross-reactivity)?"*
+
+Evaluate whether the model engages with the geometric and electrostatic complementarity between ligand and receptor binding pocket, and whether it acknowledges that real receptors often have meaningful cross-reactivity (the alpha and beta adrenergic receptors both bind epinephrine and norepinephrine, with different affinities — the system is graded, not binary).
+
+**Exercise 3 — Why second messengers, when first messengers exist**
+Prompt: *"The first messenger (e.g., a hormone) binds the receptor on the outside of the cell. The second messenger (e.g., cAMP) carries the signal inside. Why doesn't the cell just let the first messenger enter and act directly? Engage with the membrane permeability problem, the amplification benefit of generating many second messengers per first messenger, and the desensitization advantage of a transient second-messenger pool."*
+
+Evaluate whether the model correctly identifies that hydrophilic first messengers cannot cross the lipid bilayer, that intracellular generation provides amplification (one receptor → many cAMP), and that second messengers can be rapidly degraded (cAMP → 5'-AMP via phosphodiesterase) for fast signal termination.
+
+**Exercise 4 — The receptor tyrosine kinase cascade**
+Prompt: *"Receptor tyrosine kinases (RTKs) like the insulin receptor and EGFR initiate signaling by autophosphorylating tyrosine residues in their cytoplasmic tail upon ligand binding. Trace the downstream events: how do SH2-domain-containing proteins recognize phosphorylated tyrosines, how does this recruit and activate the Ras-MAPK pathway, and what is the ultimate cellular response — typically gene transcription? Identify two human cancers in which constitutive activation of an RTK drives the disease."*
+
+Evaluate whether the model engages with the SH2 domain as a phospho-tyrosine reader, traces the Ras → Raf → MEK → ERK cascade in order, and identifies relevant cancers (e.g., chronic myelogenous leukemia / BCR-ABL, lung adenocarcinoma / EGFR mutations, HER2-positive breast cancer).
+
+**Exercise 5 — Quorum sensing as group decision**
+Prompt: *"Bacteria communicate population density through quorum sensing — secreting and detecting signaling molecules (autoinducers) whose concentration rises with cell density. Use one specific example (e.g., Vibrio fischeri bioluminescence, Pseudomonas aeruginosa virulence, biofilm formation) to walk me through the mechanism. Why does it make evolutionary sense for bacteria to delay certain behaviors until a quorum is established, and what kinds of behaviors specifically benefit from this kind of coordinated response?"*
+
+Evaluate whether the model engages with the cost-benefit logic — behaviors that require many participants to be effective (biofilm formation, virulence in a host, bioluminescence visible to predators) only pay off above a critical population threshold, so signaling enables coordinated activation rather than wasted individual effort.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Earl W. Sutherland Jr.** discovered cyclic AMP in 1957 — the first known "second messenger," the intracellular signal that translates a hormone binding at the cell surface into a metabolic change inside. He won the 1971 Nobel Prize for it.
+
+**Run this:**
+
+```
+Who was Earl W. Sutherland Jr., and how does his discovery of cyclic AMP connect to the cell communication pathways we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Earl Wilbur Sutherland Jr."** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to trace one signaling pathway from glucagon binding the liver cell surface to glucose release — through cAMP.
+- Ask it to compare cAMP's role in 1957 thinking with the dozen-plus second messengers we now know about.
+
+What changes? What gets better? What gets worse?

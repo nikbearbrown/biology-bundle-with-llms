@@ -192,3 +192,55 @@ You are one draw from a nearly infinite lottery. So is everyone else. The fact t
 9. Bdelloid rotifers have apparently reproduced asexually for tens of millions of years without experiencing the mutation ratchet that theory predicts should destroy asexual lineages. They acquire new genetic sequences through horizontal gene transfer from bacteria, fungi, and other organisms. In what sense does this mechanism serve the same function as sexual recombination? In what sense is it fundamentally different? Does their existence refute the Red Queen hypothesis, or does it support a modified version of it? *Tests: reasoning about the evolutionary function of genetic variation, not just its mechanism.*
 
 10. Nondisjunction occurs when chromosomes or chromatids fail to separate properly during meiosis. If nondisjunction occurs during meiosis I for chromosome 21 in a human cell, predict the chromosome content of each of the four resulting gametes. If nondisjunction instead occurs during meiosis II in one of the cells, how does the outcome differ? *Tests: applying mechanistic knowledge of meiosis I vs. II to predict specific chromosomal outcomes.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Why two divisions, and what each accomplishes**
+Prompt a model: *"Meiosis consists of two sequential divisions (Meiosis I and Meiosis II) that together convert one diploid cell into four haploid gametes. Walk me through what each division accomplishes mechanistically, and why the cell could not achieve a haploid state with a single division. Specifically: at the end of Meiosis I, are the daughter cells haploid or diploid? Justify your answer with reference to the chromosome content."*
+
+Evaluate whether the model correctly identifies that Meiosis I separates homologous chromosomes (reductional division — produces cells with one copy of each chromosome but each chromosome still has two sister chromatids), while Meiosis II separates sister chromatids (equational division — produces single-chromatid haploid gametes). The cells at the end of Meiosis I are haploid in chromosome number but each chromosome is still doubled.
+
+**Exercise 2 — Crossing over and the value of recombination**
+Prompt: *"During Meiosis I, homologous chromosomes pair (synapsis) and exchange genetic material (crossing over). The frequency of crossing over varies along chromosomes — averaging perhaps 1-2 crossovers per chromosome arm in humans [verify]. Walk me through why the cell invests in this seemingly risky process: what does recombination accomplish that random assortment alone cannot? Engage with the speed of adaptation in changing environments and the avoidance of Muller's ratchet (mutation accumulation in asexual lineages)."*
+
+Evaluate whether the model engages with the population-genetics rationale for sex (recombination breaks linkage, generates novel allele combinations, allows beneficial mutations to be combined into single genomes) and with the bdelloid rotifer counter-example (an apparently asexual lineage that has persisted for millions of years).
+
+**Exercise 3 — The arithmetic of gamete diversity**
+Prompt: *"Humans have 23 chromosome pairs. Random assortment alone (without crossing over) produces 2²³ = approximately 8.4 million possible gamete combinations. Walk me through the math, and then estimate how crossing over modifies this number — specifically, how a single crossover event per chromosome arm increases the diversity. What is the rough scale of total possible human gametes from a single individual?"*
+
+Evaluate whether the model correctly applies the 2²³ calculation and engages with the multiplication principle for crossing over. The product of 8.4M × 8.4M (zygote combinations from two parents) is roughly 70 trillion — far more than the number of humans who have ever lived. Each fertilization is essentially unique.
+
+**Exercise 4 — Nondisjunction and the consequences**
+Prompt: *"Nondisjunction is the failure of homologous chromosomes (Meiosis I) or sister chromatids (Meiosis II) to separate properly. Walk me through what happens to gametes produced by nondisjunction at each stage, and why the resulting zygotes are typically nonviable except for specific chromosomes (the Down syndrome trisomy-21 case being a notable exception). Why does maternal age increase the risk of trisomy 21 specifically — what is the mechanism?"*
+
+Evaluate whether the model engages with the egg-arrest mechanism — human oocytes enter meiosis prenatally, then arrest in prophase I until ovulation, sometimes for decades. Spindle attachments degrade over time, so older eggs are more prone to chromosome missegregation. This is a meiotic-spindle aging mechanism, not an embryonic-development mechanism.
+
+**Exercise 5 — Sexual reproduction's long-term advantage**
+Prompt: *"In the short term, asexual reproduction is twice as efficient as sexual reproduction — every individual can reproduce, rather than half (the females). Yet the vast majority of complex eukaryotes use sexual reproduction. Walk me through the leading theories for why sex persists despite this two-fold cost: the Red Queen hypothesis (coevolution with parasites), Muller's ratchet (mutation accumulation), and the Hill-Robertson effect (interference between selected alleles). Which of these is best supported by current evidence?"*
+
+Evaluate whether the model correctly summarizes each theory and engages with the Red Queen hypothesis as the most empirically supported in many contexts (parasite-host coevolution selects for genetic variability in hosts), while acknowledging that no single theory fully explains the persistence of sex across all sexual taxa.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Walter Sutton** proposed in 1902 — based on grasshopper testis cells — that chromosomes carry the units of inheritance Mendel had inferred. The chromosome theory of inheritance, the bridge between cytology and genetics, was his master's thesis.
+
+**Run this:**
+
+```
+Who was Walter Sutton, and how does his chromosome theory of inheritance connect to the meiosis and sexual reproduction we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Walter Sutton"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to map Mendel's Law of Independent Assortment onto chromosome behavior in meiosis — the exact connection Sutton made.
+- Ask it to compare Sutton's chromosome theory with the rediscovery of Mendel's work that was happening at the same time.
+
+What changes? What gets better? What gets worse?

@@ -190,3 +190,55 @@ That is where the next chapter begins: what, physically, is a gene? What does it
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Linkage and recombination frequency**
+Prompt a model: *"Two genes are located on the same chromosome 18 centimorgans apart. In a test cross between a doubly heterozygous individual (genotype AaBb) and a doubly homozygous recessive individual (aabb), what proportion of offspring would you expect to show parental phenotypes versus recombinant phenotypes? Walk me through the relationship between recombination frequency and physical distance, and explain why this relationship breaks down at distances above approximately 50 centimorgans."*
+
+Evaluate whether the model correctly calculates that 18 cM = 18% recombinant gametes, so 82% of offspring should show parental phenotypes (split equally between the two parental types) and 18% should be recombinant. The breakdown above 50 cM occurs because multiple crossovers between the loci begin to randomize inheritance, making the loci effectively unlinked.
+
+**Exercise 2 — X-linked inheritance and the affected-male pattern**
+Prompt: *"Hemophilia A is an X-linked recessive disorder. Walk me through the inheritance pattern when a carrier mother (X^H X^h) marries an unaffected father (X^H Y): what proportion of sons and daughters will be affected, what proportion will be carriers? Then explain why X-linked recessive disorders show a characteristic 'skip a generation' pattern and why affected fathers cannot pass the disease to their sons."*
+
+Evaluate whether the model correctly determines that 50% of sons will be affected (X^h Y), 0% of daughters will be affected (all receive X^H from father), and 50% of daughters will be carriers (X^H X^h). The fathers-not-to-sons rule follows from sons receiving Y from father, not X — so X-linked alleles travel from carrier mothers to affected sons, then potentially to carrier granddaughters.
+
+**Exercise 3 — Pedigree analysis as detective work**
+Prompt: *"You are presented with a four-generation pedigree showing an autosomal dominant disorder with reduced penetrance (about 70%). Walk me through how you would distinguish this pattern from autosomal recessive (which would show different parent-offspring patterns) and from X-linked dominant (which would show different sex distributions). What single feature of the pedigree most decisively identifies the inheritance mode? What is the chance that an apparently 'unaffected' individual in a generation could carry the allele but not express it?"*
+
+Evaluate whether the model engages with the male-to-male transmission diagnostic (rules out X-linked), the apparent skipping of generations (consistent with reduced penetrance autosomal dominant or autosomal recessive), and the calculation of carrier risk for unaffected offspring of affected parents (with 70% penetrance, 30% of carriers will appear unaffected).
+
+**Exercise 4 — Polygenic inheritance and the bell curve**
+Prompt: *"Human height is determined by hundreds to thousands of genetic variants, each contributing a small effect. Walk me through how this polygenic architecture produces a continuous (bell-curve) distribution rather than discrete categories, and explain how genome-wide association studies (GWAS) have identified specific height-associated variants. What fraction of the heritability of height has been accounted for by all known variants combined, and why does substantial 'missing heritability' remain?"*
+
+Evaluate whether the model correctly identifies that the central limit theorem produces normal distributions when many small additive effects combine, and whether it engages with the missing-heritability problem (most GWAS-identified variants have very small effect sizes; rare variants, gene-gene interactions, and gene-environment interactions remain hard to capture). Currently identified variants account for roughly 25-40% of height heritability [verify].
+
+**Exercise 5 — Mitochondrial inheritance as exception**
+Prompt: *"Mitochondrial DNA is inherited exclusively from the mother — sperm contribute nuclear DNA but not mitochondria. Walk me through the consequences for inheritance of mitochondrial diseases (e.g., MELAS, Leber's hereditary optic neuropathy): what proportion of children of an affected mother will be affected? Why doesn't the same pattern apply to children of an affected father? Then explain why some mitochondrial diseases show variable expressivity even within siblings — the heteroplasmy phenomenon."*
+
+Evaluate whether the model correctly identifies that all children of an affected mother inherit her mitochondria, but the variable expression depends on what proportion of mitochondria are mutant (heteroplasmy ratio) — a stochastic process during oogenesis. Children of affected fathers are unaffected because the father's mitochondria are not transmitted (with rare exceptions).
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Calvin Bridges** was Thomas Hunt Morgan's student in the Columbia "Fly Room" — and proved the chromosome theory of inheritance in 1916 by showing that rare nondisjunction events produce predictable inheritance anomalies. He helped build the first detailed Drosophila genetic map.
+
+**Run this:**
+
+```
+Who was Calvin Bridges, and how does his nondisjunction work connect to the modern understandings of inheritance we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Calvin Bridges"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through one nondisjunction event in meiosis and show why the offspring's phenotype proves chromosomes carry genes.
+- Ask it to describe what the Columbia "Fly Room" was actually like — the conditions, the records, the daily rhythm of the genetics that became standard.
+
+What changes? What gets better? What gets worse?

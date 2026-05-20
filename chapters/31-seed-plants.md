@@ -156,3 +156,55 @@ When you look at a flowering plant, you are looking at the product of 350 millio
 9. Darwin described the apparently sudden appearance of flowering plants in the Cretaceous fossil record as an "abominable mystery." Modern genomics suggests angiosperms are a sister group to gymnosperms, not descended from them, and diverged from a common ancestor. Yet the earliest unambiguous angiosperm fossils appear abruptly, without clear transitional forms. Propose two different explanations — one taphonomic (related to how fossils form and are preserved) and one biological (related to where early angiosperms lived) — for why transitional angiosperm fossils might be absent from the record even if angiosperms evolved gradually. *Tests: reasoning about the limits of the fossil record and the conditions for fossil preservation.*
 
 10. A warming climate is shifting the timing of spring events: bees are emerging earlier, but some flowering plants are blooming at different rates depending on their temperature sensitivity. In some regions, the mismatch between bee emergence and flower bloom is growing. Using what you know about pollination biology and coevolution, predict the likely short-term and long-term consequences of this phenological mismatch for (a) the plant population's seed production, (b) the bee population's early-season nutrition, and (c) the coevolutionary relationship between the plant and its pollinator over multiple generations. *Tests: applying pollination biology to a climate-change scenario, requiring integration of ecology and evolutionary logic.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — The seed innovation, from gymnosperm to angiosperm**
+Prompt a model: *"Gymnosperms ('naked seeds' — pines, cypresses, conifers) evolved before angiosperms ('vessel seeds' — flowering plants). Walk me through what specifically changed in the angiosperm innovation: the appearance of the carpel (enclosing the ovule), the flower as a pollination apparatus, the fruit as a dispersal apparatus, and the double fertilization producing both embryo and endosperm. Why has this combination produced the dominant plant lineage today (~250,000 angiosperm species vs. ~1000 gymnosperms)?"*
+
+Evaluate whether the model engages with each angiosperm innovation as solving a distinct problem (carpel = embryo protection from drying and predation; flower = animal pollination = directed gamete delivery; fruit = animal dispersal = recruitment to favorable habitats; double fertilization = embryo plus dedicated nutrition stored at high efficiency), and whether it correctly identifies that the combination has enabled angiosperms to coevolve with insects and other animals in ways gymnosperms cannot.
+
+**Exercise 2 — Pollination as ecological engineering**
+Prompt: *"Approximately 75-90% of flowering plants depend on animal pollinators (mostly insects) [verify], with the remainder using wind or water. Walk me through three distinct pollination syndromes — bee pollination, hummingbird pollination, bat pollination — and identify the specific floral traits that have coevolved for each (color, scent, shape, nectar reward, time of day). Why are crop yields so vulnerable to pollinator decline, and what would happen if all bees were eliminated?"*
+
+Evaluate whether the model correctly identifies the syndrome traits (bee = blue/yellow, sweet scent, landing platform; hummingbird = red, no scent, tubular flower, copious nectar; bat = white/dim, strong fermenty scent, large landing platform, night-blooming), and whether it engages with the agricultural-dependence argument: many crops (almonds, apples, cherries, blueberries) are nearly 100% pollinator-dependent, so pollinator loss has direct food-security consequences.
+
+**Exercise 3 — Wood as evolutionary innovation**
+Prompt: *"Wood (secondary xylem) is one of the most important evolutionary innovations in plant history. It allows plants to grow tall — competing for light at canopy heights other plants cannot reach — and to support the dramatic biomass needed for long-lived perennials. Walk me through how wood is structured at the cellular level (lignified secondary cell walls, dead at maturity, conducting water through pits), and explain why wood is so important to the carbon cycle: a single mature tree can sequester many tons of CO₂ over its lifetime. What is the biomechanical limit on tree height, and why?"*
+
+Evaluate whether the model engages with the water-transport limit on tree height: tall trees must lift water from roots to leaves against gravity using transpiration-driven cohesion-tension. The cohesion-tension mechanism has a limit (water columns cavitate at about -100 atmospheres of tension); current tallest trees (coast redwoods at ~115 meters) operate near this limit and grow more slowly at the top.
+
+**Exercise 4 — C3, C4, and CAM as climate adaptations**
+Prompt: *"Three photosynthetic pathways have evolved in flowering plants: C3 (most plants, including wheat, rice), C4 (corn, sugarcane, ~3% of plant species but ~25% of terrestrial primary productivity [verify]), and CAM (succulents, pineapples, ~6% of species). Each is suited to different climates. Walk me through what specifically each pathway does to address the Rubisco-oxygen problem, and predict which pathway would dominate under a 2°C global warming scenario. Why has C4 evolved independently 60+ times despite the metabolic cost?"*
+
+Evaluate whether the model engages with the climate-pathway match (C3 = cool, moist; C4 = hot, sunny, somewhat dry; CAM = hot, very dry), and whether it correctly predicts that warming will favor C4 over C3 in many ecosystems, with significant agricultural implications. The repeated independent evolution of C4 reflects strong selection in hot environments — a pattern characteristic of structurally constrained but functionally important adaptations.
+
+**Exercise 5 — Coevolution of flowering plants and insects**
+Prompt: *"The Cretaceous explosion of flowering plants (~120 million years ago) coincided with the diversification of pollinating insects, particularly bees and butterflies. Walk me through the coevolutionary dynamic: how do flowers and pollinators select on each other to produce specialized partnerships (e.g., the long-tongued Madagascar moth that pollinates the Star of Bethlehem orchid, which Darwin predicted from the orchid's ~30 cm nectar tube)? What are the trade-offs of specialization — what does each partner gain, and what does each risk?"*
+
+Evaluate whether the model engages with the specialization trade-off (specialized partnerships are highly efficient when both partners are present but vulnerable to either partner's local extinction), and whether it correctly identifies that most pollination relationships are actually generalist — a flower that requires only one pollinator species is at extinction risk, so most flowering plants have multiple pollinator visitors.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Barbara McClintock** discovered transposable genetic elements — "jumping genes" — in maize in the 1940s. The field dismissed her work for thirty years before molecular biology caught up. She won the 1983 Nobel Prize, the only woman ever to win an unshared one in physiology or medicine.
+
+**Run this:**
+
+```
+Who was Barbara McClintock, and how does her discovery of transposable elements in maize connect to the seed plant biology we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Barbara McClintock"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through one of McClintock's maize crosses — what kernel color patterns revealed transposition?
+- Ask it to compare the 1940s reception of McClintock's work with how transposable elements are taught today.
+
+What changes? What gets better? What gets worse?

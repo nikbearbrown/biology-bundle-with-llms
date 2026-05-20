@@ -154,3 +154,55 @@ The membrane is lipid. That is all you need to know to understand why the system
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Hormone classes and the cell-membrane question**
+Prompt a model: *"Hormones come in three major classes: peptide/protein (insulin, growth hormone), steroid (cortisol, estradiol, testosterone), and amine (epinephrine, thyroid hormone). Walk me through how each class crosses (or fails to cross) cell membranes, and what this implies for receptor location: peptide/amine hormones bind cell-surface receptors (cannot cross membranes); steroid hormones cross freely (lipophilic) and bind intracellular receptors. Why does this difference matter for the speed and duration of hormone action?"*
+
+Evaluate whether the model correctly identifies that membrane-impermeable hormones use receptor-coupled signal cascades (fast acting, brief duration), while membrane-permeable hormones bind nuclear receptors that act as transcription factors (slower onset, longer duration as transcription is slow but produces lasting protein-level changes).
+
+**Exercise 2 — The HPA axis and stress response**
+Prompt: *"The hypothalamic-pituitary-adrenal (HPA) axis is the central stress-response system. Stress signals trigger CRH (corticotropin-releasing hormone) from the hypothalamus → ACTH (adrenocorticotropic hormone) from the anterior pituitary → cortisol from the adrenal cortex. Walk me through this cascade and explain why the system uses three sequential signals rather than direct neural-to-adrenal communication. What is the negative-feedback loop that prevents runaway cortisol production, and why does chronic stress disrupt this loop?"*
+
+Evaluate whether the model engages with the amplification benefit of the cascade (each step amplifies the signal) and the negative-feedback loop (cortisol acts on the hypothalamus and pituitary to reduce CRH and ACTH production). Chronic stress can desensitize the negative feedback (reduced glucocorticoid receptor sensitivity in the brain), allowing cortisol to remain elevated and producing the metabolic and immune consequences of chronic stress.
+
+**Exercise 3 — Insulin and glucose homeostasis**
+Prompt: *"Blood glucose is tightly regulated within a narrow range (typically 70-100 mg/dL fasting). The pancreatic islets contain alpha cells (glucagon — raises glucose) and beta cells (insulin — lowers glucose), forming a push-pull system. Walk me through how the system responds to a meal: glucose rises → insulin secreted → cells take up glucose, liver synthesizes glycogen → glucose returns to baseline. Then explain what goes wrong in type 2 diabetes: insulin resistance (cells become less responsive to insulin), eventual beta-cell dysfunction, and the consequences of chronically elevated glucose."*
+
+Evaluate whether the model correctly traces the meal response and engages with the type 2 diabetes pathophysiology: insulin resistance precedes overt diabetes by years; beta cells initially compensate by producing more insulin; eventually they fail (likely from chronic overstimulation), and glucose rises beyond normal range. Chronic hyperglycemia damages small blood vessels (retinopathy, nephropathy, neuropathy) through advanced glycation end products and other mechanisms.
+
+**Exercise 4 — Thyroid hormone and metabolic rate**
+Prompt: *"Thyroid hormone (T3 and T4) regulates basal metabolic rate, body temperature, and many other functions. Walk me through what happens to a person with hyperthyroidism (too much T3/T4): elevated heart rate, weight loss, heat intolerance, anxiety, weakness. Then walk through hypothyroidism (too little): fatigue, weight gain, cold intolerance, depression. Why does the same hormone produce such broad multi-system effects, and how does the iodine-dependent biology of thyroid hormone synthesis relate to the public-health intervention of iodized salt?"*
+
+Evaluate whether the model engages with the broad-effect mechanism (T3 binds nuclear receptors in essentially all tissues, regulating gene expression and overall metabolic activity), and the iodine connection: iodine is required for T3/T4 synthesis (both contain iodine atoms), so dietary iodine deficiency causes hypothyroidism and goiter (compensatory thyroid enlargement). Iodized salt has dramatically reduced these conditions globally where implemented.
+
+**Exercise 5 — Why hormones often have opposing pairs**
+Prompt: *"Many hormones come in opposing pairs: insulin/glucagon (glucose), calcitonin/parathyroid hormone (calcium), aldosterone/atrial natriuretic peptide (sodium), epinephrine/acetylcholine (sympathetic vs. parasympathetic). Walk me through why this opposing-pair architecture is more useful than a single hormone with positive and negative responses. What does the existence of these pairs tell us about the evolution of homeostatic systems?"*
+
+Evaluate whether the model engages with the bidirectional control argument: a single hormone can only push in one direction (presence vs. absence), while opposing pairs enable rapid bidirectional control with finer regulation. The system can move toward higher or lower setpoints by adjusting the relative amounts of opposing hormones, providing more nuanced control than a single signal could.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Bernardo Houssay** showed in the 1930s that the pituitary gland regulates carbohydrate metabolism — work that won the 1947 Nobel Prize and made him the first Latin American Nobel laureate in physiology or medicine. He was dismissed from the University of Buenos Aires by Perón and rebuilt his lab in exile.
+
+**Run this:**
+
+```
+Who was Bernardo Houssay, and how does his work on the pituitary–pancreas axis connect to the endocrine system we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Bernardo Houssay"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through Houssay's experiment showing that hypophysectomized dogs become hyper-sensitive to insulin.
+- Add a constraint: "Answer including the political context of Houssay's dismissal from his university and what it meant for Argentine science."
+
+What changes? What gets better? What gets worse?

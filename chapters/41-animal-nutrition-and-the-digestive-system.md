@@ -168,3 +168,55 @@ Van Helmont thought the plant ate water. We think the stomach does all the diges
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — The energy budget problem**
+Prompt a model: *"An adult human at rest expends approximately 1500-1800 kilocalories per day (basal metabolic rate). With moderate activity, total daily energy expenditure rises to 2000-3000 kcal. Walk me through where this energy goes: how much to brain, heart, kidneys, liver vs. skeletal muscle at rest. Then explain why the brain (about 2% of body mass) consumes about 20% of resting energy, and what evolutionary pressure produced and sustains this expensive organ."*
+
+Evaluate whether the model correctly identifies the brain's disproportionate energy use and engages with the expensive-tissue hypothesis (the human brain's evolution required compensatory reductions in other expensive tissues, particularly the gut, which became smaller as cooked food enabled more efficient nutrient extraction).
+
+**Exercise 2 — Ruminant digestion and the cellulose problem**
+Prompt: *"Cows can digest cellulose because they harbor a complex microbial community in their four-chambered stomachs (rumen, reticulum, omasum, abomasum). The cow does not produce cellulase — the bacteria do. Walk me through the digestive sequence: how plant material flows through the chambers, what each chamber accomplishes, and why ruminants regurgitate and re-chew their food (rumination). Why is this anatomical complexity necessary, and why don't humans have it?"*
+
+Evaluate whether the model engages with the fermentation strategy (microbes break down cellulose into volatile fatty acids that the cow absorbs as energy; the chambers provide the controlled environment microbes need; rumination breaks plant material into smaller pieces increasing surface area for microbial attack), and the human alternative — we depend on cooked starches and proteins from animal sources rather than raw plant cellulose, requiring much less digestive volume.
+
+**Exercise 3 — The pancreas and dual-function organ design**
+Prompt: *"The pancreas performs two largely independent functions: exocrine (secreting digestive enzymes — amylase, lipase, trypsinogen — into the duodenum) and endocrine (secreting hormones — insulin, glucagon, somatostatin — into the bloodstream). Walk me through how these two functions are anatomically segregated within the same organ, and why packaging them together makes evolutionary sense despite their distinct roles. Why is type 1 diabetes a destruction of one specific cell type in the pancreas, with no effect on the other function?"*
+
+Evaluate whether the model correctly identifies the islets of Langerhans as the endocrine compartment (~1-2% of pancreatic mass) embedded in the bulk exocrine acinar tissue, and engages with the type 1 diabetes specifics: autoimmune destruction targeted to beta cells (insulin-producing) leaves alpha cells (glucagon), other endocrine cells, and exocrine acinar cells intact. So digestion is unaffected; only insulin production is lost.
+
+**Exercise 4 — Liver as the chemical processing plant**
+Prompt: *"The liver performs over 500 distinct biochemical functions [verify], including detoxification, plasma protein synthesis, glycogen storage, bile production, and lipid metabolism. Walk me through three distinct examples: (1) urea cycle (converting toxic ammonia from amino acid breakdown to urea for excretion), (2) drug metabolism (CYP450 enzymes — phase I oxidation, phase II conjugation), and (3) blood glucose regulation (glycogen synthesis and breakdown in response to insulin and glucagon). Why is the liver uniquely positioned (anatomically and functionally) to perform all these roles?"*
+
+Evaluate whether the model engages with the portal-circulation argument: the liver receives blood directly from the digestive tract via the hepatic portal vein, enabling first-pass processing of all absorbed substances before they reach the systemic circulation. This positions the liver as the gatekeeper for ingested substances, which justifies its multifunctional design.
+
+**Exercise 5 — Why nutrient deficiencies and toxicities are not symmetric**
+Prompt: *"Most essential nutrients have a 'safe range' — too little causes deficiency disease, too much causes toxicity. Walk me through three examples where the safe range is narrow and the consequences of crossing the boundary are severe: vitamin A (deficiency → night blindness; toxicity → birth defects, hepatotoxicity), iron (deficiency → anemia; toxicity → hemochromatosis, organ damage), and selenium (deficiency → Keshan disease; toxicity → selenosis with hair loss and neurologic symptoms). Why is the safe range so narrow for these nutrients, while for others (vitamin C, B vitamins) it is much wider?"*
+
+Evaluate whether the model engages with the storage-vs-excretion distinction: water-soluble vitamins (B, C) are excreted in urine when intake exceeds need, providing a wide safe range. Fat-soluble vitamins (A, D, E, K) and minerals (iron, selenium) are stored, so excess accumulates rather than excreting — narrowing the safe range. The body's homeostatic capacity for storable substances determines whether toxicity is a realistic concern.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Theodor Escherich** identified the bacterium now called *Escherichia coli* in 1885 — the gut commensal that became microbiology's most-studied organism and the workhorse of modern molecular biology. He was an Austrian pediatrician studying infant stool samples.
+
+**Run this:**
+
+```
+Who was Theodor Escherich, and how does his discovery of E. coli connect to animal nutrition and the digestive system we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Theodor Escherich"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain the metabolic role E. coli actually plays in the healthy human gut — beyond its laboratory career.
+- Ask it to compare the original 1885 identification of E. coli with the modern understanding of the gut microbiome.
+
+What changes? What gets better? What gets worse?

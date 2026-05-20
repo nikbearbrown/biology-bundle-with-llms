@@ -192,3 +192,55 @@ The two systems are not redundant. Each compensates for the other's limitation. 
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Innate vs. adaptive immunity, distinguished**
+Prompt a model: *"Innate immunity (skin, mucus, complement, neutrophils, NK cells, macrophages) responds to pathogens within hours and recognizes broad classes (PAMPs — pathogen-associated molecular patterns). Adaptive immunity (T and B lymphocytes) develops over days to weeks but recognizes specific antigens with high precision and provides immunological memory. Walk me through why both systems are needed: what does each accomplish that the other cannot, and how do they coordinate during a typical infection?"*
+
+Evaluate whether the model engages with the speed-vs-specificity trade-off (innate is fast but generic; adaptive is slow but precise), and the coordination mechanism: innate immunity holds the line during the days adaptive immunity needs to clonally expand specific lymphocytes. Without innate immunity, infections would overwhelm hosts before adaptive responses could develop. Without adaptive immunity (severe combined immunodeficiency), most pathogens would be cleared but with memory loss between exposures.
+
+**Exercise 2 — How antibodies achieve specificity from a finite genome**
+Prompt: *"The human genome contains roughly 20,000 protein-coding genes, but the immune system can produce antibodies recognizing potentially 10¹¹ or more distinct antigens. Walk me through how V(D)J recombination generates this diversity: variable gene segments (V), diversity (D), and joining (J) segments are randomly assembled during B-cell development, creating millions of distinct B-cell receptor genes from the same starting material. What additional mechanisms (junctional diversity, somatic hypermutation) further expand the repertoire after antigen encounter?"*
+
+Evaluate whether the model engages with the combinatorial diversity (different V × D × J combinations producing many distinct receptors) and the post-encounter mechanisms (somatic hypermutation in germinal centers introduces additional point mutations in antibody genes; class switching changes the antibody's effector function while retaining specificity). The total potential diversity exceeds the actual diversity at any moment because not all possible combinations are produced.
+
+**Exercise 3 — T-cell selection and the autoimmunity problem**
+Prompt: *"During T-cell development in the thymus, two selection processes occur: positive selection (T cells that bind self-MHC weakly are preserved) and negative selection (T cells that bind self-MHC strongly are deleted, preventing autoimmunity). Walk me through why this two-step process is necessary, and explain what goes wrong when selection fails: autoimmune diseases like type 1 diabetes (T cells attacking islet beta cells), multiple sclerosis (T cells attacking myelin), rheumatoid arthritis (T cells attacking joint synovial cells). Why does this failure mode produce some of medicine's most challenging chronic diseases?"*
+
+Evaluate whether the model engages with the selection logic (T cells must recognize MHC, but not too strongly — moderate recognition is the safe zone) and the autoimmunity consequences: when self-reactive T cells escape selection (perhaps because their target antigens are expressed in tissues outside the thymus), they can attack the body's own cells. Treatment is difficult because suppressing the immune response broadly increases infection risk.
+
+**Exercise 4 — The clonal selection theory and immunological memory**
+Prompt: *"When a naive B cell encounters its specific antigen, it undergoes clonal expansion — proliferating to produce many copies of itself, some becoming antibody-producing plasma cells, others becoming memory cells. Walk me through how this 'clonal selection' principle (proposed by Burnet in 1957) explains both the primary response (slow, weeks) and the secondary response (rapid, days) to repeat exposure. Why are memory cells essential to vaccination's effectiveness, and what does this say about the engineering of effective vaccines?"*
+
+Evaluate whether the model engages with the clonal expansion mechanism (initial antigen exposure activates one or a few B cells specific for the antigen; expansion increases their number 10⁴-10⁶-fold over days) and the memory-cell longevity (some memory cells persist for decades, providing rapid response on re-exposure). Vaccination engineers this primary response with safe antigens to provide protection against the actual pathogen.
+
+**Exercise 5 — HIV and the immunodeficiency cascade**
+Prompt: *"HIV infects CD4+ T cells (helper T cells) — using the CD4 receptor for entry. As the infection progresses, CD4 counts drop. Walk me through why the loss of CD4+ helpers cascades through the immune system: helper T cells coordinate B-cell antibody production, CD8+ killer T-cell activation, and macrophage recruitment. When their numbers drop below 200/μL, AIDS is diagnosed. Why are AIDS patients vulnerable not to common pathogens but to opportunistic infections (Pneumocystis, Toxoplasma, CMV, atypical mycobacteria) that healthy people clear easily?"*
+
+Evaluate whether the model correctly identifies the helper-T-cell coordination function (without CD4+ help, B cells fail to mount strong antibody responses; CD8+ killers fail to expand; macrophages remain inactive) and the opportunistic-infection profile: pathogens that healthy people clear without symptoms become deadly in AIDS because the cellular immune response is critical for them. Antiretroviral therapy that preserves CD4+ counts has transformed AIDS from a death sentence to a chronic disease.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Susumu Tonegawa** explained in 1976 how a small number of antibody genes can generate millions of distinct antibodies — through somatic recombination of gene segments during B-cell development. He won the 1987 Nobel Prize, the only Japanese-born Nobel in physiology or medicine to that point.
+
+**Run this:**
+
+```
+Who is Susumu Tonegawa, and how does his discovery of V(D)J recombination connect to the immune system biology we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Susumu Tonegawa"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through one example of V(D)J recombination — how a B cell assembles a unique antibody from a finite gene-segment library.
+- Ask it to compare Tonegawa's molecular biology work with his later transition into memory neuroscience.
+
+What changes? What gets better? What gets worse?

@@ -198,3 +198,55 @@ That is cancer. Not an invasion of something foreign. Not the acquisition of a n
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Why mitosis, why these phases**
+Prompt a model: *"Mitosis is divided into prophase, metaphase, anaphase, and telophase. Walk me through what each phase actually accomplishes mechanistically — what molecular events define the transition from one phase to the next, and why the cell could not skip any single phase without consequence. Specifically: what would happen if anaphase began before metaphase had aligned all chromosomes at the metaphase plate?"*
+
+Evaluate whether the model correctly identifies the spindle assembly checkpoint as the mechanism that prevents premature anaphase entry — the checkpoint is satisfied only when every chromosome has bipolar attachment to spindle microtubules. Premature entry would cause chromosome missegregation and aneuploidy.
+
+**Exercise 2 — Cyclin-CDK as cell-cycle clock**
+Prompt: *"Cyclin-dependent kinases (CDKs) drive cell-cycle progression by phosphorylating downstream targets. Cyclin levels oscillate dramatically during the cell cycle — synthesized at specific phases and degraded at others — while CDK levels remain relatively constant. Why is cyclin degradation, not synthesis, the rate-limiting step? Engage with the role of the anaphase-promoting complex (APC) in degrading cyclin B at the metaphase-to-anaphase transition."*
+
+Evaluate whether the model correctly identifies that ubiquitin-mediated proteolysis (via APC-Cdc20 at metaphase, APC-Cdh1 at telophase) is the irreversible commitment step — degradation cannot be undone, while synthesis can be paused. This unidirectionality is what gives the cycle its temporal arrow.
+
+**Exercise 3 — The G1 checkpoint and p53**
+Prompt: *"The G1/S checkpoint determines whether a cell commits to DNA replication. The tumor suppressor p53 monitors DNA damage at this checkpoint — if damage is detected, p53 induces p21, which inhibits CDK4/6-cyclin D. Walk me through what happens to a cell that has lost p53 function (as in many cancers) and accumulates DNA damage. Why does loss of p53 not immediately cause cell death — what does it do instead?"*
+
+Evaluate whether the model correctly identifies that p53 loss does not kill the cell but removes the checkpoint, allowing damaged DNA to be replicated and propagated. Over time this accumulates mutations and genomic instability — the slow path to malignancy. The "guardian of the genome" name reflects p53's surveillance role rather than an executioner role.
+
+**Exercise 4 — Binary fission vs. mitosis**
+Prompt: *"Bacteria reproduce by binary fission, which superficially resembles mitosis but differs in important ways. Compare the two processes mechanistically — chromosome organization (single circular vs. multiple linear), DNA replication timing (concurrent with cell division vs. completed before), and the absence of a spindle apparatus in bacteria. Why does the prokaryotic cell architecture make a spindle unnecessary?"*
+
+Evaluate whether the model engages with the FtsZ ring (the bacterial division apparatus, ancestrally related to tubulin) and the active separation of replicated chromosomes via attachment to specific membrane sites. Push back if it claims bacteria "lack" division apparatus — they have one, just structurally different from the eukaryotic spindle.
+
+**Exercise 5 — Cancer as cell-cycle dysregulation**
+Prompt: *"Most cancers are driven by mutations in genes that regulate the cell cycle — typically loss-of-function in tumor suppressors (Rb, p53, BRCA1/2) or gain-of-function in proto-oncogenes that become oncogenes (MYC, RAS, cyclin D amplification). Walk me through how a single oncogenic mutation in one of these genes shifts the balance toward unrestrained proliferation, and why most cancers require multiple mutations to develop. Use Knudson's two-hit hypothesis to explain the difference between sporadic and inherited cancer susceptibility."*
+
+Evaluate whether the model correctly distinguishes oncogenes (gain-of-function, requires one allele) from tumor suppressors (loss-of-function, requires both alleles inactivated). Knudson's two-hit hypothesis explains why familial retinoblastoma patients (who inherit one defective Rb allele) develop tumors much earlier than sporadic cases (who must acquire both mutations somatically).
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Yoshio Masui** identified the "maturation-promoting factor" in frog oocytes in 1971 — the master regulator that drives a cell into M-phase. The discovery launched the molecular study of the cell cycle and the chain of work that led to the 2001 Nobel Prize (which he was not part of).
+
+**Run this:**
+
+```
+Who is Yoshio Masui, and how does his discovery of maturation-promoting factor connect to the cell cycle and cell reproduction we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Yoshio Masui"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through Masui's frog oocyte cytoplasm transfer experiment — what was injected, and what changed?
+- Add a constraint: "Answer including the 2001 Nobel for cell-cycle research and Masui's notable absence from the prize."
+
+What changes? What gets better? What gets worse?

@@ -210,3 +210,55 @@ The cell is not magic. It is physics, run very cleverly, at very small scales, v
 9. ATP is unstable — it spontaneously hydrolyzes in water. This seems like a design flaw. Argue that it is actually a feature. What would go wrong if ATP were highly stable and resisted hydrolysis? *Tests: reasoning about the functional consequences of molecular properties.*
 
 10. Feedback inhibition of glycolysis by ATP is allosteric: ATP binds away from the active site and induces a conformational change. Why might evolution have favored allosteric regulation over simple competitive inhibition (where ATP would block the active site directly)? What does the allosteric mechanism allow that competitive inhibition would not? *Tests: open-ended reasoning about evolutionary design logic.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Why ATP, not ADP or AMP**
+Prompt a model: *"ATP is the universal energy currency. Why is the third phosphate bond — the one hydrolyzed to release energy — particularly suited to this role? Engage with the electrostatic repulsion between adjacent phosphate groups, the resonance stabilization of the released phosphate, and the favorable hydration of the products. Then explain why cells sometimes use GTP instead and what the energetic cost of switching currencies is."*
+
+Evaluate whether the model engages with the actual chemistry (phosphate-phosphate repulsion, resonance, hydration) rather than vaguely citing "high-energy bonds." The phrase "high-energy bond" is a teaching shortcut — the energy comes from the products' stability, not from the bond's intrinsic energy.
+
+**Exercise 2 — Coupled reactions, on the page**
+Prompt: *"The reaction glucose + Pᵢ → glucose-6-phosphate has a positive ΔG of about +13.8 kJ/mol — it is energetically unfavorable. Yet cells perform it routinely. Walk me through how coupling this reaction to ATP hydrolysis (ΔG ≈ -30.5 kJ/mol) makes the combined reaction favorable, and explain why the coupling requires the same enzyme molecule (hexokinase) rather than two separate enzymes acting in sequence. What is the kinetic significance of having the two reactions occur on the same active site?"*
+
+Evaluate whether the model correctly computes the net ΔG of approximately -16.7 kJ/mol and engages with the enzymatic coupling — both reactions must occur in a single active site to ensure the released energy is captured rather than dissipated as heat.
+
+**Exercise 3 — Enzymes and the activation-energy gap**
+Prompt: *"An uncatalyzed reaction has an activation energy of 60 kJ/mol. An enzyme reduces it to 25 kJ/mol. Estimate, using the Arrhenius equation [Ea/RT scaling], the order-of-magnitude speedup the enzyme provides at body temperature (310 K). Then identify three distinct mechanisms by which enzymes lower activation energy: substrate orientation, transition-state stabilization, and induced fit. Which of these is most consequential for most enzymes?"*
+
+Evaluate whether the model correctly applies the Arrhenius scaling (the speedup is approximately e^((60-25)×1000/(8.314×310)) ≈ e^13.6 ≈ 800,000-fold — the LLM may approximate; check the order of magnitude) and whether it distinguishes the three mechanisms rather than collapsing them into "lowering the energy barrier."
+
+**Exercise 4 — Allosteric regulation as feedback control**
+Prompt: *"In glycolysis, the enzyme phosphofructokinase-1 (PFK-1) is allosterically inhibited by ATP and citrate, and activated by AMP and fructose-2,6-bisphosphate. Trace the logic: why does each of these regulators make sense as a control input? Specifically, what does each signal tell PFK-1 about the cell's energy state, and how does the regulatory architecture prevent the cell from running glycolysis when energy supplies are already adequate?"*
+
+Evaluate whether the model correctly identifies ATP as a signal of energy abundance (inhibitor), AMP as a signal of energy depletion (activator), and citrate as a signal that the citric acid cycle is saturated (inhibitor). Push for engagement with the rationale: regulation at PFK-1 is the committed step of glycolysis, so regulating here prevents wasted downstream investment.
+
+**Exercise 5 — The thermodynamic case for catabolism**
+Prompt: *"Cellular respiration releases approximately 686 kcal of free energy per mole of glucose oxidized [verify]. Cells capture roughly 30-32 ATP per glucose, with each ATP equivalent to about 7.3 kcal/mol — meaning the cell captures roughly 220-235 kcal of the 686 kcal as usable energy. Walk me through where the rest goes (heat, primarily), and why the second law of thermodynamics requires that some energy be lost. Could a cell ever achieve 100% efficiency? Why or why not?"*
+
+Evaluate whether the model correctly computes the efficiency (approximately 32-34%, comparable to a modern internal combustion engine) and engages with the second-law argument: any spontaneous reaction must increase the universe's entropy, which requires that some energy be released as heat.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Gerty Cori** and her husband Carl worked out the Cori cycle — how muscle lactate becomes liver glucose — and were jointly awarded the 1947 Nobel Prize. She was the first American woman to win a Nobel in science.
+
+**Run this:**
+
+```
+Who was Gerty Cori, and how does the Cori cycle connect to the metabolism we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Gerty Cori"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to trace one molecule of lactate through the Cori cycle from working muscle to liver and back to muscle.
+- Add a constraint: "Answer including the institutional resistance the Coris faced because Gerty was a woman — and how it shaped where they worked."
+
+What changes? What gets better? What gets worse?

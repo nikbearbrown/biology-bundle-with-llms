@@ -42,3 +42,35 @@ Diversity chapters (26-34, including viruses, prokaryotes, protists, fungi, seed
 ### Total prose
 
 ~240,000 chapter words across 47 chapters; companion files separate. By word count, the largest book in the workshop.
+
+---
+
+## 2026-05-12 — Completed LLM Exercises pattern (45 chapters added)
+
+The book now has `## LLM Exercises` blocks across all 47 chapters. The existing 2 chapters (03, 04) were left untouched; 45 gap chapters got new blocks in matching format.
+
+**Format matched from Ch 04 (the more polished of the existing 2):** `## LLM Exercises` header, intro paragraph, 5 exercises per chapter formatted as `**Exercise N — Title**` followed by italicized embedded prompt in quotes, then a paragraph "Evaluate whether the model..." with explicit verification criteria. Each prompt asks the student to push the LLM past hand-waving toward mechanistic reasoning with an explicit failure mode named.
+
+**45 chapters added in 7 thematic batches:**
+
+| Batch | Chapters | Focus |
+|---|---|---|
+| 1: Foundations | 02, 06-12 | Study of life, cell structure, membranes, metabolism, respiration, photosynthesis, signaling, cell division |
+| 2: Genetics | 14-20 | Meiosis, Mendel, modern inheritance, DNA structure, transcription/translation, gene expression, biotech |
+| 3: Evolution | 22-24 | Origin of species, population genetics, phylogenies |
+| 4: Diversity | 26-34 | Viruses, prokaryotes, protists, fungi, seedless plants, seed plants, animal diversity, invertebrates, vertebrates |
+| 5: Plant Biology | 36-38 | Plant form & physiology, soil & nutrition, reproduction |
+| 6: Animal Physiology | 40-50 | Body form, nutrition, nervous, sensory, endocrine, musculoskeletal, respiratory, circulatory, osmoregulation, immune, reproduction |
+| 7: Ecology | 52-55 | Biosphere, population/community, ecosystems, conservation |
+
+**Format consistency:** Every block follows the Ch 04 template — intro paragraph + 5 named exercises with italicized embedded prompts and explicit evaluation criteria. Total ~27,000 words of new exercise content across 45 chapters.
+
+**[verify] flags used appropriately:** Specific numerical claims that I was less confident about are flagged for production-side verification — e.g., specific mutation rate ranges, Higgs proton transport ratios, recovery half-times, percentage estimates that vary by source. The structural reasoning in each exercise stands without depending on the exact numerical values.
+
+**Format-inconsistency follow-up flag:** Ch 03's existing LLM block uses a slightly different format (`**Exercise N: Title**` with plain prompt text, no embedded blockquote, no explicit "Evaluate whether..." paragraph). This is functional but less rigorous than the Ch 04 / chs 02-55 standard. Standardizing Ch 03 would require minor revision. Not done in this pass.
+
+**Mechanistic-depth note:** Exercises consistently push toward mechanistic reasoning over verbal pattern-matching — "explain WHY," "trace the cascade," "identify what would break if X were removed." This matches the AxF v1.1 voice and the bundle's overall mechanism-first treatment.
+
+**Cross-chapter callbacks:** Several chapters (Ch 08 metabolism → Ch 09 respiration; Ch 17 DNA → Ch 18 genes/proteins → Ch 19 expression; Ch 11 signaling → Ch 12 cell cycle → Ch 49 immune) have exercises that explicitly reference the prior chapter's machinery, reflecting the bundle's intentional dependency structure.
+
+**No follow-ups flagged beyond the Ch 03 format-standardization note above.**

@@ -191,3 +191,55 @@ Understanding this does not make the organisms less remarkable. It makes the eng
 **Challenge**
 
 9. You are studying speciation in a cichlid fish population in a small African lake. The lake contains two color morphs — red males and blue males — that preferentially mate with females of their own color. Females discriminate by color. Genetic analysis shows the two morphs diverge at 3% of loci, primarily at color and color-preference genes. Recently, the lake has experienced increased sedimentation that reduces water clarity. (a) Before the sedimentation event, what type of speciation process was underway, and what was the primary isolating mechanism? (b) Predict the effect of reduced water clarity on the speciation process, and explain the molecular mechanism by which the two morphs would fuse or diverge. (c) If the two morphs do begin to fuse genetically, would you expect the allele frequencies of non-color genes to change as well? Explain why or why not. (d) A conservation biologist proposes filtering the water to restore clarity. Predict whether this would be sufficient to restore the original reproductive isolation, assuming 10 generations of interbreeding have already occurred. What genetic changes during those 10 generations would determine the answer? *Tests: comprehensive integration of sympatric speciation, behavioral isolation, reinforcement, fusion dynamics, and the genetics of hybrid zones.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — The four engines of evolution, distinguished**
+Prompt a model: *"Natural selection, mutation, gene flow, and genetic drift are the four mechanisms that change allele frequencies. For each, identify (1) what direction it pushes allele frequencies (toward fitness, randomly, mixing, randomly), (2) what population size makes it dominant, and (3) one specific empirical example. Then explain why drift dominates in small populations and selection dominates in large ones — engage with the mathematics of expected vs. realized allele frequency change."*
+
+Evaluate whether the model engages with the central insight: drift's effect scales as 1/N (smaller populations drift more), while selection's effect is roughly constant per generation. So in populations below ~10⁴, drift can overwhelm weak selection coefficients (s < 1/N).
+
+**Exercise 2 — Speciation requires reproductive isolation**
+Prompt: *"Two populations are considered separate species when reproductive isolation prevents gene flow between them. Walk me through the distinction between prezygotic isolation (preventing mating or fertilization) and postzygotic isolation (preventing viable or fertile offspring), and identify three mechanisms within each. Then evaluate the biological species concept's limits — for what kinds of organisms (asexual, fossil, hybridizing) does the concept break down?"*
+
+Evaluate whether the model correctly identifies prezygotic mechanisms (temporal, behavioral, mechanical, gametic) and postzygotic mechanisms (hybrid inviability, hybrid sterility, hybrid breakdown), and whether it engages with the limits: asexual organisms (no mating to isolate), fossils (can't test interbreeding), and hybridizing taxa (e.g., grizzly-polar bear hybrids that are fertile).
+
+**Exercise 3 — Allopatric and sympatric speciation, with examples**
+Prompt: *"Allopatric speciation requires geographic isolation; sympatric speciation occurs without it. Walk me through one robust example of each: Galápagos finches (allopatric — isolated on different islands) and African cichlids (often cited as sympatric, though contested). For sympatric speciation, what mechanism allows reproductive isolation to evolve in the absence of geographic separation — and why is this contested as a general phenomenon?"*
+
+Evaluate whether the model correctly identifies that sympatric speciation often requires either ecological specialization (different host plants for phytophagous insects) or polyploidy (instantaneous reproductive isolation in plants), and whether it engages with the controversy: pure sympatric speciation is theoretically possible but empirically rare in animals.
+
+**Exercise 4 — Punctuated equilibrium vs. gradualism**
+Prompt: *"Eldredge and Gould's punctuated equilibrium hypothesis (1972) proposed that most evolutionary change occurs in geologically brief bursts of rapid speciation, followed by long periods of morphological stasis. This contrasted with the gradualist view of slow continuous change. Walk me through the empirical evidence for and against each model from the fossil record, and identify what we now know that resolves much of the original debate."*
+
+Evaluate whether the model engages with the central empirical observation — many lineages show stasis interrupted by short transition periods — but is careful to note that 'short' geologically can mean tens of thousands of years, which is many generations. The contemporary view treats both gradual and punctuated patterns as valid, depending on lineage and timescale.
+
+**Exercise 5 — Why convergent evolution is so common**
+Prompt: *"Wings have evolved independently at least four times (insects, pterosaurs, birds, bats). Eyes have evolved 50-100 times in different lineages [verify]. Walk me through why convergent evolution is so common — what does this tell us about the constraints on biological design? Engage with the limited number of viable solutions to common environmental problems, and identify one case where convergent solutions look similar but differ mechanistically (e.g., camera eyes in vertebrates vs. cephalopods)."*
+
+Evaluate whether the model engages with the constraint argument (the laws of physics limit viable solutions, so similar problems often produce similar solutions), and whether it correctly notes the vertebrate-cephalopod camera eye difference: vertebrate eyes have an inverted retina (photoreceptors point away from light, with the optic nerve creating a blind spot), while cephalopod eyes have a non-inverted retina (no blind spot). Same gross design, different developmental origin.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Alfred Russel Wallace** independently developed the theory of natural selection in 1858 — while feverish with malaria in what is now Indonesia — and sent his manuscript to Darwin, prompting the joint Linnean Society presentation that announced the theory.
+
+**Run this:**
+
+```
+Who was Alfred Russel Wallace, and how does his independent development of natural selection connect to the evolution and origin of species we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Alfred Russel Wallace"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to compare Wallace's and Darwin's versions of natural selection — what they agreed on, what differed.
+- Ask it to walk through the Wallace Line, the biogeographic boundary in Indonesia that Wallace identified between Asian and Australian faunas.
+
+What changes? What gets better? What gets worse?

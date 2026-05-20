@@ -176,3 +176,55 @@ You are not your genome. You are your genome expressed.
 9. Some epigenetic marks are heritable — passed from parent cell to daughter cell during division. But when a sperm and egg fuse, most epigenetic marks are erased and reset. This "epigenetic reprogramming" allows the zygote to develop into any cell type. What would go wrong if epigenetic marks were NOT erased at fertilization? Conversely, what is the risk if reprogramming is incomplete? Connect your answer to both normal development and disease. *Tests: reasoning about the function and failure modes of epigenetic inheritance at the organism level.*
 
 10. MicroRNAs are small RNAs (~21 nucleotides) that bind to complementary sequences in target mRNAs and either block their translation or cause their degradation. A single microRNA can regulate hundreds of different mRNAs. Given this, explain why dysregulation of a single microRNA could have cascading effects on a cell's behavior. Then explain why this same property makes microRNAs attractive candidates for cancer therapy — and what the challenge of specificity would be. *Tests: reasoning from mechanism to clinical consequence for post-transcriptional control.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — The lac operon as a logic gate**
+Prompt a model: *"The lac operon in E. coli encodes the genes for lactose metabolism. The operon is induced by lactose AND repressed by glucose — meaning the cell only expresses these genes when lactose is available and glucose is not. Walk me through the molecular logic: how does the cell sense both signals (allolactose and cAMP), and how do the lac repressor and CAP protein implement this AND-NOT logic at the operator and promoter? What would happen if a mutant lac repressor could not bind allolactose?"*
+
+Evaluate whether the model correctly identifies the dual-control mechanism — lac repressor (allosterically inhibited by allolactose, releasing operator) AND CAP-cAMP complex (activated when glucose is low, binding promoter) — and whether it engages with the metabolic logic: glucose is preferred, so the cell only expresses lactose-metabolizing enzymes when lactose is the only sugar available.
+
+**Exercise 2 — Eukaryotic gene regulation: distance and complexity**
+Prompt: *"Eukaryotic enhancers can be located thousands of base pairs upstream, downstream, or even within introns of the genes they regulate. Walk me through how DNA looping brings distant enhancers into contact with promoters, and how transcription factors at enhancers communicate with the basal transcription machinery. Why does this architecture enable the dramatically more complex regulation of eukaryotic genes compared to bacteria?"*
+
+Evaluate whether the model engages with the chromatin-loop architecture (mediated by proteins like cohesin and CTCF), the role of Mediator complex in coupling enhancers to RNA polymerase II, and the combinatorial logic enabled by multiple enhancers at different distances providing tissue-specific and temporal-specific control.
+
+**Exercise 3 — Chromatin state as gene regulation**
+Prompt: *"Eukaryotic DNA is wrapped around histones to form nucleosomes, which can adopt 'open' (euchromatin, transcriptionally active) or 'closed' (heterochromatin, transcriptionally silent) states. Walk me through how histone modifications — specifically histone acetylation (typically activating) and histone methylation (context-dependent) — alter chromatin state. What is the role of the histone code and how does it integrate with DNA methylation to provide a stable but reversible regulatory layer?"*
+
+Evaluate whether the model correctly identifies that histone acetylation neutralizes the positive charge of histones, weakening their DNA binding and opening chromatin, while specific methylation marks (e.g., H3K4me3 = active, H3K27me3 = repressed) recruit different effector proteins. The integration with DNA methylation involves both inheritable patterns (cell-type identity) and reversible patterns (developmental decisions).
+
+**Exercise 4 — Post-transcriptional regulation: microRNAs**
+Prompt: *"MicroRNAs (miRNAs) are short non-coding RNAs (~22 nucleotides) that regulate gene expression by base-pairing with target mRNAs and either blocking translation or accelerating degradation. A single miRNA can regulate hundreds of target mRNAs, and most human protein-coding genes are estimated to be miRNA-regulated [verify]. Walk me through the biogenesis pathway (Drosha, Dicer, RISC complex) and explain why this regulatory layer is particularly important for fine-tuning gene expression rather than on/off switching."*
+
+Evaluate whether the model correctly traces the biogenesis (primary miRNA → pre-miRNA → mature miRNA → loading into RISC), and engages with the mechanism's strengths (small RNA → broad regulatory reach) and limits (miRNAs typically reduce protein output by 30-70% rather than switching genes off completely — they fine-tune rather than gate).
+
+**Exercise 5 — How cells differ when they have the same genome**
+Prompt: *"Every somatic cell in a multicellular organism contains essentially the same genome, yet a neuron and a hepatocyte are dramatically different cells. Walk me through how differential gene expression — controlled by tissue-specific transcription factors, chromatin state, and post-transcriptional regulation — produces this diversity. Then explain how a fertilized egg differentiates into hundreds of cell types: what drives the initial commitment decisions, and why are cell fates generally stable once established (even though the underlying genome is identical)?"*
+
+Evaluate whether the model engages with the master-regulator concept (specific transcription factors like MyoD for muscle, Pax6 for eye, that initiate cell-type-specific cascades), and whether it correctly identifies that fate stability comes from positive-feedback loops (a transcription factor sustains its own expression while activating downstream cell-type programs) and chromatin-state inheritance through cell division.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Mary-Claire King** showed in 1990 that breast cancer susceptibility could be inherited through a single gene, BRCA1 — at a time when most of her field believed the disease was too genetically heterogeneous to track. The discovery reshaped both cancer genetics and gene expression studies.
+
+**Run this:**
+
+```
+Who is Mary-Claire King, and how does her work on BRCA1 and gene expression connect to the regulation of gene expression we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Mary-Claire King"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to explain how a single BRCA1 mutation affects gene expression in cells decades before any tumor appears.
+- Ask it to compare King's BRCA1 work with her earlier finding that humans and chimps share 99% of their DNA.
+
+What changes? What gets better? What gets worse?

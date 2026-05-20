@@ -184,3 +184,55 @@ That negotiation built the biosphere.
 ---
 
 *By Nik Bear Brown*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Soil as a layered ecosystem**
+Prompt a model: *"Soil is not just a substrate — it is a living ecosystem with distinct horizons (O for organic litter, A for topsoil, B for subsoil, C for parent material). Walk me through what each horizon contributes to plant growth, and explain why the A horizon (topsoil) is the most agriculturally important. What does it take to build one inch of topsoil, and why is the global rate of topsoil loss (estimated at 24 billion tons per year [verify]) considered a major environmental crisis?"*
+
+Evaluate whether the model engages with the time scale (typically 100-1000 years to build one inch of topsoil through weathering and biological accumulation), and the rate-of-loss problem: most agricultural soils are losing depth faster than they can rebuild, with consequences for long-term food security.
+
+**Exercise 2 — Macronutrients and the limiting-nutrient principle**
+Prompt: *"Plants require approximately 17 essential nutrients [verify]. Macronutrients (N, P, K and several others) are needed in large quantities; micronutrients (Fe, Zn, Mn, etc.) in trace amounts. Liebig's Law of the Minimum states that growth is limited by the scarcest essential nutrient — adding more of any other nutrient will not increase growth until the limiting nutrient is supplied. Walk me through what makes nitrogen typically the limiting nutrient in agricultural soils, and explain why phosphorus is also frequently limiting, particularly in tropical soils."*
+
+Evaluate whether the model correctly identifies that nitrogen is mobile in soil (leaches with water) and only available as nitrate or ammonium (not from atmospheric N₂ without nitrogen-fixing bacteria), while phosphorus is largely immobile, often bound to soil particles in unavailable forms. The Haber-Bosch process is the industrial answer to nitrogen limitation; phosphorus has no equivalent industrial source, making it a longer-term concern for global agriculture.
+
+**Exercise 3 — Nitrogen fixation and the rhizobium symbiosis**
+Prompt: *"Atmospheric N₂ is unavailable to most organisms — only certain bacteria and archaea express nitrogenase, the enzyme that reduces N₂ to ammonia. Legumes (beans, peas, soybeans) form root-nodule symbioses with Rhizobium bacteria, where the plant provides carbon and an oxygen-protected environment for the bacteria, in exchange for fixed nitrogen. Walk me through the molecular signaling that establishes this partnership and the cost-benefit math for the plant: how much carbon does the plant invest in supporting the bacteria, relative to the nitrogen it receives?"*
+
+Evaluate whether the model engages with the metabolic cost (legumes invest perhaps 4-10% of their photosynthate in supporting rhizobia [verify]), and the trade-off — fixed nitrogen costs the plant directly but enables growth in nitrogen-poor soils where non-leguminous plants struggle. This is why legume-based crop rotations have been a cornerstone of sustainable agriculture for millennia.
+
+**Exercise 4 — Carnivorous plants and the nitrogen-acquisition trade-off**
+Prompt: *"Carnivorous plants (Venus flytrap, sundews, pitcher plants) capture and digest insects, supplementing their nitrogen intake. They evolved primarily in nitrogen-poor habitats — bogs, sandy soils, nutrient-poor wetlands. Walk me through the trade-off: carnivory has evolved independently at least 6 times in different plant lineages, suggesting it provides a real advantage in some niches. But it remains rare overall. What metabolic costs does carnivory impose, and why doesn't it spread to more competitive habitats?"*
+
+Evaluate whether the model engages with the cost (specialized trapping structures require significant investment; digestive enzymes are metabolically expensive; many carnivorous plants are slow-growing), and the benefit-niche match: carnivory pays off only when the alternative is severe nitrogen limitation. In nutrient-rich soils, the cost of carnivorous structures exceeds the benefit, and conventional plants outcompete carnivorous ones.
+
+**Exercise 5 — Mycorrhizae and the resource-trading network**
+Prompt: *"As Chapter 29 introduced, approximately 90% of land plants form mycorrhizal associations with fungi. The exchange is bidirectional: plants provide sugars to fungi; fungi provide water and nutrients (especially phosphorus) to plants, accessing volumes of soil far larger than the plant's roots could alone. Walk me through the molecular signaling that establishes mycorrhizal symbiosis, and explain how the 'wood-wide web' connects different trees of different species through shared fungal networks. Is the network mutualistic, parasitic, or both depending on context?"*
+
+Evaluate whether the model engages with the strigolactone signaling pathway (plants release strigolactones that signal mycorrhizal fungi to colonize), and the network dynamics: the carbon and nutrient flows in mycorrhizal networks vary in direction depending on each tree's status (large healthy trees often act as net donors to smaller or stressed trees of the same or different species).
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Selman Waksman** coined the word "antibiotic" and led the systematic search through soil microbes that produced streptomycin in 1943 — the first effective drug against tuberculosis. He won the 1952 Nobel Prize, with credit later disputed by his student Albert Schatz.
+
+**Run this:**
+
+```
+Who was Selman Waksman, and how does his soil microbiology connect to plant nutrition and the soil ecosystem we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Selman Waksman"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through how Waksman's lab screened soil samples for antibacterial activity — the specific assay.
+- Ask it to compare nitrogen-fixing bacteria in plant root nodules with the Streptomyces that produced streptomycin — what role does each play in soil ecology?
+
+What changes? What gets better? What gets worse?

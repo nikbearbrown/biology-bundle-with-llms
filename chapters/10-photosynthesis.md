@@ -200,3 +200,55 @@ That is the story of a photon that never really dies.
 9. The atmosphere before the evolution of oxygenic photosynthesis contained essentially no free oxygen. Cyanobacteria changed this over roughly a billion years by releasing O₂ as a byproduct of water splitting. Many anaerobic organisms went extinct as O₂ accumulated. Explain why O₂ is toxic to anaerobic metabolism, and then explain the paradox: the same process that poisoned most of Earth's early life also made complex multicellular life possible. *Tests: connecting photosynthetic mechanism to large-scale evolutionary consequences.*
 
 10. Imagine a hypothetical mutant plant whose Photosystem I can re-energize electrons to a high enough state to reduce NADP⁺ using only one photon — eliminating the need for Photosystem II and water splitting entirely. What would this plant need as an electron donor to replace water? What would it no longer release as a byproduct? What would the consequences be for the rest of the biosphere if this mutation spread globally? *Tests: reasoning from mechanism to consequence, using the chapter's framework to evaluate a hypothetical.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Why two photosystems**
+Prompt a model: *"Plants and algae use two distinct photosystems (PSI and PSII) connected by an electron transport chain. Why couldn't a single photosystem accomplish the entire job of producing ATP and NADPH? Engage with the energy levels of the excited electrons, the reduction potentials needed to split water and reduce NADP⁺, and the historical origin of the two systems through cyanobacterial endosymbiosis."*
+
+Evaluate whether the model correctly identifies that no single photosystem can both extract electrons from water (requires very strong oxidizing potential) AND transfer them to NADP⁺ (requires very strong reducing potential) — the two-step "Z-scheme" achieves both because the second photon boost regenerates the energy lost during electron transport.
+
+**Exercise 2 — The Calvin cycle's apparent inefficiency**
+Prompt: *"The Calvin cycle requires 18 ATP and 12 NADPH to produce one molecule of glucose (which can be packaged as starch or sucrose for transport). Cellular respiration of that same glucose yields about 30-32 ATP. Walk me through the apparent energy deficit: where do the additional 12-14 ATP equivalents come from to make photosynthesis energetically positive? Hint: the answer involves comparing free energies, not just ATP counts."*
+
+Evaluate whether the model engages with the central insight — photosynthesis converts low-energy CO₂ + H₂O into high-energy glucose, and the energy stored in the chemical bonds of glucose far exceeds the ATP cost of building it. The accounting requires comparing standard free energies of formation, not ATP equivalents.
+
+**Exercise 3 — Rubisco and the oxygen problem**
+Prompt: *"Rubisco is the most abundant enzyme on Earth, and also one of the slowest and least specific. It can bind either CO₂ (productive — fixation) or O₂ (wasteful — photorespiration). Walk me through why this enzyme evolved its imperfection: what was the atmospheric composition when Rubisco evolved, and what fraction of its activity now goes to photorespiration versus carbon fixation? Why hasn't a better Rubisco evolved despite billions of years of selection?"*
+
+Evaluate whether the model correctly identifies that Rubisco evolved when atmospheric oxygen was negligible (≤1%), and that its slow turnover and oxygen-binding tendency are now selected against but the evolutionary path to a "better" enzyme appears to be blocked by structural constraints. The fraction lost to photorespiration in modern C₃ plants is roughly 25-30% [verify].
+
+**Exercise 4 — C4 and CAM as engineering solutions**
+Prompt: *"C4 plants (corn, sugarcane) and CAM plants (cacti, pineapples) have evolved separate workarounds to the Rubisco-oxygen problem. C4 plants spatially separate CO₂ capture from CO₂ fixation; CAM plants temporally separate them. Walk me through both architectures and explain why each is suited to a specific climate (hot/dry vs. extreme arid). What is the metabolic cost of each adaptation, and under what conditions does it pay off?"*
+
+Evaluate whether the model correctly identifies that C4 plants concentrate CO₂ in bundle-sheath cells where Rubisco operates (spatial separation), while CAM plants open stomata only at night to capture CO₂ as malate, then release it for Rubisco during the day (temporal separation). Both pay an ATP cost but trade water loss for CO₂ specificity.
+
+**Exercise 5 — Photosynthesis at the planetary scale**
+Prompt: *"Photosynthesis fixes approximately 100-120 gigatons of carbon per year globally [verify]. Roughly half is from terrestrial plants and half from marine phytoplankton. Yet marine biomass is far smaller than terrestrial biomass — perhaps 1-2% of total. Walk me through how this is possible: what is the turnover rate of marine phytoplankton compared to land plants, and what does the difference reveal about ecosystem energetics? What would happen to atmospheric CO₂ if marine phytoplankton productivity dropped by 30%?"*
+
+Evaluate whether the model correctly identifies that marine phytoplankton turn over in days while trees turn over in decades or centuries, so the same biomass produces vastly more annual fixation. A 30% drop in marine fixation would significantly increase atmospheric CO₂ accumulation rate, with substantial climate consequences.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Robert Hill** showed in 1937 that isolated chloroplasts could split water and release oxygen in the light — proving that the O₂ in photosynthesis comes from water, not CO₂. The Hill reaction is still how undergraduate biology labs first observe the light reactions.
+
+**Run this:**
+
+```
+Who was Robert Hill, and how does the Hill reaction connect to the light reactions of photosynthesis we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Robert Hill (biochemist)"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through the original Hill reaction setup — what was the artificial electron acceptor, and why did it matter?
+- Ask it to compare Hill's "the oxygen comes from water" result with the isotope-labeling experiments that later confirmed it.
+
+What changes? What gets better? What gets worse?

@@ -188,3 +188,55 @@ It is, in the end, just arithmetic. The arithmetic of who is alive, who breeds, 
 9. The side-blotched lizard maintains three male color morphs (orange, blue, yellow) in stable cycling frequencies through a rock-paper-scissors dynamic. From a Hardy-Weinberg perspective, this population is not in equilibrium — frequencies cycle rather than stabilize. Yet the three morphs persist indefinitely. This seems to contradict the expectation that directional selection should eventually fix one allele. Explain why this cycling pattern represents a form of long-term stability, and what would have to change in the environment or the fitness relationships to break the cycle and allow one morph to become fixed. *Tests: applying selection logic to a frequency-dependent fitness system, reasoning about conditions for fixation.*
 
 10. A human population on a remote island has been isolated for 200 generations. A researcher finds that one allele at a particular locus has risen from a frequency of 0.01 (estimated from the founding population) to 0.35 today. The allele appears to have no effect on survival or reproduction in lab studies. Propose two different mechanisms that could explain this increase, explain how you would distinguish between them empirically, and describe what evidence would allow you to rule out natural selection as a cause. *Tests: designing an inference strategy to distinguish drift from selection using allele frequency data and population history.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Hardy-Weinberg as null hypothesis**
+Prompt a model: *"The Hardy-Weinberg equilibrium states that in a population not undergoing selection, mutation, gene flow, drift, or non-random mating, allele frequencies remain constant across generations and genotype frequencies follow p² + 2pq + q². Walk me through why this equilibrium serves as the null hypothesis for population genetics: what does it mean to test 'whether evolution is occurring' by checking departures from Hardy-Weinberg? Identify one specific allele in human populations and predict whether you would find Hardy-Weinberg equilibrium for it."*
+
+Evaluate whether the model correctly identifies that Hardy-Weinberg provides a null model, and that departure from the predicted genotype frequencies indicates one or more of the five forces is at work. The CCR5-Δ32 deletion in European populations is a classic example of departure from equilibrium due to historical selection (possibly plague-related).
+
+**Exercise 2 — Computing allele frequency changes from fitness**
+Prompt: *"In a population, the AA genotype has fitness 1.0, Aa has fitness 1.0, and aa has fitness 0.5 (the recessive allele a is partially deleterious). If the starting allele frequency of a is 0.3, predict the frequency of a after one generation of selection. Walk me through the calculation, including the average fitness of the population and the post-selection allele frequencies. After how many generations would a drop to 0.1, approximately?"*
+
+Evaluate whether the model correctly applies the selection equations: q' = (q² × 0.5 + pq × 1.0) / mean fitness, with mean fitness = p² + 2pq + 0.5q². For q=0.3: q² = 0.09 contributes 0.045 to mean fitness; 2pq = 0.42 contributes 0.42; p² = 0.49 contributes 0.49 — mean fitness = 0.955. q' ≈ (0.09×0.5 + 0.21) / 0.955 ≈ 0.267. Approximately 5-7 generations to reach 0.1 [check arithmetic].
+
+**Exercise 3 — Heterozygote advantage and balanced polymorphism**
+Prompt: *"Sickle cell disease is the textbook example of heterozygote advantage maintaining a deleterious allele in a population. In malaria-endemic regions, HbA/HbS heterozygotes have higher fitness than either homozygote (HbA/HbA susceptible to malaria, HbS/HbS suffer sickle cell disease). Walk me through how to compute the equilibrium allele frequency in such a system, given specific fitness values. What happens to the equilibrium when malaria is eradicated?"*
+
+Evaluate whether the model correctly identifies that the equilibrium frequency depends on the relative fitness disadvantages of the two homozygotes: q_eq = s_AA / (s_AA + s_aa), where s values are the selection coefficients against each homozygote. After malaria eradication, s_AA drops to ~0 and the HbS allele decays at the rate determined by s_aa.
+
+**Exercise 4 — Effective population size as the relevant N**
+Prompt: *"The effective population size (Nₑ) is typically much smaller than the census population size (N) — often 10-25% [verify]. Walk me through the factors that reduce Nₑ below N: unequal sex ratios, variance in reproductive success, population bottlenecks, and overlapping generations. Why does drift respond to Nₑ rather than N? For a hypothetical population of 10,000 individuals where only 100 effectively reproduce, what is Nₑ?"*
+
+Evaluate whether the model correctly identifies that Nₑ measures the rate of genetic drift, which depends on the variance in offspring number rather than the total population. For the example, Nₑ ≈ 100 (limited by the 100 reproducers), so drift would be 100× faster than the naive N estimate would predict.
+
+**Exercise 5 — Adaptation and the question of 'fitness'**
+Prompt: *"In evolutionary biology, 'fitness' is defined as relative reproductive success — not strength, intelligence, or survival per se. Walk me through three specific cases where this distinction matters: (1) sexual selection producing traits that hinder survival but enhance mating, (2) genomic conflicts where a 'selfish' gene element spreads despite reducing organismal fitness, (3) longer-lived organisms with lower lifetime reproductive output than shorter-lived ones. For each, identify what 'fitness' means at the level of the gene vs. the organism."*
+
+Evaluate whether the model engages with the gene-centered view (Dawkins) — fitness ultimately means the rate of allele transmission to subsequent generations, which can diverge from organismal interests (selfish genetic elements like meiotic drivers, transposons) — and the sexual-selection puzzle (peacock tails, elaborate bird-of-paradise displays) where traits that reduce survival increase mating success.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Sewall Wright** built much of population genetics in the 1930s — including the concept of genetic drift, the F-statistics that quantify population structure, and the "adaptive landscape" metaphor that lets you visualize fitness across genotypes.
+
+**Run this:**
+
+```
+Who was Sewall Wright, and how does his population genetics work — genetic drift, F-statistics, and adaptive landscapes — connect to the evolution of populations we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about his career or ideas.
+```
+
+→ Search **"Sewall Wright"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to draw an adaptive landscape with two peaks separated by a valley — and explain why a population might be stuck on the lower peak.
+- Ask it to compare Wright's drift-focused view with R. A. Fisher's selection-focused view of how populations evolve.
+
+What changes? What gets better? What gets worse?

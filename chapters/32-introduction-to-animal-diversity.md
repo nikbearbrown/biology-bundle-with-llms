@@ -187,3 +187,55 @@ You share a common ancestor with that sponge. And you share developmental instru
 **Challenge**
 
 9. You are analyzing a fossil from the Ediacaran period (600 million years ago). It is approximately 5 cm in diameter, shows no mineralized structures, has a faint impression of radial symmetry, and was found in marine sediments alongside bacterial mats. (a) Using the defining criteria for animals, explain what morphological and chemical evidence from the fossil you would need to determine whether this organism was an animal. Identify which criteria could be assessed from fossil evidence and which cannot. (b) This organism predates the Cambrian explosion by 60 million years. If it is an animal, what are the implications for the taphonomic hypothesis about the Cambrian explosion? If it is not an animal, what are the implications for understanding what conditions gave rise to animals? (c) A molecular phylogeneticist argues that the fossil record is essentially irrelevant for understanding animal origins because molecular clocks give more precise divergence dates. A paleontologist disagrees. Construct the strongest possible argument for each position, then identify what type of evidence would settle the disagreement. *Tests: applying animal criteria to an ambiguous organism; reasoning about what fossil evidence can and cannot establish; the complementarity of molecular and fossil approaches to deep evolutionary questions.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — Body plan and the freedom of multicellularity**
+Prompt a model: *"All animals share certain features: multicellular, heterotrophic, eukaryotic, motile (at some life stage), with cells lacking cell walls. Walk me through what each of these features enables that other multicellular eukaryotes (plants, fungi) cannot do. Specifically: why does the absence of cell walls open up morphological possibilities that plants and fungi cannot pursue, and how does this connect to the evolution of cell-cell signaling and the nervous system?"*
+
+Evaluate whether the model engages with the cell-wall constraint: plants and fungi have rigid cell walls that prevent the cell motility, shape change, and direct cell-cell contact that animals exploit. This enables animal-specific innovations (gastrulation, neural crest migration, immune cells, muscle contraction) that depend on cells moving relative to each other.
+
+**Exercise 2 — Symmetry as a developmental constraint**
+Prompt: *"Animal body plans show three main symmetry patterns: asymmetry (sponges), radial symmetry (cnidarians, echinoderms — the latter as adults), and bilateral symmetry (most other animals). Walk me through why bilateral symmetry is so dominant — it's associated with cephalization (concentration of sensory organs at the front), forward-directed motility, and complex behavior. Why has radial symmetry persisted in cnidarians and echinoderms despite the apparent advantages of bilateralism?"*
+
+Evaluate whether the model engages with the lifestyle-symmetry match: radial symmetry suits sessile or slow-moving animals that interact with their environment from all directions, while bilateral symmetry suits animals that move in a consistent forward direction and need to detect what's ahead. Echinoderms are interesting because they evolved from bilateral ancestors and reverted to a (modified) radial plan as adults.
+
+**Exercise 3 — The Cambrian explosion**
+Prompt: *"The Cambrian explosion (~541-485 million years ago) produced the appearance, in the fossil record, of essentially all major animal phyla within a relatively short period (~50 million years). Walk me through three leading explanations: (1) sufficient atmospheric oxygen finally enabled large active animals, (2) the evolution of predation and the resulting arms race produced rapid morphological diversification, and (3) the appearance of hard parts (shells, exoskeletons) suddenly made fossil preservation possible (so the apparent explosion is partly an artifact of preservation). Which is best supported, and is one explanation sufficient?"*
+
+Evaluate whether the model correctly identifies that no single explanation is sufficient — the consensus view is that multiple factors converged: oxygen sufficient for energetic predation, ecological niche openings, novel developmental pathways (Hox gene regulatory expansion), and preservation bias all contribute. The "explosion" framing has been moderated as Precambrian fossils have accumulated, suggesting earlier (and slower) origins for many lineages.
+
+**Exercise 4 — Hox genes and the deep conservation of body plans**
+Prompt: *"Hox genes are master regulators of body-plan development, expressed in colinear order (the gene order on the chromosome matches the front-to-back order of body segments they specify). Walk me through how this same gene cluster — duplicated and modified across vertebrates — produces the diversity of vertebrate body plans (fish to tetrapod), and how it relates to the simpler invertebrate Hox cluster. Why is the discovery of Hox conservation considered one of the most important findings in evo-devo?"*
+
+Evaluate whether the model engages with the deep conservation: the same gene families (and largely the same molecular logic) build heads, tails, limbs across animals as different as fruit flies and humans. Modifications to Hox expression patterns (rather than entirely new genes) account for many morphological differences — explaining how rapid evolution of body plans is possible without inventing new molecular machinery.
+
+**Exercise 5 — Why are there ~1.5 million animal species but only one named human?**
+Prompt: *"Animal species count is in the millions (estimated 7-8 million total, with about 1.5 million named [verify]). Yet there is only one named human species (Homo sapiens) — though up to four other Homo species existed within the past 50,000 years (Neanderthals, Denisovans, H. floresiensis, possibly H. luzonensis). Walk me through what this asymmetry tells us about speciation rates, ecological filtering, and the unique recent history of our genus. Is the species count for any genus typically in the thousands, hundreds, or single digits?"*
+
+Evaluate whether the model engages with the broad pattern: most genera have between 1 and 10 species; only a few hyperdiverse genera have hundreds or thousands. The Homo case is unusual because the recent extinction of multiple Homo species reflects either competition with H. sapiens, climate change, or both — a pattern that may be repeated as we look for ecological reasons one species lineage often outcompetes its siblings.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Libbie Hyman** wrote the six-volume *The Invertebrates* between 1940 and 1967 — the comprehensive comparative anatomy of every invertebrate phylum, all by a single author. It is still consulted today as the most thorough survey of animal diversity ever written.
+
+**Run this:**
+
+```
+Who was Libbie Hyman, and how does her comparative work on invertebrate phyla connect to the survey of animal diversity we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Libbie Hyman"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through Hyman's view of the relationships among the major invertebrate phyla — and where modern molecular phylogenetics has revised her conclusions.
+- Add a constraint: "Answer including how Hyman worked largely without a paid position for much of her career and what that meant for the field."
+
+What changes? What gets better? What gets worse?

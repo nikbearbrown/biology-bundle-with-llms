@@ -181,3 +181,55 @@ Understanding the machinery does not make the outcomes predictable. But it makes
 **Challenge**
 
 9. You are a conservation biologist advising on whether to reintroduce wolves (*Canis lupus*) to a river valley ecosystem where they have been absent for 70 years. In their absence, elk populations have grown large and have overgrazed riparian vegetation (willows, aspens) along riverbanks. Loss of riparian vegetation has caused stream banks to erode, water temperature to rise, and trout populations to decline. (a) Trace the trophic cascade from wolf absence to trout decline, identifying each link in the chain and classifying each interaction type. (b) If wolves are reintroduced, opponents argue the elk population will crash and damage ranching. Supporters argue the system will reach a new equilibrium beneficial to overall biodiversity. Using logistic growth and predator-prey dynamics, explain what conditions would determine which prediction is more accurate. (c) Wolves were reintroduced to Yellowstone in 1995. Riparian vegetation recovered, stream banks stabilized, and trout populations increased — not only because elk were reduced in number, but because elk changed their behavior, avoiding riverbanks where they were vulnerable. This behavioral effect is called the "landscape of fear." Explain how this behavioral mechanism could produce stronger ecosystem effects than simple population reduction, and why population models alone would not have predicted it. *Tests: trophic cascades across multiple links; logistic predator-prey dynamics and equilibrium conditions; behavioral ecology as a mechanism beyond population models; synthesis of multiple chapter concepts in a documented real-world case.*
+
+---
+
+## LLM Exercises
+
+The following exercises are designed for use with a large language model. Paste the prompt into any capable model and examine the response critically — not for correctness alone, but for whether the reasoning is mechanistic or merely verbal.
+
+**Exercise 1 — r and K selection as life-history strategies**
+Prompt a model: *"r-selected species (mice, dandelions, many insects) produce many offspring with little parental investment, mature quickly, and have short lives. K-selected species (elephants, oak trees, humans) produce few offspring with substantial parental investment, mature slowly, and have long lives. Walk me through the trade-offs: under what ecological conditions does each strategy maximize fitness? Why does the r/K distinction explain why introduced species in disturbed habitats are often r-selected (rabbits in Australia) and why K-selected species are particularly vulnerable to habitat disturbance?"*
+
+Evaluate whether the model engages with the disturbance-response argument (r-selected species recover quickly from population crashes; K-selected species recover slowly), and whether it correctly identifies that habitat fragmentation and other anthropogenic disturbances often favor r-selected species — explaining why ecological communities increasingly trend toward generalist, weedy species.
+
+**Exercise 2 — Predator-prey dynamics and the Lotka-Volterra equations**
+Prompt: *"The Lotka-Volterra equations model predator-prey dynamics: prey populations grow when predators are scarce, then crash as predators recover; predator populations follow with a lag. The result is oscillating cycles. Walk me through one classic empirical example (Canadian lynx and snowshoe hare cycles, ~10-year period [verify]), and explain why these cycles are robust under some conditions but break down under others. What happens to the dynamics when humans introduce or remove a top predator?"*
+
+Evaluate whether the model engages with the lag-driven oscillation logic and the trophic-cascade observation: removing top predators can dramatically restructure ecosystems (e.g., loss of wolves from Yellowstone allowed elk populations to overgraze willows and aspens, until wolves were reintroduced in 1995 — the resulting "trophic cascade" affected stream geomorphology, beaver populations, and bird diversity).
+
+**Exercise 3 — Competition and competitive exclusion**
+Prompt: *"Gause's principle of competitive exclusion states that two species competing for the same limiting resource cannot coexist indefinitely — one will outcompete the other. Walk me through what this principle does and does not mean in real ecosystems. How do similar species coexist (resource partitioning, temporal partitioning, niche differentiation), and what does the failure of competitive exclusion in some experimental and field studies tell us about the principle's limits? Use an example like Robert MacArthur's warblers (5 species coexisting in spruce forests by foraging in different parts of the tree)."*
+
+Evaluate whether the model engages with the resource-partitioning escape from exclusion (similar species can coexist if they specialize on different parts of the resource spectrum) and the experimental nuance: competitive exclusion holds only when resources are simple and limiting; in complex environments, coexistence is the norm rather than the exception.
+
+**Exercise 4 — Mutualism, parasitism, and the spectrum of relationships**
+Prompt: *"Species interactions are conventionally classified as mutualism (+/+), commensalism (+/0), parasitism (+/-), competition (-/-), and predation (+/-). But these categories are simplifications — many relationships shift along the spectrum depending on context. Walk me through one classic example of context-dependent interactions: mycorrhizal fungi can be mutualists (providing phosphorus to plants in exchange for sugars) under low-phosphorus conditions but parasitic (taking sugars without providing benefit) under high-phosphorus conditions. What does this tell us about ecological 'categories' as descriptions vs. as fixed labels?"*
+
+Evaluate whether the model engages with the context-dependence point (the same interaction can be classified differently depending on environmental conditions), and the insight: ecological labels are useful descriptions but not fundamental categories. Many mutualisms involve costs and benefits that shift seasonally or across populations.
+
+**Exercise 5 — Community succession and the climax-community concept**
+Prompt: *"Ecological succession describes how communities change over time — from pioneer species colonizing bare ground to the eventual 'climax community' of late-successional species. Walk me through one specific successional sequence (e.g., abandoned farmland → annual weeds → perennial grasses → shrubs → pioneer forest → mature forest), and explain why the 'climax community' concept (suggesting a stable end state) has been substantially revised in modern ecology. What is meant by 'shifting mosaic' or 'stochastic dynamics' as alternatives?"*
+
+Evaluate whether the model engages with the historical climax concept (Frederic Clements, early 20th century) and its modern replacement: communities are often shaped by stochastic disturbance (fire, windstorms, disease outbreaks) that prevents any stable end state. Many ecosystems are "shifting mosaics" of patches in different successional stages, with regional structure shaped by the pattern of disturbances rather than convergence to a climax.
+
+---
+
+## AI Wayback Machine
+
+The ideas in this chapter didn't appear from nowhere. **Ruth Patrick** founded the modern study of freshwater biodiversity — her diatom-based pollution indices, developed in the 1940s and 1950s, let regulators measure river health by counting the species present. She did fieldwork into her nineties.
+
+**Run this:**
+
+```
+Who was Ruth Patrick, and how does her work using diatoms as biodiversity indicators connect to the population and community ecology we covered in this chapter? Keep it to three paragraphs. End with the single most surprising thing about her career or ideas.
+```
+
+→ Search **"Ruth Patrick"** on Wikipedia. See what the model got right, got wrong, or left out.
+
+**Now make the prompt better.** Try one of these:
+
+- Ask it to walk through how Patrick's diatom community curves let you distinguish a polluted river from a healthy one.
+- Ask it to compare Patrick's field-survey approach with the modern eDNA metabarcoding methods that have largely replaced it.
+
+What changes? What gets better? What gets worse?
